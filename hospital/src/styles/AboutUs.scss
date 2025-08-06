@@ -1,0 +1,439 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    .about-us {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #EFDAE5;
+        color: #3C103F;
+        padding: 6vw 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-size: 3vw;
+            font-family: Playfair;
+            font-weight: lighter;
+            margin-bottom: 2vw;
+        }
+
+        .members {
+            background-color: #E8C6D8;
+            width: fit-content;
+            padding: 2vw;
+            display: flex;
+            align-items: center;
+
+            .member-images {
+                display: flex;
+                margin-right: 1vw;
+
+                img {
+                    width: 3vw;
+                    height: 3vw;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-left: -1vw;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            h4 {
+                font-size: 1.2vw;
+            }
+        }
+
+        .about-us-top {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 2vw;
+            padding: 6vw 4vw;
+
+            .about-us-top-left {
+                width: 60%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 2vw;
+
+                img {
+                    height: 60%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                h4 {
+                    font-size: 1.2vw;
+                    font-weight: lighter;
+                }
+
+                button {
+                    padding: 0.8vw 1.8vw;
+                    background-color: #3C103F;
+                    color: #F6F0F3;
+                    font-size: 1.1vw;
+                    border: none;
+                    transition: all ease 0.5s;
+                    cursor: pointer;
+                    border: 1px solid #3C103F;
+                    width: fit-content;
+
+                    &:hover {
+                        border: 1px solid #3C103F;
+                        background-color: transparent;
+                        color: #3C103F;
+                    }
+                }
+            }
+
+            .about-us-top-right {
+                width: 38%;
+                height: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .about-us-middle {
+            height: fit-content;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 6vw 4vw;
+            background-color: #E8C6D8;
+
+            h2 {
+                font-size: 3vw;
+                font-family: Playfair;
+                font-weight: lighter;
+            }
+
+            svg {
+                position: absolute;
+                top: 8%;
+            }
+
+            .about-us-middle-inner {
+                height: 80vh;
+                width: 95%;
+                display: flex;
+                margin-top: 6vw;
+                align-self: center;
+
+                .about-us-middle-left {
+                    height: 100%;
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 3vw;
+                    padding-right: 2vw;
+                    position: relative;
+
+                    h4 {
+                        font-size: 1.2vw;
+                        font-weight: lighter;
+                    }
+
+                    button {
+                        padding: 0.8vw 1.8vw;
+                        background-color: #3C103F;
+                        color: #F6F0F3;
+                        font-size: 1.1vw;
+                        border: none;
+                        transition: all ease 0.5s;
+                        cursor: pointer;
+                        border: 1px solid #3C103F;
+                        width: fit-content;
+
+                        &:hover {
+                            border: 1px solid #3C103F;
+                            background-color: transparent;
+                            color: #3C103F;
+                        }
+                    }
+
+                    .customers-wrapper {
+                        display: flex;
+                        align-items: center;
+                        gap: 4vw;
+
+                        .customer {
+                            display: flex;
+                            flex-direction: column;
+                            width: fit-content;
+                            gap: 1vw;
+
+                            h2 {
+                                font-size: 2.5vw;
+                            }
+                        }
+
+                        .divider {
+                            width: 1px;
+                            height: 5vw;
+                            background-color: #3C103F;
+                            opacity: 0.5;
+                        }
+                    }
+
+                    img {
+                        position: absolute;
+                        object-fit: cover;
+                        height: 25vh;
+                        width: 18vw;
+                        right: 35%;
+                        top: 40%;
+                    }
+
+                    .img2 {
+                        position: absolute;
+                        object-fit: cover;
+                        height: 25vh;
+                        width: 14vw;
+                        top: 68%;
+                        right: 5%;
+                    }
+                }
+
+                .about-us-middle-right {
+                    height: 100%;
+                    width: 40%;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        .about-us-bottom {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 6vw 4vw;
+
+            h2 {
+                font-size: 3vw;
+                font-family: Playfair;
+                font-weight: lighter;
+                align-self: flex-end;
+                width: 40%;
+                text-align: right;
+            }
+
+            svg {
+                position: absolute;
+                top: 13%;
+            }
+
+            .about-us-bottom-inner {
+                height: 90vh;
+                width: 95%;
+                margin-top: 6vw;
+                display: flex;
+                justify-content: space-between;
+                align-self: center;
+
+                .about-us-bottom-inner-left {
+                    height: 100%;
+                    width: 32%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2vw;
+
+                    h2 {
+                        width: 100%;
+                        text-align: left;
+                        font-size: 2.5vw;
+                    }
+
+                    h4 {
+                        font-size: 1.2vw;
+                        font-weight: lighter;
+                    }
+
+                    img {
+                        object-fit: cover;
+                        height: 70%;
+                        width: 100%;
+                    }
+                }
+
+                .about-us-bottom-inner-middle {
+                    height: 100%;
+                    width: 32%;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .about-us-bottom-inner-right {
+                    height: 100%;
+                    width: 32%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 2vw;
+
+                    img {
+                        height: 70%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    h2 {
+                        width: 100%;
+                        text-align: right;
+                        font-size: 2.5vw;
+                    }
+
+                    h4 {
+                        font-size: 1.2vw;
+                        font-weight: lighter;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
+        .about-teams {
+            min-height: 100vh;
+            width: 100%;
+            margin-top: 4vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            gap: 4vw;
+            background-color: #E8C6D8;
+            padding: 6vw 4vw;
+
+            h2 {
+                font-size: 3vw;
+                font-family: Playfair;
+                font-weight: lighter;
+                text-align: center;
+                width: 100%;
+            }
+
+            .team {
+                height: 60vh;
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                gap: 1.5vw;
+                transition: all 0.3s ease;
+
+                .elem {
+                    position: relative;
+                    height: 100%;
+                    flex: 1;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: flex 0.3s ease;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    .info {
+                        position: absolute;
+                        bottom: -100%;
+                        left: 0;
+                        width: 100%;
+                        background-color: #3c103f91;
+                        color: #F6F0F3;
+                        padding: 10px;
+                        text-align: center;
+                        transition: bottom 0.5s ease;
+                    }
+
+                    &:hover .info {
+                        bottom: 15%;
+                    }
+                }
+            }
+
+            button {
+                padding: 0.8vw 1.8vw;
+                background-color: #3C103F;
+                color: #F6F0F3;
+                font-size: 1.1vw;
+                border: none;
+                transition: all ease 0.5s;
+                cursor: pointer;
+                border: 1px solid #3C103F;
+                width: fit-content;
+
+                &:hover {
+                    border: 1px solid #3C103F;
+                    background-color: transparent;
+                    color: #3C103F;
+                }
+            }
+        }
+
+        .booking {
+            height: 50vh;
+            width: 85%;
+            margin-top: 6vw;
+            align-self: center;
+            position: relative;
+            background-image: url(/about1.webp);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            padding: 4vw;
+            gap: 2vw;
+
+            h1 {
+                font-family: Playfair;
+                font-size: 3vw;
+                font-weight: lighter;
+                width: 40%;
+            }
+
+            button {
+                padding: 0.8vw 1.8vw;
+                background-color: #3C103F;
+                color: #F6F0F3;
+                font-size: 1.1vw;
+                border: none;
+                transition: all ease 0.5s;
+                cursor: pointer;
+                border: 1px solid #3C103F;
+                width: fit-content;
+
+                &:hover {
+                    border: 1px solid #3C103F;
+                    background-color: transparent;
+                    color: #3C103F;
+                }
+            }
+        }
+    }
+}

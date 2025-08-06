@@ -1,0 +1,112 @@
+footer {
+    height: 89vh;
+    width: 100%;
+    background-color: #E8C6D8;
+    color: #3C103F;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+    .footer {
+        height: fit-content;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 8vw;
+
+        h1 {
+            font-size: 3vw;
+            font-family: Playfair;
+            font-weight: lighter;
+        }
+
+        svg {
+            position: absolute;
+            top: -10%;
+        }
+    }
+
+    .footer-bottom {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6vw;
+
+        .bottom-inner {
+            height: fit-content;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+            .bottom-left {
+                height: 100%;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    width: 10vw;
+                    object-fit: cover;
+                }
+
+                h4 {
+                    font-size: 1.1vw;
+                    display: flex;
+                    gap: 1vw;
+                }
+            }
+
+            .bottom-right {
+                display: flex;
+                height: 100%;
+                justify-content: flex-end;
+                gap: 4vw;
+
+                .elem {
+                    height: 100%;
+                    flex-shrink: 0;
+                    width: 15vw;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1vw;
+
+                    h2 {
+                        font-size: 1.4vw;
+                    }
+
+                    h4 {
+                        cursor: pointer;
+                    }
+
+                    .social-media {
+                        display: flex;
+                        gap: 1vw;
+
+                        i {
+                            font-size: 1.2vw;
+                            background-color: white;
+                            border-radius: 50%;
+                            padding: 0.4vw;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            height: fit-content;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+}

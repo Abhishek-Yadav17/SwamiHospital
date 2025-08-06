@@ -1,0 +1,223 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    .doctors {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #EFDAE5;
+        color: #3C103F;
+        padding: 6vw 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4vw;
+        font-family: Nunito;
+        position: relative;
+
+        .doctors-top {
+            height: 70vh;
+            width: 90%;
+            display: flex;
+
+            .doctor-left {
+                width: 40%;
+                height: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .doctor-right {
+                width: 60%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 0 4vw;
+
+                p {
+                    font-size: 1.1vw;
+                    background-color: #E8C6D8;
+                    border-radius: 50px;
+                    width: fit-content;
+                    padding: 0 1vw;
+                }
+
+                h1 {
+                    font-family: Playfair;
+                    text-transform: capitalize;
+                    margin-top: 1vw;
+                    margin-bottom: 3vw;
+                }
+
+                h4 {
+                    font-size: 1.3vw;
+                    font-weight: lighter;
+                    margin-bottom: 2vw;
+                }
+
+                .buttons {
+                    display: flex;
+                    gap: 2vw;
+
+                    button {
+                        padding: 0.6vw 1.2vw;
+                        background-color: transparent;
+                        font-size: 1.1vw;
+                        border: none;
+                        transition: all ease 0.5s;
+                        cursor: pointer;
+                        border: 1px solid #3C103F;
+                        width: fit-content;
+                        text-transform: capitalize;
+                        display: flex;
+                        gap: 2vw;
+                        align-items: center;
+
+                        i {
+                            background-color: #3C103F;
+                            border-radius: 50%;
+                            padding: 0.3vw;
+                            color: #F6F0F3;
+                            transition: all ease 0.5s;
+                        }
+
+                        &:hover {
+                            background-color: #3C103F;
+                            color: #F6F0F3;
+                        }
+
+                        &:hover i {
+                            background-color: #E8C6D8;
+                            color: #3C103F;
+                        }
+                    }
+                }
+
+                .socials {
+                    display: flex;
+                    gap: 2vw;
+                    border: 1px solid #3C103F;
+                    align-items: center;
+                    justify-content: center;
+                    width: fit-content;
+                    padding: 1.5vw 4vw 1.5vw 2vw;
+                    margin-top: 2vw;
+
+                    h5 {
+                        font-size: 1.2vw;
+                    }
+
+                    i {
+                        font-size: 1.4vw;
+                    }
+                }
+            }
+        }
+
+        .doctors-bottom {
+            height: fit-content;
+            width: 90%;
+            background-color: #E8C6D8;
+            padding: 2vw;
+            display: flex;
+            gap: 5vw;
+
+            .doctors-bottom-left {
+                width: 60%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 4vw;
+
+                .doctors-bottom-inner {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2vw;
+
+                    h2 {
+                        font-family: Playfair;
+                        font-weight: lighter;
+                        font-size: 2vw;
+                        text-transform: capitalize;
+                    }
+
+                    h4 {
+                        font-size: 1.2vw;
+                        font-weight: lighter;
+
+                        span {
+                            font-weight: bold;
+                        }
+                    }
+
+                    ul {
+                        padding-left: 1vw;
+                    }
+                }
+            }
+
+            .doctors-bottom-right {
+                height: 100%;
+                width: 35%;
+                display: flex;
+                flex-direction: column;
+                gap: 1vw;
+                background-color: #EFDAE5;
+                padding: 2vw;
+
+                h2 {
+                    font-size: 2vw;
+                }
+
+                h4 {
+                    font-weight: lighter;
+                    font-size: 1.1vw;
+                }
+
+                .appointment-form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2vw;
+                    margin-top: 2vw;
+
+                    input,
+                    textarea {
+                        padding: 0.8vw;
+                        font-size: 1vw;
+                        border: none;
+                        outline: none;
+                        background-color: #E8C6D8;
+                        color: #3C103F;
+
+                        &::placeholder {
+                            color: #3C103F;
+                        }
+                    }
+
+                    button {
+                        padding: 0.8vw 1.8vw;
+                        background-color: #3C103F;
+                        color: #F6F0F3;
+                        font-size: 1.1vw;
+                        border: none;
+                        transition: all ease 0.5s;
+                        cursor: pointer;
+                        border: 1px solid #3C103F;
+
+                        &:hover {
+                            border: 1px solid #3C103F;
+                            background-color: transparent;
+                            color: #3C103F;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

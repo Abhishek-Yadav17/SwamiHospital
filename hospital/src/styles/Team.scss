@@ -1,0 +1,124 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    .doctor-team {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #EFDAE5;
+        color: #3C103F;
+        padding: 6vw 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4vw;
+
+        >h1 {
+            font-size: 3vw;
+            font-family: Playfair;
+            font-weight: lighter;
+            width: 40%;
+            text-align: center;
+        }
+
+        .team-cards {
+            height: fit-content;
+            width: 85%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 3vw;
+
+            .elem {
+                width: 30%;
+                height: 60vh;
+                flex-shrink: 0;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                .social-icons {
+                    position: absolute;
+                    top: -50%;
+                    right: 2%;
+                    width: 2.5vw;
+                    height: 8vw;
+                    background-color: #EFDAE5;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 10px 0;
+                    transition: top 0.4s ease;
+                    z-index: 2;
+
+                    i {
+                        color: #3C103F;
+                        font-size: 1vw;
+                        cursor: pointer;
+                    }
+                }
+
+                .doctor-info {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    background-color: #3c103f91;
+                    color: #F6F0F3;
+                    padding: 10px;
+                    text-align: center;
+                    pointer-events: none;
+                    z-index: 2;
+                }
+            }
+        }
+
+        .booking {
+            height: 50vh;
+            width: 85%;
+            position: relative;
+            background-image: url(/about1.webp);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            margin-top: 6vw;
+            padding: 4vw;
+            gap: 2vw;
+
+            h1 {
+                font-family: Playfair;
+                font-size: 3vw;
+                font-weight: lighter;
+                width: 40%;
+            }
+
+            button {
+                padding: 0.8vw 1.8vw;
+                background-color: #3C103F;
+                color: #F6F0F3;
+                font-size: 1.1vw;
+                border: none;
+                transition: all ease 0.5s;
+                cursor: pointer;
+                border: 1px solid #3C103F;
+                width: fit-content;
+
+                &:hover {
+                    border: 1px solid #3C103F;
+                    background-color: transparent;
+                    color: #3C103F;
+                }
+            }
+        }
+    }
+}

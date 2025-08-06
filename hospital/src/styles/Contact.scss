@@ -1,0 +1,177 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    .contact-us {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #EFDAE5;
+        color: #3C103F;
+        padding: 6vw 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+
+        h1 {
+            font-size: 3vw;
+            font-family: Playfair;
+            font-weight: lighter;
+        }
+
+        h4 {
+            font-size: 1.2vw;
+            font-weight: lighter;
+        }
+
+        .contact-inner {
+            height: 90vh;
+            width: 85%;
+            margin-top: 4vw;
+            display: flex;
+            justify-content: space-between;
+
+            .contact-inner-left {
+                height: 100%;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h4 {
+                    font-size: 1.2vw;
+                }
+
+                .contact-inner-left-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2vw;
+
+                    .contact-inner-left-box {
+                        width: 20vw;
+                        display: flex;
+                        align-items: center;
+                        gap: 1vw;
+                        padding: 1.2vw 1.5vw;
+                        border: 1px solid #3C103F;
+                        transition: all ease 0.5s;
+
+                        .icon-wrapper {
+                            background-color: #3C103F;
+                            width: 3vw;
+                            height: 3vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #F6F0F3;
+                            font-size: 1.5vw;
+                            transition: all ease 0.5s;
+
+                        }
+
+                        .content-wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.4vw;
+
+                            h2 {
+                                font-size: 1.3vw;
+                                font-family: Playfair;
+                                font-weight: lighter;
+                            }
+
+                            h4 {
+                                font-size: 1.1vw;
+                                text-align: left;
+                                margin: 0;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: #E8C6D8;
+                            color: #3C103F;
+
+                            .icon-wrapper {
+                                background-color: #C3A1C6;
+                                color: #3C103F;
+                            }
+                        }
+                    }
+                }
+
+                .contact-social-media {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1vw;
+
+                    .social-media {
+                        display: flex;
+                        gap: 1vw;
+
+                        i {
+                            font-size: 1.2vw;
+                            background-color: white;
+                            border-radius: 50%;
+                            padding: 0.4vw;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .contact-inner-right {
+                background-color: #E8C6D8;
+                width: 45%;
+                height: 100%;
+                padding: 2vw;
+
+                .contact-form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    label {
+                        font-weight: bold;
+                        margin-bottom: 0.5vw;
+                    }
+
+                    input,
+                    textarea {
+                        padding: 0.8vw 1.5vw;
+                        border: none;
+                        font-size: 1vw;
+                        margin-bottom: 2vw;
+                        background-color: #EFDAE5;
+
+                        &:focus {
+                            border: none;
+                            outline: none;
+                        }
+                    }
+
+                    textarea {
+                        min-height: 20vh;
+                    }
+
+                    button {
+                        padding: 0.8vw 1.8vw;
+                        background-color: #3C103F;
+                        color: #F6F0F3;
+                        font-size: 1.1vw;
+                        border: none;
+                        transition: all ease 0.5s;
+                        cursor: pointer;
+                        border: 1px solid #3C103F;
+
+                        &:hover {
+                            border: 1px solid #3C103F;
+                            background-color: transparent;
+                            color: #3C103F;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
