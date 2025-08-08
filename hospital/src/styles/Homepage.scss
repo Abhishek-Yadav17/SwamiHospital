@@ -10,11 +10,9 @@ main {
         color: #3C103F;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        gap: 4vw;
+        gap: 5vw;
         position: relative;
         padding-top: 2vw;
-        overflow: hidden;
 
         h1 {
             font-size: 4.5vw;
@@ -58,23 +56,11 @@ main {
             }
         }
 
-        .hero-bottom {
+        .hero-buttons {
             display: flex;
             gap: 2vw;
-            width: 50%;
+            padding-left: 2vw;
             position: relative;
-
-            img {
-                width: 40%;
-                object-fit: cover;
-            }
-
-            h4 {
-                font-size: 1.2vw;
-                margin-bottom: 2vw;
-                width: 80%;
-                font-weight: lighter;
-            }
 
             button {
                 padding: 0.8vw 1.8vw;
@@ -90,6 +76,35 @@ main {
                     border: 1px solid #3C103F;
                     background-color: transparent;
                     color: #3C103F;
+                }
+            }
+
+            .buttons-details {
+                position: absolute;
+                width: 60%;
+                height: 35vh;
+                background-color: #3C103F;
+                color: #F6F0F3;
+                z-index: 3;
+                top: 100%;
+                padding: 2vw;
+
+                h4 {
+                    width: 80%;
+                    font-weight: lighter;
+                    margin: 1.4vw 0;
+                }
+
+                button {
+                    width: fit-content;
+                    background-color: #E8C6D8;
+                    color: #3C103F;
+
+                    &:hover {
+                        background-color: transparent;
+                        border: 1px solid #E8C6D8;
+                        color: #F6F0F3;
+                    }
                 }
             }
         }
@@ -192,9 +207,9 @@ main {
                         font-family: Nunito;
                     }
 
-                    img {
-                        width: 50%;
-                        object-fit: cover;
+                    iframe {
+                        width: 60%;
+                        height: 30vh;
                     }
 
                     .line {

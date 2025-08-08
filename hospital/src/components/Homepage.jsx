@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -7,7 +6,28 @@ import '../styles/Homepage.scss'
 
 const Homepage = () => {
 
-    const navigate = useNavigate();
+    const [hoverIndex, setHoverIndex] = useState(null);
+    const [isDetailsHovered, setDetailsHovered] = useState(false);
+    const showDetails = hoverIndex !== null || isDetailsHovered;
+
+    const services = [
+        {
+            title: "ENT",
+            description: "Ear, Nose, and Throat treatments for improved breathing, hearing, and overall comfort. Ear, Nose, and Throat treatments for improved breathing, hearing, and overall comfort. Ear, Nose, and Throat treatments for improved breathing, hearing, and overall comfort.",
+        },
+        {
+            title: "Facial Cosmetics",
+            description: "Customized treatments to harmonize your facial features with symmetry and balance. Customized treatments to harmonize your facial features with symmetry and balance. Customized treatments to harmonize your facial features with symmetry and balance.",
+        },
+        {
+            title: "Facial Plastic Surgery",
+            description: "Advanced surgical procedures to enhance or restore facial aesthetics and function. Advanced surgical procedures to enhance or restore facial aesthetics and function. Advanced surgical procedures to enhance or restore facial aesthetics and function.",
+        },
+        {
+            title: "Dentistry",
+            description: "Comprehensive dental care for a confident, healthy, and beautiful smile. Comprehensive dental care for a confident, healthy, and beautiful smile. Comprehensive dental care for a confident, healthy, and beautiful smile.",
+        },
+    ];
 
     const plansData = [
         {
@@ -78,18 +98,52 @@ const Homepage = () => {
                             </text>
                         </motion.svg>
                     </motion.div>
+
                     <motion.div
-                        className="hero-bottom"
-                        initial={{ opacity: 0, x: -100, y: 100 }}
-                        animate={{ opacity: 1, x: 0, y: 0 }}
-                        transition={{ duration: 1.2, ease: "easeOut", delay: 0.5 }}
+                        className="hero-buttons"
+                        onMouseLeave={() => {
+                            setHoverIndex(null);
+                            setDetailsHovered(false);
+                        }}
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 1 }}
                     >
-                        <img src="/face3.jpg" alt="face" />
-                        <div className="hero-bottom-right">
-                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatum!</h4>
-                            <button>Book an appointment</button>
-                        </div>
+                        {services.map((service, index) => (
+                            <button
+                                key={index}
+                                onMouseEnter={() => setHoverIndex(index)}
+                            >
+                                {service.title}
+                            </button>
+                        ))}
+
+                        <motion.div
+                            className="buttons-details"
+                            onMouseEnter={() => setDetailsHovered(true)}
+                            onMouseLeave={() => setDetailsHovered(false)}
+                            initial={{ opacity: 0, y: 20, pointerEvents: "none" }}
+                            animate={{
+                                opacity: showDetails ? 1 : 0,
+                                y: showDetails ? 0 : 20,
+                                pointerEvents: showDetails ? "auto" : "none"
+                            }}
+                            transition={{ staggerChildren: 0.15, delayChildren: 0.3 }}
+                        >
+                            <motion.div
+                                key={hoverIndex}
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -10 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                <h2>{services[hoverIndex]?.title}</h2>
+                                <h4>{services[hoverIndex]?.description}</h4>
+                                <button className="learn-more-btn">Learn More</button>
+                            </motion.div>
+                        </motion.div>
                     </motion.div>
+
                     <motion.img
                         src="/model.webp"
                         alt="model"
@@ -188,14 +242,16 @@ const Homepage = () => {
                                     Why Choose Us?
                                 </motion.h2>
 
-                                <motion.img
-                                    src="about.webp"
-                                    alt=""
+                                <motion.iframe
+                                    src="https://www.google.com/maps/embed?pb=..."
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
                                     variants={{
                                         hidden: { opacity: 0, y: -50 },
                                         visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
                                     }}
-                                />
+                                ></motion.iframe>
 
                                 <div className="line"></div>
 

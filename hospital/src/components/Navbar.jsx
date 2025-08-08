@@ -13,7 +13,7 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1 }}
             >
-                <h2><i class="ri-shopping-cart-line"></i> Cart()</h2>
+                <img src="/swami.png" alt="logo" className='logo' />
                 <img src="/logo.png" alt="logo" />
                 <motion.div
                     className="nav2"
@@ -37,7 +37,7 @@ const Navbar = () => {
                     <AnimatePresence>
                         {hovered && (
                             <>
-                                {['Home', 'About', 'Services', 'Contact', 'Team'].map((item, i) => (
+                                {['Home', 'About', 'Services', 'Team', 'Contact'].map((item, i) => (
                                     <motion.h4
                                         key={item}
                                         className="nav-item"

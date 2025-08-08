@@ -24,7 +24,7 @@ const Footer = () => {
                             visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
                         }}
                     >
-                        Swami's Dental Clinic
+                        Swami's Clinic
                     </motion.h1>
 
                     <svg
