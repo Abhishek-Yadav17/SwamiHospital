@@ -139,7 +139,12 @@ const Homepage = () => {
                             >
                                 <h2>{services[hoverIndex]?.title}</h2>
                                 <h4>{services[hoverIndex]?.description}</h4>
-                                <button className="learn-more-btn">Learn More</button>
+                                <button
+                                    className="learn-more-btn"
+                                    onClick={() => {
+                                        window.location.href = `/services`;
+                                    }}
+                                >Learn More</button>
                             </motion.div>
                         </motion.div>
                     </motion.div>
