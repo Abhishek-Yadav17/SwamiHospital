@@ -11,7 +11,7 @@ main {
         display: flex;
         flex-direction: column;
         position: relative;
-        padding-top: 2vw;
+        padding-top: 1vw;
 
         h2 {
             align-self: center;
@@ -112,6 +112,7 @@ main {
                         font-size: 1.2vw;
                         margin-bottom: 1vw;
                         color: #E8C6D8;
+                        width: 100%;
                     }
 
                     .ent-sub-section {
@@ -123,6 +124,8 @@ main {
                         h4 {
                             font-size: 1vw;
                             margin-bottom: 0.5vw;
+                            align-self: flex-start;
+                            font-weight: bold;
                         }
 
                         ul {
