@@ -68,8 +68,14 @@ const FacialCosmetics = () => {
                 </div>
               </li>
               <li>
+                <strong>Derma Roller</strong>
+              </li>
+              <li>
                 <strong>Microneedling</strong>
                 <h4>Collagen induction therapy using tiny needles to trigger skin healing and firming.</h4>
+              </li>
+              <li>
+                <strong>Acne & Scar Treatment</strong>
               </li>
               <li>
                 <strong>PRP (Platelet-Rich Plasma)</strong>
@@ -88,6 +94,24 @@ const FacialCosmetics = () => {
                 <div className="cosmetic-images">
                   <img src="/cosmetic8.jpg" alt="cosmetic" />
                 </div>
+              </li>
+              <li>
+                <strong>Laser Hair Reduction</strong>
+              </li>
+              <li>
+                <strong>Tattoo Removal</strong>
+              </li>
+              <li>
+                <strong>Scar Removal</strong>
+              </li>
+              <li>
+                <strong>Beard Patch Treatment</strong>
+              </li>
+              <li>
+                <strong>Pigmentation-depigmentation</strong>
+              </li>
+              <li>
+                <strong>All kind of Hair Treatment</strong>
               </li>
             </ul>
           </div>

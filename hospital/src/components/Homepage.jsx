@@ -166,8 +166,8 @@ const Homepage = () => {
                     </motion.h1>
                     
                     <motion.h4
-                        initial={{ opacity: 0, y: -100 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.5, delay: 0.5 }}
                     >
                         We, at <span>Swami's Clinic</span> are dedicated to provide healthcare services related to <span>Ear, Nose, Throat Facial Cosmetics & Dentistry</span> with our team of experts.
@@ -275,10 +275,6 @@ const Homepage = () => {
                                         </div>
                                     </div>
                                 )}
-
-                                <button className="learn-more-btn" onClick={() => window.location.href = `/services`}>
-                                    Learn More
-                                </button>
                             </motion.div>
                         </motion.div>
                     </motion.div>
