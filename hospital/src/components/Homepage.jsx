@@ -12,7 +12,7 @@ const Homepage = () => {
 
     const services = [
         {
-            title: "ENT",
+            title: "Ear Nose Throat",
             sections: [
                 {
                     sectionTitle: "Ear Treatments",
@@ -150,13 +150,36 @@ const Homepage = () => {
             <Navbar />
             <main>
                 <div className="hero">
-                    <motion.h2
-                        initial={{ opacity: 0, y: -100 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1.5, delay: 0.5 }}
-                    >
-                        सुहास्य वदनं सर्व सुखस्य कारणं
-                    </motion.h2>
+                    <div className="hero-heading">
+                        <motion.button
+                            className="contact-button"
+                            variants={{
+                                hidden: { opacity: 0, y: 50 },
+                                visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.2 } }
+                            }}
+                        >
+                            <i className="ri-phone-fill"></i>+91 9135321616
+                        </motion.button>
+
+                        <motion.h2
+                            initial={{ opacity: 0, y: -100 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1.5, delay: 0.5 }}
+                        >
+                            सुहास्य वदनं सर्व सुखस्य कारणं
+                        </motion.h2>
+
+                        <motion.button
+                            className="contact-button"
+                            variants={{
+                                hidden: { opacity: 0, y: 50 },
+                                visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.2 } }
+                            }}
+                        >
+                            <i className="ri-mail-fill"></i>swamisentdentalclinic@gmail.com
+                        </motion.button>
+                    </div>
+
                     <motion.h1
                         initial={{ opacity: 0, y: -100 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -164,7 +187,7 @@ const Homepage = () => {
                     >
                         Self Beauty Reflects Only Through A Strong Self Identity
                     </motion.h1>
-                    
+
                     <motion.h4
                         initial={{ opacity: 0, x: 100 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -191,7 +214,9 @@ const Homepage = () => {
                                 onMouseEnter={() => setHoverIndex(index)}
                                 onClick={() => window.location.href = `/${service.title.toLowerCase().replace(/\s+/g, '-')}`}
                             >
-                                {service.title}
+                                {service.title.split(' ').map((w, idx) => (
+                                    <div key={idx}>{w}</div>
+                                ))}
                             </button>
                         ))}
 
@@ -210,7 +235,7 @@ const Homepage = () => {
                             <motion.div key={hoverIndex} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}>
                                 <h2>{services[hoverIndex]?.title}</h2>
 
-                                {services[hoverIndex]?.title === "ENT" && (
+                                {services[hoverIndex]?.title === "Ear Nose Throat" && (
                                     <div className="ent-grid">
                                         <div className="services-grid">
                                             {services[hoverIndex].sections.map((section, sectionIndex) => (
@@ -301,34 +326,6 @@ const Homepage = () => {
                             }
                         }}
                     >
-                        <motion.h1
-                            variants={{
-                                hidden: { opacity: 0, y: 50 },
-                                visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
-                            }}
-                        >
-                            Redefining beauty with personalized care
-                        </motion.h1>
-
-                        <svg
-                            width="100%"
-                            height="100"
-                            viewBox="0 0 1000 100"
-                            preserveAspectRatio="none"
-                            style={{ marginTop: "2vw" }}
-                        >
-                            <motion.path
-                                d="M0 70 H500 L600 20 H1000"
-                                stroke="#C3A1C6"
-                                strokeWidth="1"
-                                fill="none"
-                                initial={{ pathLength: 0 }}
-                                whileInView={{ pathLength: 1 }}
-                                viewport={{ once: true, amount: 0.4 }}
-                                transition={{ duration: 2, ease: "easeInOut" }}
-                            />
-                        </svg>
-
                         <div className="about-inner">
                             <div className="about-inner-left">
                                 <motion.iframe

@@ -7,13 +7,17 @@ nav {
     justify-content: space-between;
     padding: 0 2vw;
     transition: width 1s ease;
+    position: relative;
 
     .logo {
         height: 9vw;
         width: 7vw;
     }
 
-    img {
+    >img:nth-of-type(2) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         width: 15vw;
     }
 
@@ -23,20 +27,18 @@ nav {
         overflow: hidden;
         width: fit-content;
         background-color: #3C103F;
+        padding: 0.8vw 2vw;
         color: #F6F0F3;
-        padding: 0.8vw 1.8vw;
-        gap: 2vw;
+        gap: 2.2vw;
         cursor: pointer;
-        white-space: nowrap;
-    }
 
-    .nav-item {
-        opacity: 1;
-        pointer-events: auto;
-        margin-left: 1vw;
-    }
+        h4 {
+            font-size: 1.2vw;
+            transition: all ease 0.5s;
 
-    .menu {
-        display: block;
+            &:hover {
+                color: #E8C6D8;
+            }
+        }
     }
 }

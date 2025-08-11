@@ -14,33 +14,65 @@ main {
         padding-top: 1vw;
         gap: 1vw;
 
-        h2 {
-            align-self: center;
-            word-spacing: 0.5vw;
-            margin-bottom: 3vw;
+        .hero-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2vw;
+            margin-bottom: 2vw;
+
+            h2 {
+                flex: 1;
+                text-align: center;
+                margin: 0;
+            }
+
+            .contact-button {
+                padding: 0.5vw 1.2vw;
+                background-color: #3C103F;
+                color: #F6F0F3;
+                font-size: 1.1vw;
+                border: none;
+                transition: all ease 0.5s;
+                cursor: pointer;
+                border: 1px solid #3C103F;
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                white-space: nowrap;
+
+                i {
+                    margin-right: 0.4vw;
+                }
+
+                &:hover {
+                    background-color: transparent;
+                    color: #3C103F;
+                }
+            }
         }
 
         h1 {
-            font-size: 4vw;
+            font-size: 3vw;
             font-family: Playfair;
             font-weight: lighter;
             line-height: 1.2;
-            width: 65%;
+            width: 60%;
             height: fit-content;
-            margin-bottom: 6vw;
+            margin-bottom: 4vw;
             padding-left: 6vw;
             align-self: center;
             text-align: center;
         }
 
         h4 {
-            font-size: 1.3vw;
+            font-size: 1.5vw;
             font-weight: lighter;
             width: 60%;
             text-align: left;
             padding: 0 6vw;
             align-self: flex-start;
-            margin-bottom: 6vw;
+            margin-bottom: 4vw;
 
             span {
                 font-weight: bold;
@@ -59,10 +91,12 @@ main {
                 color: #F6F0F3;
                 font-size: 1.1vw;
                 border: none;
+                height: 18vh;
                 width: 25%;
                 transition: all ease 0.5s;
                 cursor: pointer;
                 border: 1px solid #3C103F;
+                text-transform: uppercase;
 
                 &:hover {
                     border: 1px solid #3C103F;
@@ -211,7 +245,7 @@ main {
         width: 100%;
         background-color: #EFDAE5;
         color: #3C103F;
-        padding: 6vw 4vw;
+        padding: 0 4vw;
         display: flex;
         flex-direction: column;
         align-items: center;
