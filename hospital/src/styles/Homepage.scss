@@ -107,6 +107,7 @@ main {
                     display: flex;
                     flex-direction: column;
                     gap: 1.5vw;
+                    min-width: 20%;
 
                     h3 {
                         font-size: 1.2vw;
@@ -121,7 +122,7 @@ main {
                         flex-direction: column;
                         gap: 1vw;
 
-                        h4 {
+                        h5 {
                             font-size: 1vw;
                             margin-bottom: 0.5vw;
                             align-self: flex-start;

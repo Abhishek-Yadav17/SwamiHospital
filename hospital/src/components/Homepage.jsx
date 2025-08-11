@@ -75,35 +75,37 @@ const Homepage = () => {
         {
             title: "Facial Cosmetics",
             items: [
-                "Botox Injections", "Dermal Fillers", "Lip Augmentation",
-                "Jawline Contouring", "Cheek Enhancement", "Under Eye Fillers",
-                "Non-Surgical Nose Job", "Gummy Smile Correction", "Temple Filling"
+                "Dermascopy Skin & Hair Analysis", "Hydrafacial", "Dermaplanning",
+                "Chemical Peel", "LED Light Therapy", "Crystal Therapy",
+                "Mesotherapy", "Derma Roller", "Microneedling", "Acne & Scar Treatment", "PRP", "Hair Transplant", "Botox",
+                "Laser Hair Reduction", "Tattoo Removal", "Scar Removal", "Beard Patch Treatment", "Pigmentation-depigmentation",
+                "All kind of Hair Treatment"
             ]
         },
         {
             title: "Facial Plastic Surgery",
             items: [
-                "Rhinoplasty", "Blepharoplasty", "Facelift",
-                "Neck Lift", "Brow Lift", "Chin Implant",
-                "Otoplasty", "Cheek Implants", "Scar Revision"
+                "Rhinoplasty", "Blepharoplasty", "Implants and Prosthesis",
+                "Pinnaplasty", "Brow Lift / Forehead Lift", "Facial Reanimation",
+                "Genioplasty", "Facelift / Necklift", "Botox, Fillers, PMU"
             ]
         },
         {
             title: "Dentistry",
             items: [
-                "Teeth Cleaning", "Root Canal", "Tooth Extraction", "Bridges",
-                "Crowns", "Cavity Fillings", "Wisdom Tooth Removal", "Orthodontics",
-                "Teeth Whitening", "Implants", "Veneers", "Dental X-rays",
-                "Gum Treatment", "Emergency Dentistry", "Dentures", "Night Guards"
+                "Scaling", "Tooth Extraction", "Composite", "Root Canal",
+                "GICC", "Cown Bridge", "Dental Implant", "Flap Surgery",
+                "Laminate", "Veneers", "Bleach",
+                "De-Pigmentation", "Ortho (Braces)", "Night Guard", "Retainer", "Pediatric Dentistry"
             ],
             sections: [
                 {
                     sectionTitle: "Aesthetic Dentistry",
-                    items: ["Smile Design", "Cosmetic Bonding", "Gum Contouring", "Invisalign"]
+                    items: ["Smile Design", "Dental Jewellery", "Teeth Whitening", "Gummy Smile Treatment"]
                 },
                 {
                     sectionTitle: "Treatment",
-                    items: ["Periodontal Therapy", "TMJ Treatment", "Oral Cancer Screening", "Pediatric Care"]
+                    items: ["Lichen Planus", "Mouth Ulcer", "Glossitis", "Osmf", "Leucoplakia", "Hallitosis"]
                 }
             ]
         }
@@ -227,7 +229,7 @@ const Homepage = () => {
                                             <h3>{services[hoverIndex]?.extra?.sectionTitle}</h3>
                                             {services[hoverIndex]?.extra?.subSections.map((sub, idx) => (
                                                 <div key={idx} className="ent-sub-section">
-                                                    <h4>{sub.title}</h4>
+                                                    <h5>{sub.title}</h5>
                                                     <ul>
                                                         {sub.items.map((item, i) => (
                                                             <li key={i}>{item}</li>
