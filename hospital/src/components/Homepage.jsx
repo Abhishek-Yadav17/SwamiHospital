@@ -289,34 +289,6 @@ const Homepage = () => {
                         visible: { transition: { staggerChildren: 0.3 } }
                     }}
                 >
-                    <motion.h2
-                        variants={{
-                            hidden: { opacity: 0, y: -50 },
-                            visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
-                        }}
-                    >
-                        The Stats Speaks for Themselves
-                    </motion.h2>
-                    <motion.div className="stats">
-                        {[
-                            ["96%", "Patient Satisfaction Rate"],
-                            ["12+", "Years of Industry Experience"],
-                            ["10,000+", "Successful Surgeries Performed"],
-                            ["30%", "State-of-the-Art Facilities"],
-                        ].map(([num, desc]) => (
-                            <motion.div
-                                className="elem"
-                                key={num}
-                                variants={{
-                                    hidden: { opacity: 0, y: 50 },
-                                    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-                                }}
-                            >
-                                <h1>{num}</h1>
-                                <h4>{desc}</h4>
-                            </motion.div>
-                        ))}
-                    </motion.div>
                     <motion.div
                         className="about"
                         initial="hidden"
@@ -413,7 +385,7 @@ const Homepage = () => {
                                     visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
                                 }}
                             >
-                                <img src="about1.webp" alt="about" />
+                                <h1>....</h1>
                             </motion.div>
                         </div>
                     </motion.div>

@@ -6,12 +6,13 @@ main {
     .hero {
         min-height: 100vh;
         width: 100%;
-        background-color: #E8C6D8;
+        background-color: #f3dde8;
         color: #3C103F;
         display: flex;
         flex-direction: column;
         position: relative;
         padding-top: 1vw;
+        gap: 1vw;
 
         h2 {
             align-self: center;
@@ -28,15 +29,17 @@ main {
             height: fit-content;
             margin-bottom: 6vw;
             padding-left: 6vw;
+            align-self: center;
+            text-align: center;
         }
 
         h4 {
-            font-size: 1.2vw;
+            font-size: 1.3vw;
             font-weight: lighter;
             width: 60%;
-            text-align: right;
+            text-align: left;
             padding: 0 6vw;
-            align-self: flex-end;
+            align-self: flex-start;
             margin-bottom: 6vw;
 
             span {
@@ -47,7 +50,7 @@ main {
         .hero-buttons {
             display: flex;
             gap: 2vw;
-            padding-left: 2vw;
+            padding: 0 2vw;
             position: relative;
 
             button {
@@ -56,6 +59,7 @@ main {
                 color: #F6F0F3;
                 font-size: 1.1vw;
                 border: none;
+                width: 25%;
                 transition: all ease 0.5s;
                 cursor: pointer;
                 border: 1px solid #3C103F;
@@ -69,7 +73,7 @@ main {
 
             .buttons-details {
                 position: absolute;
-                width: 90%;
+                width: 96%;
                 height: fit-content;
                 background-color: #E8C6D8;
                 color: #3C103F;
