@@ -1,0 +1,91 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    .dentistry {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #EFDAE5;
+        color: #3C103F;
+        padding: 6vw 4vw;
+        font-family: Nunito;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4vw;
+
+        .dentistry-heading {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5vw;
+
+            h1 {
+                font-family: Playfair;
+                font-size: 3vw;
+                font-weight: lighter;
+            }
+
+            h4 {
+                font-size: 1.2vw;
+                font-weight: lighter;
+            }
+        }
+
+        .dentistry-content {
+            width: 100%;
+            background-color: #E8C6D8;
+            padding: 2vw;
+            display: flex;
+            flex-direction: column;
+            gap: 6vw;
+
+            .dentistry-section {
+                display: flex;
+                flex-direction: column;
+                gap: 1vw;
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 3vw;
+
+                    li {
+                        width: 48%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.8vw;
+                        background-color: #EFDAE5;
+                        padding: 1.5vw;
+                        height: fit-content;
+
+                        strong {
+                            font-size: 1.4vw;
+                            font-weight: bold;
+                            color: #3C103F;
+                        }
+
+                        .teeth-images {
+                            display: flex;
+                            gap: 1vw;
+                            flex-wrap: wrap;
+
+                            img {
+                                width: 100%;
+                                max-width: 15vw;
+                                border-radius: 6px;
+                            }
+
+                            video {
+                                width: 100%;
+                                max-width: 15vw;
+                                border-radius: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

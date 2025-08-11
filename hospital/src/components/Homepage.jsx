@@ -13,20 +13,100 @@ const Homepage = () => {
     const services = [
         {
             title: "ENT",
-            description: "Ear, Nose, and Throat treatments for improved breathing, hearing, and overall comfort. Ear, Nose, and Throat treatments for improved breathing, hearing, and overall comfort. Ear, Nose, and Throat treatments for improved breathing, hearing, and overall comfort.",
+            sections: [
+                {
+                    sectionTitle: "Ear Treatments",
+                    items: [
+                        "Endoscopy with Suction Irrigation", "Foreign Body Removal", "Ear Biopsy",
+                        "Microscopy", "Myringotomy", "Myringotomy with Gromet",
+                        "Pinnaplasty", "Miringoplasty", "Tympanoplasty",
+                        "Mastoidectomy", "Stapedotomy", "Cochlear Implant"
+                    ]
+                },
+                {
+                    sectionTitle: "Nose Treatments",
+                    items: [
+                        "Nasal Cautery For Allergy", "Septoplasty", "Turbinoplasty / Conchoplasty",
+                        "Rhinoplasty", "Anterior FESS", "Total FESS (Sinus Surgery)",
+                        "Foreign Body Removal", "Nasal Bone Fracture Repair", "Nasal Polypectomy",
+                        "Nasal Hemangioma Removal", "Juvenile Nasapharyngeal Angiofibroma", "Nasal Biospy"
+                    ]
+                },
+                {
+                    sectionTitle: "Throat Treatments",
+                    items: [
+                        "Oral Biospy", "Tonsilectomy", "Adenoidectomy Resection",
+                        "Tonsil & Adenoid Tar", "Peritonsillar Abscess / Quinsy Drainage", "Uvuloplasty",
+                        "Uvulopalatoplasty", "Tongue Tie Release", "Laryngoscopy",
+                        "Miscrolaryngoscopy"
+                    ]
+                },
+                {
+                    sectionTitle: "Head & Neck Surgery",
+                    items: [
+                        "Neck Node Biospy", "Superficial Parotidectomy", "Total Parotidectomy",
+                        "Submandibular Gland Excision", "Hemithyroidectomy", "Total Thyroidectomy",
+                        "Thyroglossal Cyst Excision", "Dermoid/sebaceous Cyst Excision",
+                        "Ludwig's Angina", "Neck Space Abscess I & D",
+                        "Ranula Excision"
+                    ]
+                }
+            ],
+            extra: {
+                sectionTitle: "Audio and Speech Unit",
+                subSections: [
+                    {
+                        title: "Digital Hearing Aids",
+                        items: [
+                            "Behind The Ear (BTE)", "Reciever in Canal (RIC)",
+                            "Completely In Canal (CIC)", "Invisible In Canal (IIC)"
+                        ]
+                    },
+                    {
+                        title: "Allergy Treatment",
+                        items: [
+                            "Allergy Profile Blood Tests", "Anti Allergy Immunotherapy"
+                        ]
+                    }
+                ]
+            }
         },
+
         {
             title: "Facial Cosmetics",
-            description: "Customized treatments to harmonize your facial features with symmetry and balance. Customized treatments to harmonize your facial features with symmetry and balance. Customized treatments to harmonize your facial features with symmetry and balance.",
+            items: [
+                "Botox Injections", "Dermal Fillers", "Lip Augmentation",
+                "Jawline Contouring", "Cheek Enhancement", "Under Eye Fillers",
+                "Non-Surgical Nose Job", "Gummy Smile Correction", "Temple Filling"
+            ]
         },
         {
             title: "Facial Plastic Surgery",
-            description: "Advanced surgical procedures to enhance or restore facial aesthetics and function. Advanced surgical procedures to enhance or restore facial aesthetics and function. Advanced surgical procedures to enhance or restore facial aesthetics and function.",
+            items: [
+                "Rhinoplasty", "Blepharoplasty", "Facelift",
+                "Neck Lift", "Brow Lift", "Chin Implant",
+                "Otoplasty", "Cheek Implants", "Scar Revision"
+            ]
         },
         {
             title: "Dentistry",
-            description: "Comprehensive dental care for a confident, healthy, and beautiful smile. Comprehensive dental care for a confident, healthy, and beautiful smile. Comprehensive dental care for a confident, healthy, and beautiful smile.",
-        },
+            items: [
+                "Teeth Cleaning", "Root Canal", "Tooth Extraction", "Bridges",
+                "Crowns", "Cavity Fillings", "Wisdom Tooth Removal", "Orthodontics",
+                "Teeth Whitening", "Implants", "Veneers", "Dental X-rays",
+                "Gum Treatment", "Emergency Dentistry", "Dentures", "Night Guards"
+            ],
+            sections: [
+                {
+                    sectionTitle: "Aesthetic Dentistry",
+                    items: ["Smile Design", "Cosmetic Bonding", "Gum Contouring", "Invisalign"]
+                },
+                {
+                    sectionTitle: "Treatment",
+                    items: ["Periodontal Therapy", "TMJ Treatment", "Oral Cancer Screening", "Pediatric Care"]
+                }
+            ]
+        }
     ];
 
     const plansData = [
@@ -68,36 +148,30 @@ const Homepage = () => {
             <Navbar />
             <main>
                 <div className="hero">
+                    <motion.h2
+                        initial={{ opacity: 0, y: -100 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1.5, delay: 0.5 }}
+                    >
+                        सुषस्यानं वन्दनं सर्वो सुखस्य कारणम्
+                    </motion.h2>
                     <motion.h1
                         initial={{ opacity: 0, y: -100 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.5, delay: 0.5 }}
                     >
-                        Sculpting confidence defining true beauty
+                        Self Beauty Reflects Only Through A Strong Self Identity
                     </motion.h1>
-                    <motion.div
-                        className="rotating"
-                        initial={{ scale: 0 }}
-                        animate={{ scale: 1 }}
-                        transition={{ duration: 1.5, ease: "easeOut", delay: 0.5 }}
+                    
+                    <motion.h4
+                        initial={{ opacity: 0, y: -100 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1.5, delay: 0.5 }}
                     >
-                        <img src="/face2.jpg" alt="circle" className="circle-img" />
-                        <motion.svg
-                            viewBox="0 0 200 200"
-                            className="circle-svg"
-                            animate={{ rotate: 360 }}
-                            transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
-                        >
-                            <defs>
-                                <path id="circlePath" d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0" />
-                            </defs>
-                            <text>
-                                <textPath href="#circlePath" startOffset="0%">
-                                    Book • Consult • Glow • Repeat •
-                                </textPath>
-                            </text>
-                        </motion.svg>
-                    </motion.div>
+                        We, at <span>Swami's Clinic</span> are dedicated to provide healthcare services related to <span>Ear, Nose, Throat Facial Cosmetics & Dentistry</span> with our team of experts.
+
+                        We also help people with brief and thorough counselling sessions who struggle with selfworth / self esteem seeking <span>Cosmetic treatments</span>.
+                    </motion.h4>
 
                     <motion.div
                         className="hero-buttons"
@@ -113,6 +187,7 @@ const Homepage = () => {
                             <button
                                 key={index}
                                 onMouseEnter={() => setHoverIndex(index)}
+                                onClick={() => window.location.href = `/${service.title.toLowerCase().replace(/\s+/g, '-')}`}
                             >
                                 {service.title}
                             </button>
@@ -130,33 +205,81 @@ const Homepage = () => {
                             }}
                             transition={{ staggerChildren: 0.15, delayChildren: 0.3 }}
                         >
-                            <motion.div
-                                key={hoverIndex}
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -10 }}
-                                transition={{ duration: 0.3 }}
-                            >
+                            <motion.div key={hoverIndex} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}>
                                 <h2>{services[hoverIndex]?.title}</h2>
-                                <h4>{services[hoverIndex]?.description}</h4>
-                                <button
-                                    className="learn-more-btn"
-                                    onClick={() => {
-                                        window.location.href = `/services`;
-                                    }}
-                                >Learn More</button>
+
+                                {services[hoverIndex]?.title === "ENT" && (
+                                    <div className="ent-grid">
+                                        <div className="services-grid">
+                                            {services[hoverIndex].sections.map((section, sectionIndex) => (
+                                                <div key={sectionIndex} className="service-section">
+                                                    <h3>{section.sectionTitle}</h3>
+                                                    <ul>
+                                                        {section.items.map((item, itemIndex) => (
+                                                            <li key={itemIndex}>{item}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            ))}
+                                        </div>
+
+                                        <div className="ent-extra">
+                                            <h3>{services[hoverIndex]?.extra?.sectionTitle}</h3>
+                                            {services[hoverIndex]?.extra?.subSections.map((sub, idx) => (
+                                                <div key={idx} className="ent-sub-section">
+                                                    <h4>{sub.title}</h4>
+                                                    <ul>
+                                                        {sub.items.map((item, i) => (
+                                                            <li key={i}>{item}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+
+                                {["Facial Cosmetics", "Facial Plastic Surgery"].includes(services[hoverIndex]?.title) && (
+                                    <div className="grid-3x3">
+                                        {services[hoverIndex].items.map((item, index) => (
+                                            <div key={index} className="grid-item">{item}</div>
+                                        ))}
+                                    </div>
+                                )}
+
+                                {services[hoverIndex]?.title === "Dentistry" && (
+                                    <div className="dentistry-grid">
+                                        <ul>
+                                            {services[hoverIndex].items.slice(0, 8).map((item, index) => (
+                                                <li key={index}>{item}</li>
+                                            ))}
+                                        </ul>
+                                        <ul>
+                                            {services[hoverIndex].items.slice(8, 16).map((item, index) => (
+                                                <li key={index}>{item}</li>
+                                            ))}
+                                        </ul>
+                                        <div className="dentistry-sectioned">
+                                            {services[hoverIndex].sections.map((section, i) => (
+                                                <div key={i}>
+                                                    <h3>{section.sectionTitle}</h3>
+                                                    <ul>
+                                                        {section.items.map((item, idx) => (
+                                                            <li key={idx}>{item}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+
+                                <button className="learn-more-btn" onClick={() => window.location.href = `/services`}>
+                                    Learn More
+                                </button>
                             </motion.div>
                         </motion.div>
                     </motion.div>
-
-                    <motion.img
-                        src="/model.webp"
-                        alt="model"
-                        className="model-img"
-                        initial={{ opacity: 0, x: 100, y: 100 }}
-                        animate={{ opacity: 1, x: 0, y: 0 }}
-                        transition={{ duration: 1.2, ease: "easeOut", delay: 0.5 }}
-                    />
                 </div>
                 <motion.div
                     className="page1"
@@ -238,17 +361,8 @@ const Homepage = () => {
 
                         <div className="about-inner">
                             <div className="about-inner-left">
-                                <motion.h2
-                                    variants={{
-                                        hidden: { opacity: 0, y: -50 },
-                                        visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
-                                    }}
-                                >
-                                    Why Choose Us?
-                                </motion.h2>
-
                                 <motion.iframe
-                                    src="https://www.google.com/maps/embed?pb=..."
+                                    src="https://www.google.com/maps?q=202,+2nd+floor+Vedriti+Building+above+Gajlaxmi+Jwellers,+Tata+Guardroom+Bus+Stop,+Nagar+Road,+Pune-14&output=embed"
                                     allowFullScreen=""
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
@@ -266,17 +380,32 @@ const Homepage = () => {
                                         visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
                                     }}
                                 >
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quos. Sed cum porro temporibus vero. Fugiat ea voluptates quasi dolore error, fugit!
+                                    <span>Address:</span> 202, 2nd floor Vedriti Building above Gajlaxmi Jwellers, Tata Guardroom Bus Stop, Nagar Road, Pune-14
                                 </motion.h4>
 
-                                <motion.button
-                                    variants={{
-                                        hidden: { opacity: 0, y: 50 },
-                                        visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.2 } }
-                                    }}
+                                <motion.div
+                                    className="about-inner-left-buttons"
+                                    initial="hidden"
+                                    animate="visible"
                                 >
-                                    Book an appointment
-                                </motion.button>
+                                    <motion.button
+                                        variants={{
+                                            hidden: { opacity: 0, y: 50 },
+                                            visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.2 } }
+                                        }}
+                                    >
+                                        <i class="ri-phone-fill"></i>+91 9135321616
+                                    </motion.button>
+
+                                    <motion.button
+                                        variants={{
+                                            hidden: { opacity: 0, y: 50 },
+                                            visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.2 } }
+                                        }}
+                                    >
+                                        <i class="ri-mail-fill"></i>swamisentdentalclinic@gmail.com
+                                    </motion.button>
+                                </motion.div>
                             </div>
 
                             <motion.div

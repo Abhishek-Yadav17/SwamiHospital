@@ -1,0 +1,132 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    .ent {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #EFDAE5;
+        color: #3C103F;
+        padding: 6vw 4vw;
+        font-family: Nunito;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4vw;
+
+        .ent-heading {
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+            text-align: center;
+
+            h1 {
+                font-family: Playfair;
+                font-size: 3vw;
+                font-weight: lighter;
+            }
+
+            h4 {
+                font-size: 1.2vw;
+                font-weight: lighter;
+            }
+        }
+
+        .ent-content {
+            width: 100%;
+            background-color: #E8C6D8;
+            padding: 2vw;
+            display: flex;
+            flex-direction: column;
+            gap: 6vw;
+
+            .ent-section {
+                display: flex;
+                flex-direction: column;
+                gap: 1vw;
+
+                h2 {
+                    font-size: 2vw;
+                    margin-bottom: 1vw;
+                    border-bottom: 1px solid #3C103F;
+                    padding-bottom: 0.5vw;
+                }
+
+                ul {
+                    padding-left: 1.8vw;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 2.8vw;
+
+                    li {
+                        width: 48%;
+                        font-size: 1.1vw;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.8vw;
+                        background-color: #EFDAE5;
+                        height: fit-content;
+                        padding: 1.5vw;
+
+
+                        strong {
+                            display: block;
+                            font-weight: bold;
+                            margin-bottom: 1vw;
+                            font-size: 1.4vw;
+                        }
+
+                        h4 {
+                            font-size: 1.1vw;
+                            font-weight: lighter;
+                            margin-bottom: 1vw;
+                        }
+
+                        .ent-images {
+                            display: flex;
+                            gap: 1vw;
+                            flex-wrap: wrap;
+
+                            img {
+                                width: 100%;
+                                max-width: 20vw;
+                                border-radius: 6px;
+                            }
+
+                            video {
+                                width: 100%;
+                                max-width: 20vw;
+                                border-radius: 6px;
+                            }
+                        }
+
+                        .desc {
+                            p {
+                                font-size: 1.1vw;
+                            }
+                        }
+                    }
+                }
+
+                .hearing-images {
+                    display: flex;
+                    gap: 1vw;
+                    flex-wrap: wrap;
+                    padding-left: 1.8vw;
+
+                    img {
+                        width: 100%;
+                        max-width: 10vw;
+                        border-radius: 6px;
+                    }
+                }
+
+                p {
+                    font-size: 1.4vw;
+                    margin: 1vw 0;
+                }
+            }
+        }
+    }
+}

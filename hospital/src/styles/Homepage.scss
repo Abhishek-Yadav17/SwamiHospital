@@ -10,49 +10,37 @@ main {
         color: #3C103F;
         display: flex;
         flex-direction: column;
-        gap: 5vw;
         position: relative;
         padding-top: 2vw;
 
+        h2 {
+            align-self: center;
+            word-spacing: 0.5vw;
+            margin-bottom: 2vw;
+        }
+
         h1 {
-            font-size: 4.5vw;
+            font-size: 4vw;
             font-family: Playfair;
             font-weight: lighter;
             line-height: 1.2;
-            width: 60%;
+            width: 65%;
             height: fit-content;
-            padding-left: 10vw;
+            margin-bottom: 6vw;
+            padding-left: 6vw;
         }
 
-        .rotating {
-            position: relative;
-            width: 160px;
-            height: 160px;
-            margin-left: 25vw;
+        h4 {
+            font-size: 1.2vw;
+            font-weight: lighter;
+            width: 60%;
+            text-align: right;
+            padding: 0 6vw;
+            align-self: flex-end;
+            margin-bottom: 6vw;
 
-
-            .circle-img {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 5.5vw;
-                height: 5.5vw;
-                transform: translate(-50%, -50%);
-                border-radius: 50%;
-                object-fit: cover;
-                z-index: 2;
-            }
-
-            .circle-svg {
-                width: 100%;
-                height: 100%;
-
-                text {
-                    font-size: 1.4vw;
-                    font-weight: bold;
-                    fill: #000;
-                    letter-spacing: 2px;
-                }
+            span {
+                font-weight: bold;
             }
         }
 
@@ -81,24 +69,114 @@ main {
 
             .buttons-details {
                 position: absolute;
-                width: 60%;
-                height: 35vh;
+                width: 90%;
+                height: fit-content;
                 background-color: #3C103F;
                 color: #F6F0F3;
                 z-index: 3;
                 top: 100%;
                 padding: 2vw;
 
-                h4 {
-                    width: 80%;
-                    font-weight: lighter;
-                    margin: 1.4vw 0;
+                .ent-grid {
+                    display: flex;
+                    gap: 3vw;
+                    margin-top: 2vw;
+                }
+
+                .services-grid {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 4vw;
+
+                    .service-section {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2vw;
+
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1.5vw;
+                            list-style: none;
+                        }
+                    }
+                }
+
+                .ent-extra {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5vw;
+
+                    h3 {
+                        font-size: 1.2vw;
+                        margin-bottom: 1vw;
+                        color: #E8C6D8;
+                    }
+
+                    .ent-sub-section {
+                        margin-bottom: 1.5vw;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1vw;
+
+                        h4 {
+                            font-size: 1vw;
+                            margin-bottom: 0.5vw;
+                        }
+
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1.5vw;
+                            list-style: none;
+                        }
+                    }
+                }
+
+                .grid-3x3 {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 1.5vw;
+                    margin-top: 2vw;
+                }
+
+                .dentistry-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 3vw;
+                    margin-top: 2vw;
+
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.5vw;
+                    }
+
+                    .dentistry-sectioned {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2vw;
+
+                        h3 {
+                            font-size: 1.4vw;
+                            margin-bottom: 2vw;
+                        }
+
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1.5vw;
+                        }
+                    }
                 }
 
                 button {
                     width: fit-content;
                     background-color: #E8C6D8;
                     color: #3C103F;
+                    margin-top: 2vw;
 
                     &:hover {
                         background-color: transparent;
@@ -200,12 +278,8 @@ main {
                     height: 100%;
                     display: flex;
                     flex-direction: column;
+                    justify-content: space-between;
                     gap: 2vw;
-
-                    h2 {
-                        font-size: 2.5vw;
-                        font-family: Nunito;
-                    }
 
                     iframe {
                         width: 60%;
@@ -223,23 +297,38 @@ main {
                         font-size: 1.3vw;
                         font-weight: lighter;
                         width: 80%;
+
+                        span {
+                            font-weight: bold;
+                        }
                     }
 
-                    button {
-                        padding: 0.8vw 1.8vw;
-                        background-color: #3C103F;
-                        color: #F6F0F3;
-                        font-size: 1.1vw;
-                        border: none;
-                        transition: all ease 0.5s;
-                        cursor: pointer;
-                        border: 1px solid #3C103F;
-                        width: fit-content;
+                    .about-inner-left-buttons {
+                        display: flex;
+                        gap: 1vw;
 
-                        &:hover {
+                        button {
+                            padding: 0.8vw 1.8vw;
+                            background-color: #3C103F;
+                            color: #F6F0F3;
+                            font-size: 1.1vw;
+                            border: none;
+                            transition: all ease 0.5s;
+                            cursor: pointer;
                             border: 1px solid #3C103F;
-                            background-color: transparent;
-                            color: #3C103F;
+                            width: fit-content;
+                            display: flex;
+                            align-items: center;
+
+                            i {
+                                margin-right: 0.4vw;
+                            }
+
+                            &:hover {
+                                border: 1px solid #3C103F;
+                                background-color: transparent;
+                                color: #3C103F;
+                            }
                         }
                     }
                 }

@@ -7,6 +7,10 @@ import Team from './components/Team';
 import DoctorPage from './components/DoctorPage';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
+import ENT from './components/ENT';
+import FacialPlastic from './components/FacialPlastic';
+import FacialCosmetics from './components/FacialCosmetics';
+import Dentistry from './components/Dentistry';
 import './App.css'
 
 function App() {
@@ -20,6 +24,10 @@ function App() {
           <Route path="/services/:serviceId" element={<ServiceDetails />} />
           <Route path="/team" element={<Team />} />
           <Route path="/doctors/:doctorId" element={<DoctorPage />} />
+          <Route path="/ent" element={<ENT />} />
+          <Route path="/facial-plastic-surgery" element={<FacialPlastic />} />
+          <Route path="/facial-cosmetics" element={<FacialCosmetics />} />
+          <Route path="/dentistry" element={<Dentistry />} />
         </Routes>
     </Router>
   );
