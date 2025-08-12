@@ -33,7 +33,7 @@ const Services = () => {
                             visible: { y: 0, opacity: 1, transition: { duration: 0.6 } }
                         }}
                     >
-                        Personalized surgical options for you
+                        Personalized Consultations For You
                     </motion.h1>
 
                     <motion.div

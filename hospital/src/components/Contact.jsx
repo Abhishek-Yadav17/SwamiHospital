@@ -25,7 +25,7 @@ const Contact = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                        Get in touch how can we help
+                        Let Us Know How Can We Help
                     </motion.h1>
 
                     <motion.h4
@@ -33,7 +33,7 @@ const Contact = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                        Experiencing licensing, billing, or technical challenges? Interested in providing feedback?
+                        Contact Us, WhatsApp Us, Mail Us or Meet In Person
                     </motion.h4>
 
                     <motion.div
@@ -60,7 +60,7 @@ const Contact = () => {
                                 }}
                                 transition={{ duration: 0.6 }}
                             >
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis similique hic dolorem neque, aliquid dolorum vero voluptate? Est quis maiores, quasi porro tenetur harum adipisci vel quos cumque ut ad reprehenderit voluptas pariatur earum quod dolorum saepe impedit provident asperiores.
+                                You can get your querry or feedback updated with us anytime. Our Coordinator will contact you soon.
                             </motion.h4>
 
                             <motion.div
@@ -70,7 +70,7 @@ const Contact = () => {
                                 }}
                             >
                                 {[
-                                    { icon: "ri-mail-line", title: "Send Us Email", subtitle: "email@email.com" },
+                                    { icon: "ri-mail-line", title: "Send Us Email", subtitle: "swamisclinic100@email.com" },
                                     { icon: "ri-map-pin-line", title: "Our Location", subtitle: "Pune, Maharashtra" },
                                     { icon: "ri-phone-line", title: "Call Us!", subtitle: "+123456789" },
                                 ].map(({ icon, title, subtitle }, i) => (
