@@ -42,7 +42,7 @@ const Team = () => {
                             }
                         }}
                     >
-                        World-class surgeons exceptional results
+                        Delicate Approach, Exceptional Results
                     </motion.h1>
 
                     <motion.div

@@ -7,10 +7,10 @@ import '../styles/Services.scss'
 const Services = () => {
 
     const services = [
-        { title: 'ENT', subtitle: 'Comprehensive care for Ear, Nose, Throat, Head & Neck'},
+        { title: 'Ear Nose Throat', subtitle: 'Comprehensive care for Ear, Nose, Throat, Head & Neck'},
         { title: 'Facial Aesthetics', subtitle: 'Advanced dermatological solutions for glowing, youthful skin'},
-        { title: 'Facial Plastic Surgery', subtitle: 'Expert surgical solutions to restore form and function with precision and care'},
         { title: 'Dentistry', subtitle: 'Complete Dental Care for Health, Function, and Aesthetics'},
+        { title: 'Facial Plastic Surgery', subtitle: 'Expert surgical solutions to restore form and function with precision and care'},
     ];
 
     return (

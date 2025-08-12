@@ -193,6 +193,7 @@ main {
                         border: none;
                         outline: none;
                         background-color: #E8C6D8;
+                        font-family: Nunito;
                         color: #3C103F;
 
                         &::placeholder {
@@ -208,6 +209,7 @@ main {
                         border: none;
                         transition: all ease 0.5s;
                         cursor: pointer;
+                        font-family: Nunito;
                         border: 1px solid #3C103F;
 
                         &:hover {

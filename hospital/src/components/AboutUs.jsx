@@ -10,7 +10,7 @@ const AboutUs = () => {
         <>
             <Navbar />
             <main>
-                <motion.div 
+                <motion.div
                     className="about-us"
                     initial="hidden"
                     whileInView="visible"
@@ -26,7 +26,7 @@ const AboutUs = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, ease: 'easeOut' }}
                     >
-                        Advancing knowledge through discovery
+                        Customised Care With Expertise
                     </motion.h1>
 
                     <motion.div
@@ -57,14 +57,6 @@ const AboutUs = () => {
                         }}
                     >
                         <div className="about-us-top-left">
-                            <motion.img
-                                src="/about1.webp"
-                                alt=""
-                                initial={{ y: -50, opacity: 0 }}
-                                whileInView={{ y: 0, opacity: 1 }}
-                                viewport={{ once: true, amount: 0.4 }}
-                                transition={{ duration: 0.7, ease: 'easeOut' }}
-                            />
                             <motion.h4
                                 initial={{ y: 50, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
@@ -152,45 +144,6 @@ const AboutUs = () => {
                                 >
                                     Learn More
                                 </motion.button>
-
-                                <motion.div
-                                    className="customers-wrapper"
-                                    initial={{ y: 50, opacity: 0 }}
-                                    variants={{
-                                        visible: { y: 0, opacity: 1, transition: { duration: 0.7, ease: 'easeOut' } }
-                                    }}
-                                >
-                                    <div className="customer">
-                                        <h2>550+</h2>
-                                        <h4>Happy Customers</h4>
-                                    </div>
-
-                                    <div className="divider"></div>
-
-                                    <div className="customer">
-                                        <h2>12+</h2>
-                                        <h4>Year Experience</h4>
-                                    </div>
-                                </motion.div>
-
-                                <motion.img
-                                    src="/about.webp"
-                                    alt="about"
-                                    initial={{ scale: 0.8, opacity: 0 }}
-                                    variants={{
-                                        visible: { scale: 1, opacity: 1, transition: { duration: 0.8, ease: 'easeOut' } }
-                                    }}
-                                />
-
-                                <motion.img
-                                    src="/about1.webp"
-                                    alt="about"
-                                    className="img2"
-                                    initial={{ scale: 0.8, opacity: 0 }}
-                                    variants={{
-                                        visible: { scale: 1, opacity: 1, transition: { duration: 0.8, ease: 'easeOut' } }
-                                    }}
-                                />
                             </div>
 
                             <motion.div
@@ -217,34 +170,6 @@ const AboutUs = () => {
                             }
                         }}
                     >
-                        <motion.h2
-                            initial={{ y: 50, opacity: 0 }}
-                            variants={{
-                                visible: { y: 0, opacity: 1, transition: { duration: 0.7, ease: "easeOut" } }
-                            }}
-                        >
-                            Empowering discovery shaping future
-                        </motion.h2>
-
-                        <svg
-                            width="92%"
-                            height="100"
-                            viewBox="0 0 1000 100"
-                            preserveAspectRatio="none"
-                            style={{ marginTop: "2vw" }}
-                        >
-                            <motion.path
-                                d="M1000 70 H500 L400 20 H0"
-                                stroke="#C3A1C6"
-                                strokeWidth="1"
-                                fill="none"
-                                initial={{ pathLength: 0 }}
-                                whileInView={{ pathLength: 1 }}
-                                viewport={{ once: true, amount: 0.4 }}
-                                transition={{ duration: 2, ease: "easeInOut" }}
-                            />
-                        </svg>
-
                         <div className="about-us-bottom-inner">
                             <motion.div
                                 className="about-us-bottom-inner-left"
@@ -254,32 +179,15 @@ const AboutUs = () => {
                                 }}
                                 style={{ cursor: "pointer" }}
                             >
+                                <h2>Our Vision</h2>
+                                <h4>
+                                    It is still very evident as to where this field of applied science of aesthetics will take human experience in the following decades, which necessitates commitment, honesty, integrity, creativity and innovation. We adhere to the same rigorous standards and intent as the pioneers of of this field were and still on.
+                                </h4>
                                 <h2>Our Mission</h2>
                                 <h4>
                                     Is to prevent people from wandering from one setup to another in order to have a wholesome treatment related to ENT, Dental and Facial Aesthetics thereby saving their precious time, energy and undue expenses. We simultaneously aim to provide the highest caliber of healthcare in our areas of expertise.
                                 </h4>
-                                <motion.img
-                                    src="/about2.webp"
-                                    alt=""
-                                    transition={{ duration: 0.3 }}
-                                    style={{ display: "block", width: "100%", marginTop: "1rem" }}
-                                />
-                            </motion.div>
 
-                            <motion.div
-                                className="about-us-bottom-inner-middle"
-                                initial={{ y: -50, opacity: 0 }}
-                                variants={{
-                                    visible: { y: 0, opacity: 1, transition: { duration: 0.7, ease: "easeOut" } }
-                                }}
-                                style={{ cursor: "pointer" }}
-                            >
-                                <motion.img
-                                    src="/about3.webp"
-                                    alt=""
-                                    transition={{ duration: 0.3 }}
-                                    style={{ display: "block", width: "100%" }}
-                                />
                             </motion.div>
 
                             <motion.div
@@ -296,74 +204,28 @@ const AboutUs = () => {
                                     transition={{ duration: 0.3 }}
                                     style={{ display: "block", width: "100%" }}
                                 />
-                                <h2>Our Vision</h2>
-                                <h4>
-                                    It is still very evident as to where this field of applied science of aesthetics will take human experience in the following decades, which necessitates commitment, honesty, integrity, creativity and innovation. We adhere to the same rigorous standards and intent as the pioneers of of this field were and still on.
-                                </h4>
+                                <motion.img
+                                    src="/about2.webp"
+                                    alt=""
+                                    transition={{ duration: 0.3 }}
+                                    style={{ display: "block", width: "100%", marginTop: "1rem" }}
+                                />
                             </motion.div>
                         </div>
-                    </motion.div>
-
-                    <motion.div
-                        className="about-teams"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.4 }}
-                        variants={{
-                            hidden: {},
-                            visible: {
-                                transition: { staggerChildren: 0.3 }
-                            }
-                        }}
-                    >
-                        <motion.h2
-                            variants={{
-                                hidden: { opacity: 0, y: 50 },
-                                visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
-                            }}
-                        >
-                            Explore Team
-                        </motion.h2>
-
                         <motion.div
-                            className="team"
-                            variants={{
-                                hidden: { y: 50, opacity: 0 },
-                                visible: { y: 0, opacity: 1, transition: { duration: 0.8 } }
-                            }}
+                            className="about-us-team"
+                            initial={{ y: 50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true, amount: 0.3 }}
+                            transition={{ duration: 0.6, ease: "easeOut" }}
                         >
-                            {[
-                                { name: "Dr. Jane Doe", role: "Cardiologist" },
-                                { name: "Dr. John Smith", role: "Orthopedic Surgeon" },
-                                { name: "Dr. Lisa Ray", role: "Dermatologist" },
-                                { name: "Dr. Mark Lee", role: "Neurosurgeon" }
-                            ].map(({ name, role }, i) => (
-                                <motion.div
-                                    className="elem"
-                                    key={i}
-                                    whileHover={{ flex: 1.4 }}
-                                    transition={{ type: "tween", duration: 0.3 }}
-                                >
-                                    <img src="about1.webp" alt="team" />
-                                    <div className="info">
-                                        <h4>{name}</h4>
-                                        <p>{role}</p>
-                                    </div>
-                                </motion.div>
-                            ))}
+                            <h2>Explore Our Team From Here:</h2>
+                            <button
+                                onClick={() => {
+                                    window.location.href = `/team`;
+                                }}
+                            >Explore Team</button>
                         </motion.div>
-
-                        <motion.button
-                            onClick={() => {
-                                window.location.href = `/team`;
-                            }}
-                            variants={{
-                                hidden: { opacity: 0, y: 50 },
-                                visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.2 } }
-                            }}
-                        >
-                            Explore Team
-                        </motion.button>
                     </motion.div>
                 </motion.div>
             </main>

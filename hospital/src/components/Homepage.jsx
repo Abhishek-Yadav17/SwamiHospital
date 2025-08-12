@@ -199,9 +199,7 @@ const Homepage = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1.5, delay: 0.5 }}
                 >
-                    We, at <span>Swami's Clinic</span> are dedicated to provide healthcare services related to <span>Ear, Nose, Throat Facial Cosmetics & Dentistry</span> with our team of experts.
-
-                    We also help people with brief and thorough counselling sessions who struggle with selfworth / self esteem seeking <span>Cosmetic treatments</span>.
+                    Devoted towards complete Facial Aesthetics solutions through a team of experts including Surgeons, Dentists and Cosmetologists, Psychologists. Ensuring a positive self-esteem through Facial Aesthetics!
                 </motion.h4>
 
                 <motion.div

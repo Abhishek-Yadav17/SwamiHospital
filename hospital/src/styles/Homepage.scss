@@ -2,6 +2,7 @@ main {
     min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
+    font-family: Nunito;
 
     .hero {
         min-height: 80vh;
@@ -44,6 +45,7 @@ main {
                 display: flex;
                 align-items: center;
                 white-space: nowrap;
+                font-family: Nunito;
 
                 i {
                     margin-right: 0.4vw;
@@ -102,7 +104,8 @@ main {
                 border: 1px solid #3C103F;
                 text-transform: uppercase;
                 font-weight: bold;
-                font-family: Playfair !important;
+                font-family: Playfair;
+                font-weight: lighter;
 
                 &:hover {
                     border: 1px solid #3C103F;
@@ -236,7 +239,7 @@ main {
     }
 
     .page1 {
-        min-height: 90vh;
+        min-height: 70vh;
         width: 100%;
         background-color: #EFDAE5;
         color: #3C103F;
@@ -268,9 +271,13 @@ main {
                     flex-direction: column;
                     gap: 3vw;
 
-                    iframe {
-                        width: 80%;
-                        height: 30vh;
+                    a {
+                        color: transparent;
+
+                        iframe {
+                            width: 80%;
+                            height: 30vh;
+                        }
                     }
 
                     h4 {
@@ -394,6 +401,7 @@ main {
             transition: all ease 0.5s;
             cursor: pointer;
             border: 1px solid #3C103F;
+            font-family: Nunito;
             width: fit-content;
 
             &:hover {

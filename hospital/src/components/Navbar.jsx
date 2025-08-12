@@ -16,7 +16,7 @@ const Navbar = () => {
                 <img src="/swami.png" alt="logo" className='logo' />
                 <img src="/logo.png" alt="logo" />
                 <div className="nav2">
-                    {['Home', 'About', 'Services', 'Team', 'Contact'].map((item) => (
+                    {['Home','Services', 'About', 'Team', 'Contact'].map((item) => (
                         <h4
                             key={item}
                             className="nav-item"
