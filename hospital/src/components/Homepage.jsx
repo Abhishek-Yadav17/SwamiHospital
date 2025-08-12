@@ -182,7 +182,7 @@ const Homepage = () => {
                                 visible: { opacity: 1, x: 0, transition: { duration: 0.8, delay: 0.2 } }
                             }}
                         >
-                            <i className="ri-mail-fill"></i>swamisentdentalclinic@gmail.com
+                            <i className="ri-mail-fill"></i>swamisclinic100@gmail.com
                         </motion.button>
                 </motion.div>
 
@@ -341,7 +341,7 @@ const Homepage = () => {
                                 style={{ display: 'block' }}
                             >
                                 <motion.iframe
-                                    src="https://www.google.com/maps?q=202,+2nd+floor+Vedriti+Building+above+Gajlaxmi+Jwellers,+Tata+Guardroom+Bus+Stop,+Nagar+Road,+Pune-14&output=embed"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.453684537361!2d73.9281296!3d18.5624652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c15098e671bd%3A0xb3c415cbefd73b1a!2sSWAMI'S%20ENT%20DENTAL%20%26%20COSMETIC%20CLINIC!5e0!3m2!1sen!2sin!4vXXXXXXXXXXX"
                                     allowFullScreen=""
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
@@ -352,7 +352,6 @@ const Homepage = () => {
                                     style={{ pointerEvents: 'none' }}
                                 ></motion.iframe>
                             </a>
-                            <div className="line"></div>
 
                             <motion.h4
                                 variants={{
@@ -360,7 +359,8 @@ const Homepage = () => {
                                     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
                                 }}
                             >
-                                <span>Address:</span> 202, 2nd floor Vedriti Building above Gajlaxmi Jwellers, Tata Guardroom Bus Stop, Nagar Road, Pune-14
+                                <span>Address:</span> Office 202, 2nd floor Vedriti Building, <br />
+                                Above Gajlaxmi Jwellers, Tata Guardroom Bus Stop, Nagar Road, Pune-14
                             </motion.h4>
 
                             <motion.div
@@ -383,7 +383,7 @@ const Homepage = () => {
                                         visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.2 } }
                                     }}
                                 >
-                                    <i class="ri-mail-fill"></i>swamisentdentalclinic@gmail.com
+                                    <i class="ri-mail-fill"></i>swamisclinic100@gmail.com
                                 </motion.button>
                             </motion.div>
                         </div>

@@ -141,7 +141,7 @@ const AboutUs = () => {
                                         visible: { y: 0, opacity: 1, transition: { duration: 0.7, ease: 'easeOut' } }
                                     }}
                                 >
-                                    When the respective field specialists plan & work together; magic happens and so is our beginning of Swami's on a similar note when ENT Consultants, ENT Surgeons, Dental Consultants & Surgeons, Cosmetologist, Maxillofacial Surgeons, Skin specialists decided to collaborate & provide Healthcare services at par with international standards.
+                                    When the respective field Specialists plan & work together; magic happens and so is our beginning of Swami's on a similar note when ENT Consultants, ENT Surgeons, Dental Consultants & Surgeons, Cosmetologists, Maxillofacial Surgeons, Skin Specialists decided to collaborate & provide Healthcare services at par with International Standards.
                                 </motion.h4>
 
                                 <motion.button
@@ -256,7 +256,7 @@ const AboutUs = () => {
                             >
                                 <h2>Our Mission</h2>
                                 <h4>
-                                    Is to prevent people from wandering from one setup to another in order to have a wholesome treatment related to ENT, Dental, Cosmetology thereby saving precious time, energy and unnecessary expenses. At the same time we strive for best possible Healthcare quality in our specialities.
+                                    Is to prevent people from wandering from one setup to another in order to have a wholesome treatment related to ENT, Dental and Facial Aesthetics thereby saving their precious time, energy and undue expenses. We simultaneously aim to provide the highest caliber of healthcare in our areas of expertise.
                                 </h4>
                                 <motion.img
                                     src="/about2.webp"
@@ -298,7 +298,7 @@ const AboutUs = () => {
                                 />
                                 <h2>Our Vision</h2>
                                 <h4>
-                                    It remains crystal clear as to where this branch of science is going to land human experience in the upcoming decades which calls for dedication, integrity, research & innovation. We tend to stay on the same rigorous standards and intent as the pioneers of this field were & still are.
+                                    It is still very evident as to where this field of applied science of aesthetics will take human experience in the following decades, which necessitates commitment, honesty, integrity, creativity and innovation. We adhere to the same rigorous standards and intent as the pioneers of of this field were and still on.
                                 </h4>
                             </motion.div>
                         </div>
@@ -322,7 +322,7 @@ const AboutUs = () => {
                                 visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
                             }}
                         >
-                            World-class surgeons exceptional results
+                            Explore Team
                         </motion.h2>
 
                         <motion.div
@@ -363,33 +363,6 @@ const AboutUs = () => {
                             }}
                         >
                             Explore Team
-                        </motion.button>
-                    </motion.div>
-                    <motion.div
-                        className="booking"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        variants={{
-                            hidden: { scale: 1 },
-                            visible: { scale: 1.05, transition: { duration: 0.8 } },
-                        }}
-                    >
-                        <motion.h1
-                            variants={{
-                                hidden: { y: -50, opacity: 0 },
-                                visible: { y: 0, opacity: 1, transition: { duration: 0.6 } },
-                            }}
-                        >
-                            Schedule your free consultation now
-                        </motion.h1>
-                        <motion.button
-                            variants={{
-                                hidden: { y: 50, opacity: 0 },
-                                visible: { y: 0, opacity: 1, transition: { duration: 0.6 } },
-                            }}
-                        >
-                            Book Now
                         </motion.button>
                     </motion.div>
                 </motion.div>

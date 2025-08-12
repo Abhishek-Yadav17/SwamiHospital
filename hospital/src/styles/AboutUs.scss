@@ -395,45 +395,5 @@ main {
                 }
             }
         }
-
-        .booking {
-            height: 50vh;
-            width: 85%;
-            margin-top: 6vw;
-            align-self: center;
-            position: relative;
-            background-image: url(/about1.webp);
-            background-position: center;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            padding: 4vw;
-            gap: 2vw;
-
-            h1 {
-                font-family: Playfair;
-                font-size: 3vw;
-                font-weight: lighter;
-                width: 40%;
-            }
-
-            button {
-                padding: 0.8vw 1.8vw;
-                background-color: #3C103F;
-                color: #F6F0F3;
-                font-size: 1.1vw;
-                border: none;
-                transition: all ease 0.5s;
-                cursor: pointer;
-                border: 1px solid #3C103F;
-                width: fit-content;
-
-                &:hover {
-                    border: 1px solid #3C103F;
-                    background-color: transparent;
-                    color: #3C103F;
-                }
-            }
-        }
     }
 }

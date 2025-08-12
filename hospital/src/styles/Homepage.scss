@@ -4,7 +4,7 @@ main {
     overflow-x: hidden;
 
     .hero {
-        min-height: 100vh;
+        min-height: 80vh;
         width: 100%;
         background-color: #f3dde8;
         color: #3C103F;
@@ -12,7 +12,7 @@ main {
         flex-direction: column;
         position: relative;
         padding-top: 1vw;
-        gap: 2vw;
+        justify-content: space-between;
 
         .hero-heading {
             display: flex;
@@ -93,7 +93,7 @@ main {
                 padding: 0.8vw 1.8vw;
                 background-color: #3C103F;
                 color: #F6F0F3;
-                font-size: 1.2vw;
+                font-size: 24px;
                 border: none;
                 height: 18vh;
                 width: 25%;
@@ -101,6 +101,8 @@ main {
                 cursor: pointer;
                 border: 1px solid #3C103F;
                 text-transform: uppercase;
+                font-weight: bold;
+                font-family: Playfair !important;
 
                 &:hover {
                     border: 1px solid #3C103F;
@@ -231,21 +233,10 @@ main {
                 }
             }
         }
-
-        .model-img {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 35vw;
-            height: auto;
-            object-fit: cover;
-            z-index: 1;
-            pointer-events: none;
-        }
     }
 
     .page1 {
-        min-height: 100vh;
+        min-height: 90vh;
         width: 100%;
         background-color: #EFDAE5;
         color: #3C103F;
@@ -255,42 +246,6 @@ main {
         align-items: center;
         gap: 6vw;
 
-        h2 {
-            font-size: 3vw;
-            font-family: Playfair;
-            font-weight: lighter;
-        }
-
-        .stats {
-            display: flex;
-            height: 20vh;
-            width: 100%;
-
-            .elem {
-                height: 100%;
-                width: 25%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 1.5vw;
-                border-right: 1px solid #C3A1C6;
-
-                h1 {
-                    font-family: Playfair;
-                    font-size: 2.5vw;
-                }
-
-                h4 {
-                    font-weight: lighter;
-                }
-
-                &:nth-last-child(1) {
-                    border: none;
-                }
-            }
-        }
-
         .about {
             height: fit-content;
             width: 100%;
@@ -299,18 +254,6 @@ main {
             flex-direction: column;
             gap: 6vw;
             margin-top: 2vw;
-
-            h1 {
-                font-size: 3vw;
-                font-family: Playfair;
-                font-weight: lighter;
-                width: 50%;
-            }
-
-            svg {
-                position: absolute;
-                top: 5%;
-            }
 
             .about-inner {
                 display: flex;
@@ -323,25 +266,18 @@ main {
                     height: 100%;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
-                    gap: 2vw;
+                    gap: 3vw;
 
                     iframe {
-                        width: 60%;
+                        width: 80%;
                         height: 30vh;
-                    }
-
-                    .line {
-                        width: 1px;
-                        height: 11vh;
-                        background-color: #C3A1C6;
-                        margin-left: 10vw;
                     }
 
                     h4 {
                         font-size: 1.3vw;
                         font-weight: lighter;
                         width: 80%;
+                        text-align: center;
 
                         span {
                             font-weight: bold;

@@ -80,7 +80,8 @@ const Footer = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
                             >
-                                <span>Address:</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, natus?
+                                <span>Address:</span> Office 202, 2nd floor Vedriti Building, <br />
+                                Above Gajlaxmi Jwellers, Tata Guardroom Bus Stop, Nagar Road, Pune-14
                             </motion.h4>
                         </motion.div>
 
@@ -100,7 +101,7 @@ const Footer = () => {
                             >
                                 <motion.h2>Follow Us</motion.h2>
                                 <motion.div className="social-media">
-                                    {["ri-instagram-fill", "ri-facebook-fill", "ri-linkedin-fill", "ri-twitter-x-fill"].map((icon, i) => (
+                                    {["ri-instagram-fill", "ri-facebook-fill", "ri-linkedin-fill"].map((icon, i) => (
                                         <motion.i
                                             key={i}
                                             className={icon}
