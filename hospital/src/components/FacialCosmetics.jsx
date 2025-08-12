@@ -16,7 +16,7 @@ const FacialCosmetics = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="facial-heading">
-            <h1>Facial Cosmetics & Aesthetic Treatments</h1>
+            <h1>Facial Aesthetic Treatments</h1>
             <h4>Advanced dermatological solutions for glowing, youthful skin</h4>
           </div>
 

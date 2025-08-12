@@ -48,18 +48,15 @@ const Dentistry = () => {
                 </li>
                 <li>
                   <strong>GIC Filling</strong>
+                </li>
+                <li>
+                  <strong>Routine Extraction</strong>
                   <div className="teeth-images">
                     <video src="/teeth4.mp4" autoPlay loop muted />
                   </div>
                 </li>
                 <li>
-                  <strong>Routine Extraction</strong>
-                </li>
-                <li>
                   <strong>Crown Cementation</strong>
-                  <div className="teeth-images">
-                    <img src="/teeth6.jpg" alt="teeth" />
-                  </div>
                 </li>
                 <li>
                   <strong>TMJ Disorders</strong>
@@ -117,14 +114,14 @@ const Dentistry = () => {
                 </li>
                 <li><strong>Re-Root Canal Treatment (Re-RCT)</strong></li>
                 <li><strong>Post & Core (Metal / Fibre)</strong></li>
-                <li><strong>Excluding Prosthesis</strong></li>
+                <li><strong>Vital & Non Vital Teeth Whitening</strong></li>
               </ul>
             </div>
 
             <div className="dentistry-section">
               <h2>Prosthodontic Procedures</h2>
               <ul>
-                <li><strong>Full Ceramic Zirconia Monolith Crown</strong></li>
+                <li><strong>Crown & Bridge</strong></li>
                 <li><strong>Full Ceramic Emax</strong></li>
                 <li>
                   <strong>Porcelain Veneer / Laminate</strong>
@@ -150,9 +147,6 @@ const Dentistry = () => {
                 </li>
                 <li>
                   <strong>Occlusal Adjustment</strong>
-                  <div className="teeth-images">
-                    <img src="/teeth15.jpg" alt="teeth" />
-                  </div>
                 </li>
               </ul>
             </div>
@@ -166,10 +160,6 @@ const Dentistry = () => {
                     <video src="teeth16.mp4" autoPlay loop muted></video>
                   </div>
                 </li>
-                <li><strong>OSSTEM Implants</strong></li>
-                <li><strong>Biohorizon</strong></li>
-                <li><strong>Nobel Biocare</strong></li>
-                <li><strong>Straumann</strong></li>
               </ul>
             </div>
 

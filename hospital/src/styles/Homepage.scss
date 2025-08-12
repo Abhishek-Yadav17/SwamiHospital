@@ -12,23 +12,27 @@ main {
         flex-direction: column;
         position: relative;
         padding-top: 1vw;
-        gap: 1vw;
+        gap: 2vw;
 
         .hero-heading {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 2vw;
             margin-bottom: 2vw;
+            position: relative;
 
             h2 {
+                position: absolute;
                 flex: 1;
                 text-align: center;
+                left: 42%;
+                transform: translateX(-50%);
                 margin: 0;
             }
 
             .contact-button {
-                padding: 0.5vw 1.2vw;
+                flex-shrink: 0;
+                padding: 0.3vw 1vw;
                 background-color: #3C103F;
                 color: #F6F0F3;
                 font-size: 1.1vw;
@@ -66,7 +70,7 @@ main {
         }
 
         h4 {
-            font-size: 1.5vw;
+            font-size: 1.4vw;
             font-weight: lighter;
             width: 60%;
             text-align: left;
@@ -89,7 +93,7 @@ main {
                 padding: 0.8vw 1.8vw;
                 background-color: #3C103F;
                 color: #F6F0F3;
-                font-size: 1.1vw;
+                font-size: 1.2vw;
                 border: none;
                 height: 18vh;
                 width: 25%;
@@ -109,7 +113,7 @@ main {
                 position: absolute;
                 width: 96%;
                 height: fit-content;
-                background-color: #E8C6D8;
+                background-color: #F6F0F3;
                 color: #3C103F;
                 z-index: 3;
                 top: 100%;

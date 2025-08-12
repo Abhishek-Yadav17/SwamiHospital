@@ -24,9 +24,9 @@ function App() {
           <Route path="/services/:serviceId" element={<ServiceDetails />} />
           <Route path="/team" element={<Team />} />
           <Route path="/doctors/:doctorId" element={<DoctorPage />} />
-          <Route path="/ent" element={<ENT />} />
+          <Route path="/ear-nose-throat" element={<ENT />} />
           <Route path="/facial-plastic-surgery" element={<FacialPlastic />} />
-          <Route path="/facial-cosmetics" element={<FacialCosmetics />} />
+          <Route path="/facial-aesthetics" element={<FacialCosmetics />} />
           <Route path="/dentistry" element={<Dentistry />} />
         </Routes>
     </Router>

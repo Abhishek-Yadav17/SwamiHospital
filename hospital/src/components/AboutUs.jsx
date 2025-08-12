@@ -41,7 +41,7 @@ const AboutUs = () => {
                             <img src="/about.webp" alt="member 2" />
                             <img src="/about.webp" alt="member 3" />
                         </div>
-                        <h4>20+ Expert Team Members</h4>
+                        <h4>10+ Expert Team Members</h4>
                     </motion.div>
 
                     <motion.div
@@ -71,7 +71,7 @@ const AboutUs = () => {
                                 viewport={{ once: true, amount: 0.4 }}
                                 transition={{ duration: 0.7, ease: 'easeOut' }}
                             >
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corrupti officiis vitae ducimus consequatur repellat? Expedita laboriosam atque iusto alias facere ipsum. Dolorem vel illo exercitationem, aperiam modi dolores architecto suscipit. Corporis quae dolorum deserunt aperiam incidunt laborum ut magnam.
+                                At Swami's we provice one stop solution for Ear, Nose, Throat, Dental, Facial Aesthetics & Facial Plastic Surgery possible due to a well knit coordinated teamwork between the Swami's Directors, Dr. Adeetya Varal & Dr. Pradnya Karmarkar, Consultants, Surgeons, Technicians, Health Care Professionals
                             </motion.h4>
                             <motion.button
                                 initial={{ y: 50, opacity: 0 }}
@@ -141,7 +141,7 @@ const AboutUs = () => {
                                         visible: { y: 0, opacity: 1, transition: { duration: 0.7, ease: 'easeOut' } }
                                     }}
                                 >
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero iure sequi distinctio quisquam blanditiis consequatur, vitae magnam ratione accusamus. Repudiandae quas ipsa excepturi voluptate aliquam, odio adipisci, ab omnis voluptas, vel quasi velit esse! Minima totam voluptatem nulla dignissimos vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam autem tempora enim aspernatur ea, provident iure voluptatibus sit rem numquam asperiores. Placeat nulla dolorum numquam officiis? Quisquam ipsa doloremque minima.
+                                    When the respective field specialists plan & work together; magic happens and so is our beginning of Swami's on a similar note when ENT Consultants, ENT Surgeons, Dental Consultants & Surgeons, Cosmetologist, Maxillofacial Surgeons, Skin specialists decided to collaborate & provide Healthcare services at par with international standards.
                                 </motion.h4>
 
                                 <motion.button
@@ -256,7 +256,7 @@ const AboutUs = () => {
                             >
                                 <h2>Our Mission</h2>
                                 <h4>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis repudiandae qui vitae expedita commodi fugiat iste consequuntur aliquid quod autem exercitationem, praesentium quas reiciendis consectetur delectus, dolores, a ipsum veniam ad beatae voluptates vel. Dolor tempore facilis sit. Molestiae, sit.
+                                    Is to prevent people from wandering from one setup to another in order to have a wholesome treatment related to ENT, Dental, Cosmetology thereby saving precious time, energy and unnecessary expenses. At the same time we strive for best possible Healthcare quality in our specialities.
                                 </h4>
                                 <motion.img
                                     src="/about2.webp"
@@ -298,7 +298,7 @@ const AboutUs = () => {
                                 />
                                 <h2>Our Vision</h2>
                                 <h4>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis repudiandae qui vitae expedita commodi fugiat iste consequuntur aliquid quod autem exercitationem, praesentium quas reiciendis consectetur delectus, dolores, a ipsum veniam ad beatae voluptates vel. Dolor tempore facilis sit. Molestiae, sit.
+                                    It remains crystal clear as to where this branch of science is going to land human experience in the upcoming decades which calls for dedication, integrity, research & innovation. We tend to stay on the same rigorous standards and intent as the pioneers of this field were & still are.
                                 </h4>
                             </motion.div>
                         </div>
