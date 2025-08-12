@@ -72,7 +72,7 @@ const Contact = () => {
                                 {[
                                     { icon: "ri-mail-line", title: "Send Us Email", subtitle: "swamisclinic100@email.com" },
                                     { icon: "ri-map-pin-line", title: "Our Location", subtitle: "Pune, Maharashtra" },
-                                    { icon: "ri-phone-line", title: "Call Us!", subtitle: "+123456789" },
+                                    { icon: "ri-phone-line", title: "Call Us!", subtitle: "+91 9135321616" },
                                 ].map(({ icon, title, subtitle }, i) => (
                                     <motion.div
                                         className="contact-inner-left-box"

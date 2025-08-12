@@ -113,40 +113,6 @@ const Homepage = () => {
         },
     ];
 
-    const plansData = [
-        {
-            title: "Seamless Care, From Admission to Recovery",
-            desc: "From the moment I stepped in, the staff ensured every step of my surgery and recovery was smooth and stress-free. I felt supported throughout.",
-            img: "/about1.webp"
-        },
-        {
-            title: "Truly Personalized Treatment Plans",
-            desc: "The doctors took time to explain everything and tailored my treatment to my exact condition. I wasn't just another patient — I felt heard.",
-            img: "/about1.webp"
-        },
-        {
-            title: "Appointments That Respect Your Time",
-            desc: "Booking was easy and I was seen on time. They value your schedule and make healthcare accessible without long waits.",
-            img: "/about1.webp"
-        },
-        {
-            title: "Highest Hygiene & Safety Standards",
-            desc: "Everything was spotless. Equipment was sanitized before every use, and I felt completely safe during my entire stay.",
-            img: "/about1.webp"
-        }
-    ];
-
-
-    const [planIndex, setPlanIndex] = useState(0);
-    const currentPlan = plansData[planIndex];
-
-    const changePlan = (newIndex) => {
-        setPlanIndex(newIndex);
-    };
-
-    const next = () => changePlan((planIndex + 1) % plansData.length);
-    const prev = () => changePlan((planIndex - 1 + plansData.length) % plansData.length);
-
     return (
         <>
             <Navbar />

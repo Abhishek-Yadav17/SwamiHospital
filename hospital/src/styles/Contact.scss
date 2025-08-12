@@ -49,13 +49,14 @@ main {
                     gap: 2vw;
 
                     .contact-inner-left-box {
-                        width: 20vw;
+                        width: 22vw;
                         display: flex;
                         align-items: center;
                         gap: 1vw;
                         padding: 1.2vw 1.5vw;
                         border: 1px solid #3C103F;
                         transition: all ease 0.5s;
+                        cursor: pointer;
 
                         .icon-wrapper {
                             background-color: #3C103F;
@@ -143,6 +144,7 @@ main {
                         font-size: 1vw;
                         margin-bottom: 2vw;
                         background-color: #EFDAE5;
+                        font-family: Nunito;
 
                         &:focus {
                             border: none;
@@ -162,6 +164,7 @@ main {
                         border: none;
                         transition: all ease 0.5s;
                         cursor: pointer;
+                        font-family: Nunito;
                         border: 1px solid #3C103F;
 
                         &:hover {

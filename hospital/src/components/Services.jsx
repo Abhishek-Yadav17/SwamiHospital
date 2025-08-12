@@ -7,10 +7,10 @@ import '../styles/Services.scss'
 const Services = () => {
 
     const services = [
-        { title: 'Ear Nose Throat', subtitle: 'Comprehensive care for Ear, Nose, Throat, Head & Neck'},
-        { title: 'Facial Aesthetics', subtitle: 'Advanced dermatological solutions for glowing, youthful skin'},
-        { title: 'Dentistry', subtitle: 'Complete Dental Care for Health, Function, and Aesthetics'},
-        { title: 'Facial Plastic Surgery', subtitle: 'Expert surgical solutions to restore form and function with precision and care'},
+        { title: 'Ear Nose Throat', subtitle: 'Comprehensive care for Ear, Nose, Throat, Head & Neck', img: '/service1.jpg' },
+        { title: 'Facial Aesthetics', subtitle: 'Advanced dermatological solutions for glowing, youthful skin', img: '/service2.jpg', },
+        { title: 'Dentistry', subtitle: 'Complete Dental Care for Health, Function, and Aesthetics', img: '/service3.jpg', },
+        { title: 'Facial Plastic Surgery', subtitle: 'Expert surgical solutions to restore form and function with precision and care', img: '/service4.jpg', },
     ];
 
     return (
@@ -43,7 +43,7 @@ const Services = () => {
                             visible: { y: 0, opacity: 1, transition: { duration: 0.8 } }
                         }}
                     >
-                        {services.map(({ title, subtitle, slug }, i) => (
+                        {services.map(({ title, subtitle, img }, i) => (
                             <div
                                 className="card-wrapper"
                                 key={i}
@@ -58,8 +58,8 @@ const Services = () => {
                                     }}
                                 >
                                     <motion.img
-                                        src="/about1.webp"
-                                        alt="cards"
+                                        src={img}
+                                        alt={title}
                                         variants={{
                                             rest: { scale: 1 },
                                             hover: { scale: 1.05 }
