@@ -82,34 +82,6 @@ const Services = () => {
                             </div>
                         ))}
                     </motion.div>
-
-                    <motion.div
-                        className="booking"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        variants={{
-                            hidden: { scale: 1 },
-                            visible: { scale: 1.05, transition: { duration: 0.8 } },
-                        }}
-                    >
-                        <motion.h1
-                            variants={{
-                                hidden: { y: -50, opacity: 0 },
-                                visible: { y: 0, opacity: 1, transition: { duration: 0.6 } },
-                            }}
-                        >
-                            Schedule your free consultation now
-                        </motion.h1>
-                        <motion.button
-                            variants={{
-                                hidden: { y: 50, opacity: 0 },
-                                visible: { y: 0, opacity: 1, transition: { duration: 0.6 } },
-                            }}
-                        >
-                            Book Now
-                        </motion.button>
-                    </motion.div>
                 </motion.div>
             </main>
             <Footer />

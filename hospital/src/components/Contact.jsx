@@ -60,7 +60,7 @@ const Contact = () => {
                                 }}
                                 transition={{ duration: 0.6 }}
                             >
-                                You can get your querry or feedback updated with us anytime. Our Coordinator will contact you soon.
+                                You can get your query or feedback updated with us anytime. Our Coordinator will contact you soon.
                             </motion.h4>
 
                             <motion.div

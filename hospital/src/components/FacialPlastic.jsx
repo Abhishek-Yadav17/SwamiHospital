@@ -34,7 +34,7 @@ const FacialPlastic = () => {
               <li>
                 <strong>Blepharoplasty</strong>
                 <div className="plastic-images">
-                  <img src="/plastic3.jpg" alt="plastic" />
+                  <img src="/plastic2.jpg" alt="plastic" />
                 </div>
               </li>
               <li>

@@ -81,7 +81,7 @@ const AboutUs = () => {
                             viewport={{ once: true, amount: 0.4 }}
                             transition={{ duration: 0.8, ease: 'easeOut' }}
                         >
-                            <img src="/about1.webp" alt="" />
+                            <img src="/about.jpg" alt="" />
                         </motion.div>
                     </motion.div>
 
@@ -153,7 +153,7 @@ const AboutUs = () => {
                                     visible: { x: 0, opacity: 1, transition: { duration: 0.8, ease: 'easeOut' } }
                                 }}
                             >
-                                <img src="/about1.webp" alt="" />
+                                <img src="/story.jpg" alt="story" />
                             </motion.div>
                         </div>
                     </motion.div>
@@ -179,15 +179,14 @@ const AboutUs = () => {
                                 }}
                                 style={{ cursor: "pointer" }}
                             >
-                                <h2>Our Vision</h2>
-                                <h4>
-                                    It is still very evident as to where this field of applied science of aesthetics will take human experience in the following decades, which necessitates commitment, honesty, integrity, creativity and innovation. We adhere to the same rigorous standards and intent as the pioneers of of this field were and still on.
-                                </h4>
                                 <h2>Our Mission</h2>
                                 <h4>
                                     Is to prevent people from wandering from one setup to another in order to have a wholesome treatment related to ENT, Dental and Facial Aesthetics thereby saving their precious time, energy and undue expenses. We simultaneously aim to provide the highest caliber of healthcare in our areas of expertise.
                                 </h4>
-
+                                <h2>Our Vision</h2>
+                                <h4>
+                                    It is still very evident as to where this field of applied science of aesthetics will take human experience in the following decades, which necessitates commitment, honesty, integrity, creativity and innovation. We adhere to the same rigorous standards and intent as the pioneers of of this field were and still on.
+                                </h4>
                             </motion.div>
 
                             <motion.div
@@ -196,19 +195,16 @@ const AboutUs = () => {
                                 variants={{
                                     visible: { y: 0, opacity: 1, transition: { duration: 0.7, ease: "easeOut" } }
                                 }}
-                                style={{ cursor: "pointer" }}
                             >
                                 <motion.img
-                                    src="/about2.webp"
-                                    alt=""
+                                    src="/mission.jpg"
+                                    alt="mission"
                                     transition={{ duration: 0.3 }}
-                                    style={{ display: "block", width: "100%" }}
                                 />
                                 <motion.img
-                                    src="/about2.webp"
-                                    alt=""
+                                    src="/vision.jpg"
+                                    alt="vision"
                                     transition={{ duration: 0.3 }}
-                                    style={{ display: "block", width: "100%", marginTop: "1rem" }}
                                 />
                             </motion.div>
                         </div>

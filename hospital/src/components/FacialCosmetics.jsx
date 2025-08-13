@@ -69,13 +69,22 @@ const FacialCosmetics = () => {
               </li>
               <li>
                 <strong>Derma Roller</strong>
+                <div className="cosmetic-images">
+                  <video src="/cosmetic9.mp4" autoPlay loop muted />
+                </div>
               </li>
               <li>
                 <strong>Microneedling</strong>
                 <h4>Collagen induction therapy using tiny needles to trigger skin healing and firming.</h4>
+                <div className="cosmetic-images">
+                  <img src="/cosmetic10.jpg" alt="cosmetic" />
+                </div>
               </li>
               <li>
                 <strong>Acne & Scar Treatment</strong>
+                <div className="cosmetic-images">
+                  <img src="/cosmetic11.jpg" alt="cosmetic" />
+                </div>
               </li>
               <li>
                 <strong>PRP (Platelet-Rich Plasma)</strong>
@@ -87,6 +96,9 @@ const FacialCosmetics = () => {
               <li>
                 <strong>Botox</strong>
                 <h4>Temporarily relaxes facial muscles to smooth wrinkles and fine lines.</h4>
+                <div className="cosmetic-images">
+                  <img src="/cosmetic12.jpg" alt="cosmetic" />
+                </div>
               </li>
               <li>
                 <strong>Hair Treatment & Hair Transplant</strong>
@@ -97,6 +109,9 @@ const FacialCosmetics = () => {
               </li>
               <li>
                 <strong>Laser Hair Reduction</strong>
+                <div className="cosmetic-images">
+                  <img src="/cosmetic13.jpg" alt="cosmetic" />
+                </div>
               </li>
               <li>
                 <strong>Tattoo Removal</strong>
@@ -109,6 +124,9 @@ const FacialCosmetics = () => {
               </li>
               <li>
                 <strong>Pigmentation-depigmentation</strong>
+                <div className="cosmetic-images">
+                  <img src="/cosmetic14.jpg" alt="cosmetic" />
+                </div>
               </li>
               <li>
                 <strong>All kind of Hair Treatment</strong>

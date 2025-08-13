@@ -133,26 +133,6 @@ const Footer = () => {
                                     </motion.h4>
                                 ))}
                             </motion.div>
-
-                            <motion.div
-                                className="elem"
-                                variants={{
-                                    hidden: { opacity: 0, y: -40 },
-                                    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-                                }}
-                            >
-                                <motion.h2>Terms & Conditions</motion.h2>
-                                {["Privacy & Policy", "Terms"].map((text, i) => (
-                                    <motion.h4
-                                        key={i}
-                                        initial={{ opacity: 0, y: 50 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.5, delay: i * 0.15 }}
-                                    >
-                                        {text}
-                                    </motion.h4>
-                                ))}
-                            </motion.div>
                         </motion.div>
                     </motion.div>
                     <motion.div
@@ -162,7 +142,7 @@ const Footer = () => {
                             visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                         }}
                     >
-                        &copy;{new Date().getFullYear()} Swami's Dental Clinic. All rights reserved.
+                        &copy;{new Date().getFullYear()} Swami's Clinic. All rights reserved.
                     </motion.div>
                 </motion.div>
             </footer>

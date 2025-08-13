@@ -365,67 +365,6 @@ const Homepage = () => {
                 </motion.div>
 
             </motion.div>
-            <motion.div
-                className="page2"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.4 }}
-                variants={{
-                    hidden: {},
-                    visible: {
-                        transition: { staggerChildren: 0.3 }
-                    }
-                }}
-            >
-                <motion.h2
-                    variants={{
-                        hidden: { opacity: 0, y: 50 },
-                        visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
-                    }}
-                >
-                    World-class surgeons exceptional results
-                </motion.h2>
-
-                <motion.div
-                    className="team"
-                    variants={{
-                        hidden: { y: 50, opacity: 0 },
-                        visible: { y: 0, opacity: 1, transition: { duration: 0.8 } }
-                    }}
-                >
-                    {[
-                        { name: "Dr. Jane Doe", role: "Cardiologist" },
-                        { name: "Dr. John Smith", role: "Orthopedic Surgeon" },
-                        { name: "Dr. Lisa Ray", role: "Dermatologist" },
-                        { name: "Dr. Mark Lee", role: "Neurosurgeon" }
-                    ].map(({ name, role }, i) => (
-                        <motion.div
-                            className="elem"
-                            key={i}
-                            whileHover={{ flex: 1.4 }}
-                            transition={{ type: "tween", duration: 0.3 }}
-                        >
-                            <img src="about1.webp" alt="team" />
-                            <div className="info">
-                                <h4>{name}</h4>
-                                <p>{role}</p>
-                            </div>
-                        </motion.div>
-                    ))}
-                </motion.div>
-
-                <motion.button
-                    onClick={() => {
-                        window.location.href = `/team`;
-                    }}
-                    variants={{
-                        hidden: { opacity: 0, y: 50 },
-                        visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.2 } }
-                    }}
-                >
-                    Explore Team
-                </motion.button>
-            </motion.div>
             
         </main >
             <Footer />
