@@ -14,15 +14,28 @@ main {
         align-items: center;
         gap: 2vw;
 
+        @media (max-width: 768px) {
+            gap: 4vw;
+            padding: 8vw 4vw;
+        }
+
         h1 {
             font-size: 3vw;
             font-family: Playfair;
             font-weight: lighter;
+
+            @media (max-width: 768px) {
+                font-size: 5.5vw;
+            }
         }
 
         h4 {
             font-size: 1.2vw;
             font-weight: lighter;
+
+            @media (max-width: 768px) {
+                font-size: 3.5vw;
+            }
         }
 
         .contact-inner {
@@ -32,6 +45,14 @@ main {
             display: flex;
             justify-content: space-between;
 
+            @media (max-width: 768px) {
+                margin-top: 8vw;
+                flex-direction: column;
+                height: fit-content;
+                gap: 10vw;
+                width: 100%;
+            }
+
             .contact-inner-left {
                 height: 100%;
                 width: 50%;
@@ -39,14 +60,28 @@ main {
                 flex-direction: column;
                 gap: 4vw;
 
+                @media (max-width: 768px) {
+                    width: 100%;
+                    height: 50%;
+                    gap: 8vw;
+                }
+
                 h4 {
                     font-size: 1.2vw;
+
+                    @media (max-width: 768px) {
+                        font-size: 3.5vw;
+                    }
                 }
 
                 .contact-inner-left-content {
                     display: flex;
                     flex-direction: column;
                     gap: 2vw;
+
+                    @media (max-width: 768px) {
+                        gap: 6vw;
+                    }
 
                     .contact-inner-left-box {
                         width: 22vw;
@@ -57,6 +92,12 @@ main {
                         border: 1px solid #3C103F;
                         transition: all ease 0.5s;
                         cursor: pointer;
+
+                        @media (max-width: 768px) {
+                            padding: 3vw 4vw;
+                            width: 80%;
+                            gap: 6vw;
+                        }
 
                         .icon-wrapper {
                             background-color: #3C103F;
@@ -69,6 +110,11 @@ main {
                             font-size: 1.5vw;
                             transition: all ease 0.5s;
 
+                            @media (max-width: 768px) {
+                                font-size: 3vw;
+                                padding: 3vw;
+                            }
+
                         }
 
                         .content-wrapper {
@@ -80,12 +126,20 @@ main {
                                 font-size: 1.3vw;
                                 font-family: Playfair;
                                 font-weight: lighter;
+
+                                @media (max-width: 768px) {
+                                    font-size: 3.5vw;
+                                }
                             }
 
                             h4 {
                                 font-size: 1.1vw;
                                 text-align: left;
                                 margin: 0;
+
+                                @media (max-width: 768px) {
+                                    font-size: 3vw;
+                                }
                             }
                         }
 
@@ -106,9 +160,25 @@ main {
                     flex-direction: column;
                     gap: 1vw;
 
+                    @media (max-width: 768px) {
+                        gap: 4vw;
+                    }
+
+                    h4 {
+                        font-size: 1.2vw;
+
+                        @media (max-width: 768px) {
+                            font-size: 3.5vw;
+                        }
+                    }
+
                     .social-media {
                         display: flex;
                         gap: 1vw;
+
+                        @media (max-width: 768px) {
+                            gap: 2vw;
+                        }
 
                         i {
                             font-size: 1.2vw;
@@ -116,6 +186,11 @@ main {
                             border-radius: 50%;
                             padding: 0.4vw;
                             cursor: pointer;
+
+                            @media (max-width: 768px) {
+                                font-size: 3.5vw;
+                                padding: 2.5vw;
+                            }
                         }
                     }
                 }
@@ -127,14 +202,28 @@ main {
                 height: 100%;
                 padding: 2vw;
 
+                @media (max-width: 768px) {
+                    width: 100%;
+                    height: 50%;
+                }
+
                 .contact-form {
                     display: flex;
                     flex-direction: column;
                     width: 100%;
 
+                    @media (max-width: 768px) {
+                        padding: 4vw 2vw;
+                    }
+
                     label {
                         font-weight: bold;
                         margin-bottom: 0.5vw;
+
+                        @media (max-width: 768px) {
+                            font-size: 3.5vw;
+                            margin-bottom: 2vw;
+                        }
                     }
 
                     input,
@@ -145,6 +234,12 @@ main {
                         margin-bottom: 2vw;
                         background-color: #EFDAE5;
                         font-family: Nunito;
+
+                        @media (max-width: 768px) {
+                            margin-bottom: 6vw;
+                            padding: 2.5vw 4vw;
+                            font-size: 3vw;
+                        }
 
                         &:focus {
                             border: none;
@@ -166,6 +261,11 @@ main {
                         cursor: pointer;
                         font-family: Nunito;
                         border: 1px solid #3C103F;
+
+                        @media (max-width: 768px) {
+                            padding: 2vw 3vw;
+                            font-size: 3vw;
+                        }
 
                         &:hover {
                             border: 1px solid #3C103F;

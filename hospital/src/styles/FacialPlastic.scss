@@ -25,11 +25,20 @@ main {
                 font-family: Playfair;
                 font-size: 3vw;
                 font-weight: lighter;
+
+                @media (max-width: 768px) {
+                    font-size: 5.5vw;
+                    width: 100%;
+                }
             }
 
             h4 {
                 font-size: 1.2vw;
                 font-weight: lighter;
+
+                @media (max-width: 768px) {
+                    font-size: 3.5vw;
+                }
             }
         }
 
@@ -38,10 +47,19 @@ main {
             background-color: #E8C6D8;
             padding: 2vw;
 
+            @media (max-width: 768px) {
+                padding: 4vw;
+            }
+
             ul {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 3vw;
+
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                    gap: 8vw;
+                }
 
                 li {
                     width: 48%;
@@ -53,15 +71,29 @@ main {
                     border-radius: 1vw;
                     height: fit-content;
 
+                    @media (max-width: 768px) {
+                        width: 100%;
+                        padding: 4vw;
+                        gap: 4vw;
+                    }
+
                     strong {
                         font-size: 1.4vw;
                         font-weight: bold;
                         color: #3C103F;
+
+                        @media (max-width: 768px) {
+                            font-size: 3.5vw;
+                        }
                     }
 
                     h4 {
                         font-size: 1.1vw;
                         font-weight: lighter;
+
+                        @media (max-width: 768px) {
+                            font-size: 3.5vw;
+                        }
                     }
 
                     .plastic-images {
@@ -73,12 +105,20 @@ main {
                             width: 100%;
                             max-width: 20vw;
                             border-radius: 6px;
+
+                            @media (max-width: 768px) {
+                                max-width: 50vw;
+                            }
                         }
 
                         video {
                             width: 100%;
                             max-width: 20vw;
                             border-radius: 6px;
+
+                            @media (max-width: 768px) {
+                                max-width: 50vw;
+                            }
                         }
                     }
                 }

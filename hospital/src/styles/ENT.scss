@@ -25,11 +25,20 @@ main {
                 font-family: Playfair;
                 font-size: 3vw;
                 font-weight: lighter;
+
+                @media (max-width: 768px) {
+                    font-size: 5.5vw;
+                    width: 100%;
+                }
             }
 
             h4 {
                 font-size: 1.2vw;
                 font-weight: lighter;
+
+                @media (max-width: 768px) {
+                    font-size: 3.5vw;
+                }
             }
         }
 
@@ -41,16 +50,28 @@ main {
             flex-direction: column;
             gap: 6vw;
 
+            @media (max-width: 768px) {
+                gap: 15vw;
+            }
+
             .ent-section {
                 display: flex;
                 flex-direction: column;
                 gap: 1vw;
+
+                @media (max-width: 768px) {
+                    gap: 6vw;
+                }
 
                 h2 {
                     font-size: 2vw;
                     margin-bottom: 1vw;
                     border-bottom: 1px solid #3C103F;
                     padding-bottom: 0.5vw;
+
+                    @media (max-width: 768px) {
+                        font-size: 4vw;
+                    }
                 }
 
                 ul {
@@ -58,6 +79,11 @@ main {
                     display: flex;
                     flex-wrap: wrap;
                     gap: 2.8vw;
+
+                    @media (max-width: 768px) {
+                        flex-direction: column;
+                        gap: 8vw;
+                    }
 
                     li {
                         width: 48%;
@@ -70,18 +96,32 @@ main {
                         border-radius: 1vw;
                         padding: 1.5vw;
 
+                        @media (max-width: 768px) {
+                            width: 100%;
+                            padding: 4vw;
+                            gap: 4vw;
+                        }
+
 
                         strong {
                             display: block;
                             font-weight: bold;
                             margin-bottom: 1vw;
                             font-size: 1.4vw;
+
+                            @media (max-width: 768px) {
+                                font-size: 3.5vw;
+                            }
                         }
 
                         h4 {
                             font-size: 1.1vw;
                             font-weight: lighter;
                             margin-bottom: 1vw;
+
+                            @media (max-width: 768px) {
+                                font-size: 3.5vw;
+                            }
                         }
 
                         .ent-images {
@@ -93,18 +133,37 @@ main {
                                 width: 100%;
                                 max-width: 20vw;
                                 border-radius: 6px;
+
+                                @media (max-width: 768px) {
+                                    max-width: 50vw;
+                                }
                             }
 
                             video {
                                 width: 100%;
                                 max-width: 20vw;
                                 border-radius: 6px;
+
+                                @media (max-width: 768px) {
+                                    max-width: 50vw;
+                                }
                             }
                         }
 
                         .desc {
+
+                            @media (max-width: 768px) {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 4vw;
+                            }
+
                             p {
                                 font-size: 1.1vw;
+
+                                @media (max-width: 768px) {
+                                    font-size: 3.5vw;
+                                }
                             }
                         }
                     }
@@ -116,16 +175,28 @@ main {
                     flex-wrap: wrap;
                     padding-left: 1.8vw;
 
+                    @media (max-width: 768px) {
+                        gap: 2vw;
+                    }
+
                     img {
                         width: 100%;
                         max-width: 10vw;
                         border-radius: 6px;
+
+                        @media (max-width: 768px) {
+                            max-width: 40vw;
+                        }
                     }
                 }
 
                 p {
                     font-size: 1.4vw;
                     margin: 1vw 0;
+
+                    @media (max-width: 768px) {
+                        font-size: 3.5vw;
+                    }
                 }
             }
         }

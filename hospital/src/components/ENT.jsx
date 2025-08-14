@@ -236,25 +236,25 @@ const ENT = () => {
                             <p><strong>We have the services available for evaluation of hearing which include following tests :</strong></p>
                             <ul>
                                 <li>
-                                    Pure Tone Audiometry
+                                    <h4>Pure Tone Audiometry</h4>
                                     <div className="ent-images">
                                         <img src="/audio1.jpg" alt="audio" />
                                     </div>
                                 </li>
                                 <li>
-                                    Impedence Test
+                                    <h4>Impedence Test</h4>
                                     <div className="ent-images">
                                         <img src="/audio2.jpg" alt="audio" />
                                     </div>
                                 </li>
                                 <li>
-                                    OAE
+                                    <h4>OAE</h4>
                                     <div className="ent-images">
                                         <img src="/audio3.jpg" alt="audio" />
                                     </div>
                                 </li>
                                 <li>
-                                    BERA
+                                    <h4>BERA</h4>
                                     <div className="ent-images">
                                         <img src="/audio4.jpg" alt="audio" />
                                     </div>

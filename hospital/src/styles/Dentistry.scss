@@ -25,11 +25,20 @@ main {
                 font-family: Playfair;
                 font-size: 3vw;
                 font-weight: lighter;
+
+                @media (max-width: 768px) {
+                    font-size: 5.5vw;
+                    width: 100%;
+                }
             }
 
             h4 {
                 font-size: 1.2vw;
                 font-weight: lighter;
+
+                @media (max-width: 768px) {
+                    font-size: 3.5vw;
+                }
             }
         }
 
@@ -41,15 +50,35 @@ main {
             flex-direction: column;
             gap: 6vw;
 
+            @media (max-width: 768px) {
+                padding: 4vw;
+                gap: 15vw;
+            }
+
             .dentistry-section {
                 display: flex;
                 flex-direction: column;
                 gap: 1vw;
 
+                @media (max-width: 768px) {
+                    gap: 4vw;
+                }
+
+                h2 {
+                    @media (max-width: 768px) {
+                        font-size: 4vw;
+                    }
+                }
+
                 ul {
                     display: flex;
                     flex-wrap: wrap;
                     gap: 3vw;
+
+                    @media (max-width: 768px) {
+                        flex-direction: column;
+                        gap: 8vw;
+                    }
 
                     li {
                         width: 48%;
@@ -61,10 +90,20 @@ main {
                         height: fit-content;
                         border-radius: 1vw;
 
+                        @media (max-width: 768px) {
+                            width: 100%;
+                            padding: 4vw;
+                            gap: 4vw;
+                        }
+
                         strong {
                             font-size: 1.4vw;
                             font-weight: bold;
                             color: #3C103F;
+
+                            @media (max-width: 768px) {
+                                font-size: 3.5vw;
+                            }
                         }
 
                         .teeth-images {
@@ -76,12 +115,20 @@ main {
                                 width: 100%;
                                 max-width: 15vw;
                                 border-radius: 6px;
+
+                                @media (max-width: 768px) {
+                                    max-width: 50vw;
+                                }
                             }
 
                             video {
                                 width: 100%;
                                 max-width: 15vw;
                                 border-radius: 6px;
+
+                                @media (max-width: 768px) {
+                                    max-width: 50vw;
+                                }
                             }
                         }
                     }

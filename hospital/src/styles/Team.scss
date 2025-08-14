@@ -14,12 +14,22 @@ main {
         align-items: center;
         gap: 4vw;
 
+        @media (max-width: 768px) {
+            gap: 6vw;
+            padding: 8vw 4vw;
+        }
+
         >h1 {
             font-size: 3vw;
             font-family: Playfair;
             font-weight: lighter;
             width: 40%;
             text-align: center;
+
+            @media (max-width: 768px) {
+                font-size: 5.5vw;
+                width: 100%;
+            }
         }
 
         .team-cards {
@@ -30,6 +40,11 @@ main {
             flex-wrap: wrap;
             gap: 3vw;
 
+            @media (max-width: 768px) {
+                flex-direction: column;
+                gap: 10vw;
+            }
+
             .elem {
                 width: 30%;
                 height: 60vh;
@@ -37,6 +52,11 @@ main {
                 position: relative;
                 overflow: hidden;
                 cursor: pointer;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    border-radius: 1vw;
+                }
 
                 img {
                     height: 100%;
@@ -60,10 +80,21 @@ main {
                     transition: top 0.4s ease;
                     z-index: 2;
 
+                    @media (max-width: 768px) {
+                        top: 2% !important;
+                        padding: 4vw;
+                        height: fit-content;
+                        gap: 4vw;
+                    }
+
                     i {
                         color: #3C103F;
                         font-size: 1vw;
                         cursor: pointer;
+
+                        @media (max-width: 768px) {
+                            font-size: 3.5vw;
+                        }
                     }
                 }
 
@@ -78,6 +109,11 @@ main {
                     text-align: center;
                     pointer-events: none;
                     z-index: 2;
+
+                    @media (max-width: 768px) {
+                        opacity: 1 !important;
+                        transform: translateY(0) !important;
+                    }
                 }
             }
         }

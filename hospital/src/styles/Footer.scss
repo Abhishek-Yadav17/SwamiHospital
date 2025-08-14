@@ -10,6 +10,10 @@ footer {
     overflow: hidden;
     font-family: Nunito;
 
+    @media (max-width: 768px) {
+        height: fit-content;
+    }
+
     .footer {
         height: fit-content;
         width: 100%;
@@ -23,11 +27,19 @@ footer {
             font-size: 3vw;
             font-family: Playfair;
             font-weight: lighter;
+
+            @media (max-width: 768px) {
+                font-size: 5.5vw;
+            }
         }
 
         svg {
             position: absolute;
             top: -10%;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
     }
 
@@ -39,6 +51,10 @@ footer {
         align-items: center;
         gap: 4vw;
 
+        @media (max-width: 768px) {
+            gap: 10vw;
+        }
+
         .bottom-inner {
             height: fit-content;
             width: 100%;
@@ -47,21 +63,37 @@ footer {
             justify-content: space-between;
             position: relative;
 
+            @media (max-width: 768px) {
+                align-items: flex-start;
+            }
+
             .bottom-left {
                 height: 100%;
                 width: 30%;
                 display: flex;
                 flex-direction: column;
 
+                @media (max-width: 768px) {
+                    width: 50%;
+                }
+
                 img {
                     width: 10vw;
                     object-fit: cover;
+
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
                 }
 
                 h4 {
                     font-size: 1.1vw;
                     display: flex;
                     gap: 1vw;
+
+                    @media (max-width: 768px) {
+                        font-size: 3vw;
+                    }
                 }
             }
 
@@ -71,6 +103,11 @@ footer {
                 justify-content: flex-end;
                 gap: 4vw;
 
+                @media (max-width: 768px) {
+                    width: 70%;
+                    gap: 8vw;
+                }
+
                 .elem {
                     height: 100%;
                     flex-shrink: 0;
@@ -79,12 +116,25 @@ footer {
                     flex-direction: column;
                     gap: 1vw;
 
+                    @media (max-width: 768px) {
+                        gap: 2vw;
+                        width: fit-content;
+                    }
+
                     h2 {
                         font-size: 1.4vw;
+
+                        @media (max-width: 768px) {
+                            font-size: 3vw;
+                        }
                     }
 
                     h4 {
                         cursor: pointer;
+
+                        @media (max-width: 768px) {
+                            font-size: 3.5vw;
+                        }
                     }
 
                     .social-media {
@@ -97,6 +147,11 @@ footer {
                             border-radius: 50%;
                             padding: 0.4vw;
                             cursor: pointer;
+
+                            @media (max-width: 768px) {
+                                font-size: 3vw;
+                                padding: 1.5vw;
+                            }
                         }
                     }
                 }
@@ -108,6 +163,10 @@ footer {
             width: 100%;
             text-align: center;
             font-weight: bold;
+
+            @media (max-width: 768px) {
+                font-size: 3vw;
+            }
         }
     }
 }

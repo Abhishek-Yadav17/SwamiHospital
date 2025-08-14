@@ -10,9 +10,22 @@ nav {
     font-family: Nunito;
     position: relative;
 
+    @media (max-width: 768px) {
+        height: 15vh;
+
+        &.open {
+            height: 35vh;
+        }
+    }
+
     .logo {
         height: 9vw;
         width: 7vw;
+
+        @media (max-width: 768px) {
+            height: 15vw;
+            width: 12vw;
+        }
     }
 
     >img:nth-of-type(2) {
@@ -20,6 +33,10 @@ nav {
         left: 50%;
         transform: translateX(-50%);
         width: 15vw;
+
+        @media (max-width: 768px) {
+            width: 28vw;
+        }
     }
 
     .nav2 {
@@ -33,12 +50,40 @@ nav {
         gap: 2.2vw;
         cursor: pointer;
 
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            width: fit-content;
+        }
+
         h4 {
             font-size: 1.1vw;
             transition: all ease 0.5s;
 
             &:hover {
                 color: #E8C6D8;
+            }
+
+            @media (max-width: 768px) {
+                display: none;
+                font-size: 3vw;
+                padding: 1vw 4vw;
+            }
+        }
+
+        i {
+            display: none;
+
+            @media (max-width: 768px) {
+                display: initial;
+            }
+        }
+    }
+
+    &.open {
+        .nav2 {
+            h4 {
+                display: block;
             }
         }
     }

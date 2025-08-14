@@ -359,7 +359,7 @@ const Homepage = () => {
                                 visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
                             }}
                         >
-                            <h1>....</h1>
+                            <img src="/about1.webp" alt="" />
                         </motion.div>
                     </div>
                 </motion.div>
