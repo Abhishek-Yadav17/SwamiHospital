@@ -36,7 +36,7 @@ const Footer = () => {
                     >
                         <motion.path
                             d="M0 50 L350 50 L390 75 L610 75 L650 50 L1000 50"
-                            stroke="#C3A1C6"
+                            stroke="#7C8082"
                             strokeWidth="1"
                             fill="none"
                             initial={{ pathLength: 0 }}
@@ -120,7 +120,7 @@ const Footer = () => {
                                     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
                                 }}
                             >
-                                <motion.h2>Quick Links</motion.h2>
+                                <motion.h2>Our Pages</motion.h2>
                                 {["Homepage", "Services", "Team", "Contact", "About"].map((text, i) => (
                                     <motion.h4
                                         key={i}

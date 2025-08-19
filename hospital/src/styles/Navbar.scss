@@ -1,7 +1,7 @@
 nav {
-    height: 20vh;
+    height: 17vh;
     width: 100%;
-    background-color: #BBA1C2;
+    background-color: #BCA6D5;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,8 +19,8 @@ nav {
     }
 
     .logo {
-        height: 9vw;
-        width: 7vw;
+        height: 7vw;
+        width: 6vw;
 
         @media (max-width: 768px) {
             height: 15vw;
@@ -32,7 +32,7 @@ nav {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        width: 15vw;
+        width: 13vw;
 
         @media (max-width: 768px) {
             width: 28vw;
@@ -44,9 +44,7 @@ nav {
         align-items: center;
         overflow: hidden;
         width: fit-content;
-        background-color: #3C103F;
-        padding: 0.8vw 2vw;
-        color: #F6F0F3;
+        color: #242845;
         gap: 2.2vw;
         cursor: pointer;
 
@@ -61,7 +59,7 @@ nav {
             transition: all ease 0.5s;
 
             &:hover {
-                color: #E8C6D8;
+                color: #F6F0F3;
             }
 
             @media (max-width: 768px) {
@@ -78,11 +76,46 @@ nav {
                 display: initial;
             }
         }
+
+        .cb {
+            background-color: #242845;
+            border: 1px solid #242845;
+            color: #F6F0F3;
+            padding: 0.9vw 2vw;
+            border-radius: 50px;
+            font-family: Nunito;
+            font-size: 1vw;
+            font-weight: bold;
+            transition: all ease 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid #242845;
+                color: #242845;
+            }
+
+            @media (max-width: 768px) {
+                display: none;
+                font-size: 3vw;
+                padding: 1vw 4vw;
+                width: 100%;
+                text-align: center;
+                border: none;
+                background-color: transparent;
+                color: #242845;
+                padding: 0;
+            }
+        }
     }
 
     &.open {
         .nav2 {
             h4 {
+                display: block;
+            }
+
+            .cb {
                 display: block;
             }
         }

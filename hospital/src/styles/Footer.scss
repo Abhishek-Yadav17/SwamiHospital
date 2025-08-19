@@ -1,8 +1,8 @@
 footer {
     height: 89vh;
     width: 100%;
-    background-color: #E8C6D8;
-    color: #3C103F;
+    background-color: #BCA6D5;
+    color: #242845;
     padding: 4vw;
     display: flex;
     flex-direction: column;
@@ -134,6 +134,10 @@ footer {
 
                         @media (max-width: 768px) {
                             font-size: 3.5vw;
+                        }
+
+                        &:hover {
+                            text-decoration: underline;
                         }
                     }
 

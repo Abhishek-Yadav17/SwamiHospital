@@ -6,8 +6,8 @@ main {
     .contact-us {
         min-height: 100vh;
         width: 100%;
-        background-color: #EFDAE5;
-        color: #3C103F;
+        background-color: #D2C4EE;
+        color: #242845;
         padding: 4vw;
         display: flex;
         flex-direction: column;
@@ -89,7 +89,7 @@ main {
                         align-items: center;
                         gap: 1vw;
                         padding: 1.2vw 1.5vw;
-                        border: 1px solid #3C103F;
+                        border: 1px solid #74609D;
                         transition: all ease 0.5s;
                         cursor: pointer;
 
@@ -100,7 +100,7 @@ main {
                         }
 
                         .icon-wrapper {
-                            background-color: #3C103F;
+                            background-color: #74609D;
                             width: 3vw;
                             height: 3vw;
                             display: flex;
@@ -144,12 +144,12 @@ main {
                         }
 
                         &:hover {
-                            background-color: #E8C6D8;
-                            color: #3C103F;
+                            background-color: #e2d7fa;
+                            color: #242845;
 
                             .icon-wrapper {
-                                background-color: #C3A1C6;
-                                color: #3C103F;
+                                background-color: #242845;
+                                color: #e2d7fa;
                             }
                         }
                     }
@@ -197,7 +197,7 @@ main {
             }
 
             .contact-inner-right {
-                background-color: #E8C6D8;
+                background-color: #e2d7fa;
                 width: 45%;
                 height: 100%;
                 padding: 2vw;
@@ -232,7 +232,7 @@ main {
                         border: none;
                         font-size: 1vw;
                         margin-bottom: 2vw;
-                        background-color: #EFDAE5;
+                        background-color: rgb(252, 236, 244);
                         font-family: Nunito;
 
                         @media (max-width: 768px) {
@@ -253,14 +253,14 @@ main {
 
                     button {
                         padding: 0.8vw 1.8vw;
-                        background-color: #3C103F;
+                        background-color: #74609D;
                         color: #F6F0F3;
                         font-size: 1.1vw;
                         border: none;
                         transition: all ease 0.5s;
                         cursor: pointer;
                         font-family: Nunito;
-                        border: 1px solid #3C103F;
+                        border: 1px solid #74609D;
 
                         @media (max-width: 768px) {
                             padding: 2vw 3vw;
@@ -268,9 +268,9 @@ main {
                         }
 
                         &:hover {
-                            border: 1px solid #3C103F;
+                            border: 1px solid #74609D;
                             background-color: transparent;
-                            color: #3C103F;
+                            color: #74609D;
                         }
                     }
                 }

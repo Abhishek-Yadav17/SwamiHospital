@@ -5,20 +5,44 @@ main {
     font-family: Nunito;
 
     .hero {
-        min-height: 80vh;
+        min-height: 85vh;
         width: 100%;
-        background-color: #f3dde8;
-        color: #3C103F;
+        background-color: #F6F0F3;
+        color: #242845;
         display: flex;
         flex-direction: column;
         position: relative;
         padding-top: 1vw;
         justify-content: space-between;
+        transition: background-image 0.5s ease-in-out;
 
         @media (max-width: 768px) {
             gap: 12vw;
             padding: 8vw 4vw;
             height: fit-content;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            z-index: 0;
+        }
+
+        .hero-bg.active {
+            opacity: 0.4;
+            z-index: 1;
+        }
+
+        >*:not(.hero-bg) {
+            position: relative;
+            z-index: 2;
         }
 
         .hero-heading {
@@ -48,13 +72,13 @@ main {
             .contact-button {
                 flex-shrink: 0;
                 padding: 0.3vw 1vw;
-                background-color: #3C103F;
+                background-color: #74609D;
                 color: #F6F0F3;
                 font-size: 1.1vw;
                 border: none;
                 transition: all ease 0.5s;
                 cursor: pointer;
-                border: 1px solid #3C103F;
+                border: 1px solid #74609D;
                 width: fit-content;
                 display: flex;
                 align-items: center;
@@ -71,7 +95,7 @@ main {
 
                 &:hover {
                     background-color: transparent;
-                    color: #3C103F;
+                    color: #242845;
                 }
             }
         }
@@ -130,7 +154,7 @@ main {
 
             button {
                 padding: 0.8vw 1.8vw;
-                background-color: #3C103F;
+                background-color: #74609D;
                 color: #F6F0F3;
                 font-size: 24px;
                 border: none;
@@ -138,7 +162,7 @@ main {
                 width: 25%;
                 transition: all ease 0.5s;
                 cursor: pointer;
-                border: 1px solid #3C103F;
+                border: 1px solid #74609D;
                 text-transform: uppercase;
                 font-weight: bold;
                 font-family: Playfair;
@@ -151,9 +175,9 @@ main {
                 }
 
                 &:hover {
-                    border: 1px solid #3C103F;
+                    border: 1px solid #242845;
                     background-color: transparent;
-                    color: #3C103F;
+                    color: #242845;
                 }
             }
 
@@ -162,7 +186,7 @@ main {
                 width: 96%;
                 height: fit-content;
                 background-color: #F6F0F3;
-                color: #3C103F;
+                color: #242845;
                 z-index: 3;
                 top: 100%;
                 padding: 2vw;
@@ -268,19 +292,6 @@ main {
                         }
                     }
                 }
-
-                button {
-                    width: fit-content;
-                    background-color: #E8C6D8;
-                    color: #3C103F;
-                    margin-top: 2vw;
-
-                    &:hover {
-                        background-color: transparent;
-                        border: 1px solid #E8C6D8;
-                        color: #F6F0F3;
-                    }
-                }
             }
         }
     }
@@ -288,8 +299,8 @@ main {
     .page1 {
         min-height: 100vh;
         width: 100%;
-        background-color: #EFDAE5;
-        color: #3C103F;
+        background-color: #D2C4EE;
+        color: #242845;
         padding: 0 4vw;
         display: flex;
         flex-direction: column;
@@ -315,6 +326,7 @@ main {
                 height: 80vh;
                 width: 85%;
                 align-self: center;
+                justify-content: space-between;
 
                 @media (max-width: 768px) {
                     height: fit-content;
@@ -375,13 +387,13 @@ main {
 
                         button {
                             padding: 0.8vw 1.8vw;
-                            background-color: #3C103F;
+                            background-color: #74609D;
                             color: #F6F0F3;
                             font-size: 1.1vw;
                             border: none;
                             transition: all ease 0.5s;
                             cursor: pointer;
-                            border: 1px solid #3C103F;
+                            border: 1px solid #74609D;
                             width: fit-content;
                             display: flex;
                             align-items: center;
@@ -397,17 +409,19 @@ main {
                             }
 
                             &:hover {
-                                border: 1px solid #3C103F;
+                                border: 1px solid #74609D;
                                 background-color: transparent;
-                                color: #3C103F;
+                                color: #74609D;
                             }
                         }
                     }
                 }
 
                 .about-inner-right {
-                    width: 50%;
+                    width: 40%;
                     height: 100%;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+                    overflow: hidden;
 
                     @media (max-width: 768px) {
                         width: 100%;
@@ -422,5 +436,23 @@ main {
                 }
             }
         }
+    }
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 2vw;
+    padding: 1.2vw;
+    border-radius: 50%;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
     }
 }

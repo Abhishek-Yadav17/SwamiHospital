@@ -6,13 +6,13 @@ main {
     .services {
         min-height: 100vh;
         width: 100%;
-        background-color: #EFDAE5;
-        color: #3C103F;
+        background-color: #D2C4EE;
+        color: #242845;
         padding: 4vw;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 4vw;
+        gap: 6vw;
 
         @media (max-width: 768px) {
             gap: 8vw;
@@ -31,14 +31,13 @@ main {
 
         .service-cards {
             height: fit-content;
-            width: 85%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            display: flex;
             gap: 4vw;
-            justify-items: center;
 
             @media (max-width: 768px) {
-                grid-template-columns: repeat(1, 1fr);
+                flex-direction: column;
+                align-items: center;
                 width: 100%;
                 gap: 15vw;
             }
@@ -73,7 +72,7 @@ main {
                         height: 4vw;
                         width: 4vw;
                         border-radius: 50%;
-                        background-color: #3C103F;
+                        background-color: #242845;
                         color: #F6F0F3;
                         display: flex;
                         align-items: center;
