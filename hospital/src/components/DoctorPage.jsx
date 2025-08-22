@@ -4,9 +4,11 @@ import { useParams } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import '../styles/DoctorPage.scss'
+import doctorData from '../doctorsData.json';
 
 const DoctorPage = () => {
     const { doctorId } = useParams();
+    const doctor = doctorData[doctorId];
 
     return (
         <>
@@ -43,17 +45,17 @@ const DoctorPage = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6 }}
                         >
-                            <p>Role of doctor</p>
-                            <h1>{doctorId.replace(/-/g, ' ')}</h1>
-                            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, expedita, asperiores labore magnam consequuntur, a animi incidunt nam sint quam culpa inventore? Quod sapiente, aspernatur doloremque nihil magni error expedita veniam, ut praesentium cumque inventore placeat. Doloribus accusantium labore expedita!</h4>
+                            <p>{doctor.role}</p>
+                            <h1>{doctor.name}</h1>
+                            <h4>{doctor.about}</h4>
                             <div className="buttons">
-                                <button><i className="ri-phone-fill"></i> +123456789</button>
+                                <button><i className="ri-phone-fill"></i> {doctor.phone}</button>
                             </div>
                             <div className="socials">
                                 <h5>Socials:</h5>
-                                <i className="ri-facebook-fill"></i>
-                                <i className="ri-twitter-x-fill"></i>
-                                <i className="ri-instagram-fill"></i>
+                                <a href={doctor.social.facebook}><i className="ri-facebook-fill"></i></a>
+                                <a href={doctor.social.twitter}><i className="ri-twitter-x-fill"></i></a>
+                                <a href={doctor.social.instagram}><i className="ri-instagram-fill"></i></a>
                             </div>
                         </motion.div>
                     </motion.div>
@@ -75,21 +77,27 @@ const DoctorPage = () => {
                             }}
                         >
                             <div className="doctors-bottom-inner">
-                                <h2>About {doctorId.replace(/-/g, ' ')}</h2>
-                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. A minima nulla eveniet veritatis quo tenetur delectus eos sint, illo facere laudantium similique numquam exercitationem, sequi soluta itaque. Ut odio unde magnam? Totam nihil aliquid repellat, iste unde magnam laudantium voluptatum Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, deserunt exercitationem. Earum vero alias perferendis sint doloribus fugit nam necessitatibus?</h4>
+                                <h2>About {doctor.name}</h2>
+                                <h4>{doctor.about}</h4>
                             </div>
                             <div className="doctors-bottom-inner">
-                                <h2>Education and Training</h2>
-                                <h4><span>Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. A minima nulla eveniet veritatis quo tenetur delectus eos sint, illo facere laudantium similique numquam exercitationem, sequi soluta itaque. Ut odio unde magnam? Totam nihil aliquid</h4>
-                                <h4><span>Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. A minima nulla eveniet veritatis quo tenetur delectus eos sint, illo facere laudantium similique numquam exercitationem, sequi soluta itaque. Ut odio unde magnam? Totam nihil aliquid</h4>
+                                <h2>Designation</h2>
+                                {doctor.designation.map((item, i) => (
+                                    <h4 key={i}>{item}</h4>
+                                ))}
                             </div>
                             <div className="doctors-bottom-inner">
-                                <h2>Services Provided</h2>
+                                <h2>Experience</h2>
+                                {doctor.experience.map((item, i) => (
+                                    <h4 key={i}>{item}</h4>
+                                ))}
+                            </div>
+                            <div className="doctors-bottom-inner">
+                                <h2>Skill Set</h2>
                                 <ul>
-                                    <li>Routine Check-ups</li>
-                                    <li>Cleanings and Fluoride Treatments</li>
-                                    <li>Oral Hygiene Instruction</li>
-                                    <li>Early Orthodontic Evaluation</li>
+                                    {doctor.services.map((service, i) => (
+                                        <li key={i}>{service}</li>
+                                    ))}
                                 </ul>
                             </div>
                         </motion.div>

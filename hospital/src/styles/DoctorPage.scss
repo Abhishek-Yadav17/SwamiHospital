@@ -6,8 +6,8 @@ main {
     .doctors {
         min-height: 100vh;
         width: 100%;
-        background-color: #EFDAE5;
-        color: #3C103F;
+        background-color: #D2C4EE;
+        color: #242845;
         padding: 4vw;
         display: flex;
         flex-direction: column;
@@ -42,7 +42,7 @@ main {
 
                 p {
                     font-size: 1.1vw;
-                    background-color: #E8C6D8;
+                    background-color: #C7B1E0;
                     border-radius: 50px;
                     width: fit-content;
                     padding: 0 1vw;
@@ -72,7 +72,7 @@ main {
                         border: none;
                         transition: all ease 0.5s;
                         cursor: pointer;
-                        border: 1px solid #3C103F;
+                        border: 1px solid #242845;
                         width: fit-content;
                         text-transform: capitalize;
                         display: flex;
@@ -80,7 +80,7 @@ main {
                         align-items: center;
 
                         i {
-                            background-color: #3C103F;
+                            background-color: #242845;
                             border-radius: 50%;
                             padding: 0.3vw;
                             color: #F6F0F3;
@@ -88,13 +88,13 @@ main {
                         }
 
                         &:hover {
-                            background-color: #3C103F;
+                            background-color: #242845;
                             color: #F6F0F3;
                         }
 
                         &:hover i {
-                            background-color: #E8C6D8;
-                            color: #3C103F;
+                            background-color: #D2C4EE;
+                            color: #242845;
                         }
                     }
                 }
@@ -102,7 +102,7 @@ main {
                 .socials {
                     display: flex;
                     gap: 2vw;
-                    border: 1px solid #3C103F;
+                    border: 1px solid #242845;
                     align-items: center;
                     justify-content: center;
                     width: fit-content;
@@ -113,8 +113,13 @@ main {
                         font-size: 1.2vw;
                     }
 
-                    i {
-                        font-size: 1.4vw;
+                    a {
+                        text-decoration: none;
+                        color: #242845;
+
+                        i {
+                            font-size: 1.4vw;
+                        }
                     }
                 }
             }
@@ -123,7 +128,7 @@ main {
         .doctors-bottom {
             height: fit-content;
             width: 90%;
-            background-color: #E8C6D8;
+            background-color: #C7B1E0;
             padding: 2vw;
             display: flex;
             gap: 5vw;
@@ -168,7 +173,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 gap: 1vw;
-                background-color: #EFDAE5;
+                background-color: #D2C4EE;
                 padding: 2vw;
 
                 h2 {
@@ -192,30 +197,30 @@ main {
                         font-size: 1vw;
                         border: none;
                         outline: none;
-                        background-color: #E8C6D8;
+                        background-color: #C7B1E0;
                         font-family: Nunito;
-                        color: #3C103F;
+                        color: #242845;
 
                         &::placeholder {
-                            color: #3C103F;
+                            color: #242845;
                         }
                     }
 
                     button {
                         padding: 0.8vw 1.8vw;
-                        background-color: #3C103F;
+                        background-color: #242845;
                         color: #F6F0F3;
                         font-size: 1.1vw;
                         border: none;
                         transition: all ease 0.5s;
                         cursor: pointer;
                         font-family: Nunito;
-                        border: 1px solid #3C103F;
+                        border: 1px solid #242845;
 
                         &:hover {
-                            border: 1px solid #3C103F;
+                            border: 1px solid #242845;
                             background-color: transparent;
-                            color: #3C103F;
+                            color: #242845;
                         }
                     }
                 }

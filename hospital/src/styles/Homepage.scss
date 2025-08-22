@@ -107,10 +107,9 @@ main {
             line-height: 1.2;
             width: 60%;
             height: fit-content;
-            margin-bottom: 4vw;
-            padding-left: 6vw;
             align-self: center;
             text-align: center;
+            margin-bottom: 2vw;
 
             @media (max-width: 768px) {
                 font-size: 10vw;
@@ -124,10 +123,10 @@ main {
             font-size: 1.4vw;
             font-weight: lighter;
             width: 60%;
-            text-align: left;
+            text-align: center;
             padding: 0 6vw;
-            align-self: flex-start;
-            margin-bottom: 4vw;
+            align-self: center;
+
 
             @media (max-width: 768px) {
                 font-size: 3.5vw;
@@ -137,6 +136,37 @@ main {
 
             span {
                 font-weight: bold;
+            }
+        }
+
+        .hero-mid {
+            display: flex;
+            gap: 4vw;
+            margin-top: 1vw;
+            align-self: center;
+
+            button {
+                padding: 1vw 1vw;
+                background-color: #74609D;
+                color: #F6F0F3;
+                font-size: 1.1vw;
+                border: none;
+                transition: all ease 0.5s;
+                cursor: pointer;
+                border: 1px solid #74609D;
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                gap: 0.5vw;
+
+                i {
+                    font-size: 1.2vw;
+                }
+
+                &:hover {
+                    background-color: transparent;
+                    color: #242845;
+                }
             }
         }
 

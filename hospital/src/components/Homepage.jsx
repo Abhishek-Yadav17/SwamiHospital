@@ -182,8 +182,39 @@ const Homepage = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.5, delay: 0.5 }}
                     >
-                        Devoted towards complete Facial Aesthetics solutions through a team of experts including Surgeons, Dentists and Cosmetologists, Psychologists. Ensuring a positive self-esteem through Facial Aesthetics!
+                        Facial Aesthetic solutions by expert Surgeons, Dentists, Cosmetologists & Psychologists — devoted to enhancing self-esteem.
                     </motion.h4>
+
+                    <motion.div 
+                        className="hero-mid"
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 1 }}
+                    >
+                        <motion.button
+                            variants={{
+                                hidden: { opacity: 0, y: 50 },
+                                visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.2 } }
+                            }}
+                            onClick={() => {
+                                window.location.href = `/team`;
+                            }}
+                        >
+                            Meet Our Experts<i class="ri-arrow-right-up-line"></i>
+                        </motion.button>
+
+                        <motion.button
+                            variants={{
+                                hidden: { opacity: 0, y: 50 },
+                                visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.2 } }
+                            }}
+                            onClick={() => {
+                                window.location.href = `/contact`;
+                            }}
+                        >
+                            Book your slot now<i class="ri-arrow-right-up-line"></i>
+                        </motion.button>
+                    </motion.div>
 
                     <motion.div
                         className="hero-buttons"
@@ -193,7 +224,7 @@ const Homepage = () => {
                         }}
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 1 }}
+                        transition={{ duration: 1, delay: 1.5 }}
                     >
                         {services.map((service, index) => (
                             <button
