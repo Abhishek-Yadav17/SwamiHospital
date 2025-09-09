@@ -8,7 +8,12 @@ import doctorData from '../doctorsData.json';
 
 const DoctorPage = () => {
     const { doctorId } = useParams();
-    const doctor = doctorData[doctorId];
+    const doctor =
+        doctorData.CEO[doctorId] ||
+        doctorData.RND[doctorId] ||
+        doctorData.ENT[doctorId] ||
+        doctorData.Dentistry[doctorId] ||
+        doctorData["Facial Aesthetics"][doctorId];
 
     return (
         <>

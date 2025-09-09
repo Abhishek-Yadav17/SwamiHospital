@@ -1,177 +1,264 @@
 main {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  .doctor-team {
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    background-color: #D2C4EE;
+    color: #242845;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8vw;
 
-    .doctor-team {
-        min-height: 100vh;
+    @media (max-width: 768px) {
+      gap: 6vw;
+      padding: 8vw 4vw;
+    }
+
+    > h1 {
+      font-size: 3vw;
+      font-family: Playfair;
+      font-weight: lighter;
+      width: 40%;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        font-size: 5.5vw;
         width: 100%;
-        background-color: #D2C4EE;
-        color: #242845;
-        padding: 4vw;
+      }
+    }
+
+    .categories-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6vw;
+
+      .row-1, .row-2 {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4vw;
+        width: 95%;
 
         @media (max-width: 768px) {
-            gap: 6vw;
-            padding: 8vw 4vw;
+          flex-direction: column;
+          gap: 10vw;
+          width: 90%;
+          margin: 0 auto;
         }
 
-        >h1 {
-            font-size: 3vw;
+        .category-group {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1vw;
+
+          h2 {
+            font-size: 2vw;
             font-family: Playfair;
-            font-weight: lighter;
-            width: 40%;
+            width: 100%;
             text-align: center;
+            margin-bottom: 1vw;
 
             @media (max-width: 768px) {
-                font-size: 5.5vw;
-                width: 100%;
+              font-size: 5vw;
+              margin-bottom: 4vw;
             }
-        }
+          }
 
-        .team-cards {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto;
+          .team-cards {
+            display: flex;
+            flex-direction: column;
             gap: 4vw;
-            width: 95%;
-            justify-items: center;
-
-            @media (max-width: 768px) {
-                display: flex;
-                flex-direction: column;
-                gap: 10vw;
-                width: 90%;
-            }
-
-            .card-wrapper {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 90%;
-
-                .card-title {
-                    font-size: 1.4vw;
-                    font-family: Playfair;
-                    color: #242845;
-                    margin-bottom: 0.8vw;
-                    text-align: center;
-
-                    @media (max-width: 768px) {
-                        font-size: 4vw;
-                        margin-bottom: 3vw;
-                    }
-                }
-            }
+            width: 50%;
 
             .elem {
+              width: 100%;
+              height: 30vh;
+              position: relative;
+              overflow: hidden;
+              cursor: pointer;
+
+              @media (max-width: 768px) {
+                height: 60vh;
+                border-radius: 1vw;
+              }
+
+              img {
+                height: 100%;
                 width: 100%;
-                height: 50vh;
-                position: relative;
-                overflow: hidden;
-                cursor: pointer;
+                object-fit: cover;
+              }
+
+              .social-icons {
+                position: absolute;
+                top: -50%;
+                right: 2%;
+                width: 2.5vw;
+                height: 8vw;
+                background-color: #e2d7fa;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px 0;
+                transition: top 0.4s ease;
+                z-index: 2;
 
                 @media (max-width: 768px) {
-                    width: 100%;
-                    height: 60vh;
-                    border-radius: 1vw;
+                  top: 2% !important;
+                  padding: 4vw;
+                  height: fit-content;
+                  gap: 4vw;
                 }
 
-                img {
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
+                i {
+                  color: #242845;
+                  font-size: 1vw;
+                  cursor: pointer;
+
+                  @media (max-width: 768px) {
+                    font-size: 3.5vw;
+                  }
                 }
+              }
 
-                .social-icons {
-                    position: absolute;
-                    top: -50%;
-                    right: 2%;
-                    width: 2.5vw;
-                    height: 8vw;
-                    background-color: #e2d7fa;
-                    border-radius: 10px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    align-items: center;
-                    padding: 10px 0;
-                    transition: top 0.4s ease;
-                    z-index: 2;
+              .doctor-info {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: #24284594;
+                color: #F6F0F3;
+                padding: 10px;
+                text-align: center;
+                pointer-events: none;
+                z-index: 2;
 
-                    @media (max-width: 768px) {
-                        top: 2% !important;
-                        padding: 4vw;
-                        height: fit-content;
-                        gap: 4vw;
-                    }
-
-                    i {
-                        color: #242845;
-                        font-size: 1vw;
-                        cursor: pointer;
-
-                        @media (max-width: 768px) {
-                            font-size: 3.5vw;
-                        }
-                    }
+                @media (max-width: 768px) {
+                  opacity: 1 !important;
+                  transform: translateY(0) !important;
                 }
-
-                .doctor-info {
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    background-color: #24284594;
-                    color: #F6F0F3;
-                    padding: 10px;
-                    text-align: center;
-                    pointer-events: none;
-                    z-index: 2;
-
-                    @media (max-width: 768px) {
-                        opacity: 1 !important;
-                        transform: translateY(0) !important;
-                    }
-                }
+              }
             }
-
-            .card-0 {
-                grid-column: 1;
-                grid-row: 1;
-            }
-
-            .card-1 {
-                grid-column: 2;
-                grid-row: 1;
-            }
-
-            .card-2 {
-                grid-column: 1 / span 2;
-                grid-row: 2;
-                width: 45%;
-                justify-self: center;
-            }
-
-            .card-3 {
-                grid-column: 1;
-                grid-row: 3;
-            }
-
-            .card-4 {
-                grid-column: 2;
-                grid-row: 3;
-            }
-
-            .card-5 {
-                grid-column: 1 / span 2;
-                grid-row: 4;
-                justify-self: center;
-                width: 45%;
-            }
+          }
         }
+      }
+
+      .row-3 {
+        width: 100%;
+        display: flex;
+        align-self: flex-start;
+
+        @media (max-width: 768px) {
+          width: 90%;
+          margin: 0 auto;
+        }
+
+        .category-group {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 2vw;
+
+          h2 {
+            font-size: 2vw;
+            font-family: Playfair;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1vw;
+
+            @media (max-width: 768px) {
+              font-size: 5vw;
+              margin-bottom: 4vw;
+            }
+          }
+
+          .team-cards {
+            display: flex;
+            gap: 10vw;
+            width: 100%;
+
+            .elem {
+              width: 100%;
+              height: 30vh;
+              position: relative;
+              overflow: hidden;
+              cursor: pointer;
+
+              @media (max-width: 768px) {
+                height: 60vh;
+                border-radius: 1vw;
+              }
+
+              img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+              }
+
+              .social-icons {
+                position: absolute;
+                top: -50%;
+                right: 2%;
+                width: 2.5vw;
+                height: 8vw;
+                background-color: #e2d7fa;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px 0;
+                transition: top 0.4s ease;
+                z-index: 2;
+
+                @media (max-width: 768px) {
+                  top: 2% !important;
+                  padding: 4vw;
+                  height: fit-content;
+                  gap: 4vw;
+                }
+
+                i {
+                  color: #242845;
+                  font-size: 1vw;
+                  cursor: pointer;
+
+                  @media (max-width: 768px) {
+                    font-size: 3.5vw;
+                  }
+                }
+              }
+
+              .doctor-info {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: #24284594;
+                color: #F6F0F3;
+                padding: 10px;
+                text-align: center;
+                pointer-events: none;
+                z-index: 2;
+
+                @media (max-width: 768px) {
+                  opacity: 1 !important;
+                  transform: translateY(0) !important;
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }

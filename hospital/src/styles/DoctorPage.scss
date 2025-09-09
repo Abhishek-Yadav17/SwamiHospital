@@ -21,9 +21,20 @@ main {
             width: 90%;
             display: flex;
 
+            @media (max-width: 768px) {
+                flex-direction: column;
+                height: fit-content;
+                width: 100%;
+            }
+
             .doctor-left {
                 width: 40%;
                 height: 100%;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    height: 50%;
+                }
 
                 img {
                     height: 100%;
@@ -40,12 +51,22 @@ main {
                 justify-content: space-between;
                 padding: 0 4vw;
 
+                @media (max-width: 768px) {
+                    width: 100%;
+                    height: 50%;
+                    gap: 4vw;
+                }
+
                 p {
                     font-size: 1.1vw;
                     background-color: #C7B1E0;
                     border-radius: 50px;
                     width: fit-content;
                     padding: 0 1vw;
+
+                    @media (max-width: 768px) {
+                        font-size: 3.5vw;
+                    }
                 }
 
                 h1 {
@@ -53,12 +74,20 @@ main {
                     text-transform: capitalize;
                     margin-top: 1vw;
                     margin-bottom: 3vw;
+
+                    @media (max-width: 768px) {
+                        font-size: 5vw;
+                    }
                 }
 
                 h4 {
                     font-size: 1.3vw;
                     font-weight: lighter;
                     margin-bottom: 2vw;
+
+                    @media (max-width: 768px) {
+                        font-size: 3.5vw;
+                    }
                 }
 
                 .buttons {
@@ -88,7 +117,8 @@ main {
                         }
 
                         &:hover {
-                            background-color: #242845;
+                            background-color: #74609D;
+                            border: 1px solid #74609D;
                             color: #F6F0F3;
                         }
 
@@ -133,12 +163,22 @@ main {
             display: flex;
             gap: 5vw;
 
+            @media (max-width: 768px) {
+                flex-direction: column;
+                width: 100%;
+            }
+
             .doctors-bottom-left {
                 width: 60%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 gap: 4vw;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    gap: 6vw;
+                }
 
                 .doctors-bottom-inner {
                     display: flex;
@@ -150,11 +190,19 @@ main {
                         font-weight: lighter;
                         font-size: 2vw;
                         text-transform: capitalize;
+
+                        @media (max-width: 768px) {
+                            font-size: 4.5vw;
+                        }
                     }
 
                     h4 {
                         font-size: 1.2vw;
                         font-weight: lighter;
+
+                        @media (max-width: 768px) {
+                            font-size: 3.5vw;
+                        }
 
                         span {
                             font-weight: bold;
@@ -163,6 +211,18 @@ main {
 
                     ul {
                         padding-left: 1vw;
+
+                        @media (max-width: 768px) {
+                            padding-left: 4vw;
+                        }
+
+                        li {
+                            font-size: 1.1vw;
+
+                            @media (max-width: 768px) {
+                                font-size: 3.5vw;
+                            }
+                        }
                     }
                 }
             }
@@ -176,13 +236,26 @@ main {
                 background-color: #D2C4EE;
                 padding: 2vw;
 
+                @media (max-width: 768px) {
+                    width: 100%;
+                    gap: 4vw;
+                }
+
                 h2 {
                     font-size: 2vw;
+
+                    @media (max-width: 768px) {
+                        font-size: 4.5vw;
+                    }
                 }
 
                 h4 {
                     font-weight: lighter;
                     font-size: 1.1vw;
+
+                    @media (max-width: 768px) {
+                        font-size: 3.5vw;
+                    }
                 }
 
                 .appointment-form {
@@ -190,6 +263,10 @@ main {
                     flex-direction: column;
                     gap: 2vw;
                     margin-top: 2vw;
+
+                    @media (max-width: 768px) {
+                        gap: 4vw;
+                    }
 
                     input,
                     textarea {
@@ -201,6 +278,11 @@ main {
                         font-family: Nunito;
                         color: #242845;
 
+                        @media (max-width: 768px) {
+                            font-size: 3vw;
+                            padding: 3vw 2vw;
+                        }
+
                         &::placeholder {
                             color: #242845;
                         }
@@ -208,14 +290,19 @@ main {
 
                     button {
                         padding: 0.8vw 1.8vw;
-                        background-color: #242845;
+                        background-color: #74609D;
                         color: #F6F0F3;
                         font-size: 1.1vw;
                         border: none;
                         transition: all ease 0.5s;
                         cursor: pointer;
                         font-family: Nunito;
-                        border: 1px solid #242845;
+                        border: 1px solid #74609D;
+
+                        @media (max-width: 768px) {
+                            padding: 2vw 3vw;
+                            font-size: 3vw;
+                        }
 
                         &:hover {
                             border: 1px solid #242845;
