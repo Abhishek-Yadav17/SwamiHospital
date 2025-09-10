@@ -1,10 +1,11 @@
 {
-  "CEO": {
+  "CEO & Director": {
     "dr-aditya": {
       "name": "Dr. Aditya",
-      "role": "Orthodontist",
+      "role": "Research Head",
       "phone": "+91-XXXXXXXXXX",
-      "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
+      "img": "/placeholder.jpg",
+      "about": "Dr. Aditya is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
         "MDS (Orthodontics and Dentofacial Orthopedics)"
       ],
@@ -15,12 +16,7 @@
         "Fixed appliances (metal, ceramic, self-ligating braces)",
         "Aligners",
         "Myofunctional appliances"
-      ],
-      "social": {
-        "facebook": "",
-        "twitter": "",
-        "instagram": ""
-      }
+      ]
     }
   },
   "RND": {
@@ -28,6 +24,7 @@
       "name": "Dr. Pradnya Maen",
       "role": "Cosmetic Dentist & Associate Cosmetologist",
       "phone": "+91-XXXXXXXXXX",
+      "img": "/placeholder.jpg",
       "about": "Dr. Rachana Hivarkar is a skilled dental and cosmetic care provider with comprehensive experience in dentistry and aesthetic procedures.",
       "designation": [
         "Bachelor of Dental Surgery - Dr. DY Patil Dental College, Pimpri.",
@@ -50,12 +47,7 @@
         "Periodontics: Treatment of gum disease",
         "Pediatric Dentistry: Care for children's teeth",
         "X-ray Technology: Operating and interpreting X-rays"
-      ],
-      "social": {
-        "facebook": "#",
-        "twitter": "#",
-        "instagram": "#"
-      }
+      ]
     }
   },
   "ENT": {
@@ -63,6 +55,7 @@
       "name": "Dr. Zunaid",
       "role": "Orthodontist",
       "phone": "+91-XXXXXXXXXX",
+      "img": "/placeholder.jpg",
       "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
         "MDS (Orthodontics and Dentofacial Orthopedics)"
@@ -85,6 +78,7 @@
       "name": "Dr. Aditya",
       "role": "Orthodontist",
       "phone": "+91-XXXXXXXXXX",
+      "img": "/placeholder.jpg",
       "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
         "MDS (Orthodontics and Dentofacial Orthopedics)"
@@ -106,9 +100,10 @@
   },
   "Dentistry": {
     "dr-rachna": {
-      "name": "Dr. Rachna",
-      "role": "Cosmetic Dentist & Associate Cosmetologist",
+      "name": "Dr. Rachna Hivarkar",
+      "role": "Dental consultant & Dental Surgeon",
       "phone": "+91-XXXXXXXXXX",
+      "img": "/doctor3.jpg",
       "about": "Dr. Rachana Hivarkar is a skilled dental and cosmetic care provider with comprehensive experience in dentistry and aesthetic procedures.",
       "designation": [
         "Bachelor of Dental Surgery - Dr. DY Patil Dental College, Pimpri.",
@@ -131,17 +126,13 @@
         "Periodontics: Treatment of gum disease",
         "Pediatric Dentistry: Care for children's teeth",
         "X-ray Technology: Operating and interpreting X-rays"
-      ],
-      "social": {
-        "facebook": "#",
-        "twitter": "#",
-        "instagram": "#"
-      }
+      ]
     },
     "dr-neel": {
       "name": "Dr. Neel",
       "role": "Conservative Dentistry & Endodontics",
       "phone": "+91-XXXXXXXXXX",
+      "img": "/placeholder.jpg",
       "about": "Dr. Neel Doshi is an accomplished endodontist with academic and clinical expertise, having trained nationally and internationally.",
       "designation": [
         "BDS",
@@ -163,17 +154,13 @@
         "Post & core procedures",
         "Open apex management, regenerative & surgical endodontics",
         "Microscope enhanced endodontics"
-      ],
-      "social": {
-        "facebook": "#",
-        "twitter": "#",
-        "instagram": "#"
-      }
+      ]
     },
     "dr-mayuri": {
-      "name": "Dr. Mayuri",
-      "role": "Orthodontist",
+      "name": "Dr. Mayuri Yadav MDS",
+      "role": "Oral and Maxillofacial Surgeon",
       "phone": "+91-XXXXXXXXXX",
+      "img": "/doctor2.jpg",
       "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
         "MDS (Orthodontics and Dentofacial Orthopedics)"
@@ -193,9 +180,10 @@
       }
     },
     "dr-pragati": {
-      "name": "Dr. Pragati",
-      "role": "Orthodontist",
+      "name": "Dr. Pragati Mahajan MDS",
+      "role": "Orthodontics and Dentofacialorthopedics",
       "phone": "+91-XXXXXXXXXX",
+      "img": "/doctor1.jpg",
       "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
         "MDS (Orthodontics and Dentofacial Orthopedics)"
@@ -218,6 +206,7 @@
       "name": "Dr. Nayan",
       "role": "Orthodontist",
       "phone": "+91-XXXXXXXXXX",
+      "img": "/placeholder.jpg",
       "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
         "MDS (Orthodontics and Dentofacial Orthopedics)"
@@ -242,6 +231,7 @@
       "name": "Dr. Aditya",
       "role": "Orthodontist",
       "phone": "+91-XXXXXXXXXX",
+      "img": "/placeholder.jpg",
       "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
         "MDS (Orthodontics and Dentofacial Orthopedics)"
@@ -264,6 +254,7 @@
       "name": "Dr. Pradnya",
       "role": "Cosmetic Dentist & Associate Cosmetologist",
       "phone": "+91-XXXXXXXXXX",
+      "img": "/placeholder.jpg",
       "about": "Dr. Rachana Hivarkar is a skilled dental and cosmetic care provider with comprehensive experience in dentistry and aesthetic procedures.",
       "designation": [
         "Bachelor of Dental Surgery - Dr. DY Patil Dental College, Pimpri.",
@@ -286,17 +277,13 @@
         "Periodontics: Treatment of gum disease",
         "Pediatric Dentistry: Care for children's teeth",
         "X-ray Technology: Operating and interpreting X-rays"
-      ],
-      "social": {
-        "facebook": "#",
-        "twitter": "#",
-        "instagram": "#"
-      }
+      ]
     },
     "dr-madhuri": {
       "name": "Dr. Madhuri",
       "role": "Orthodontist",
       "phone": "+91-XXXXXXXXXX",
+      "img": "/placeholder.jpg",
       "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
         "MDS (Orthodontics and Dentofacial Orthopedics)"

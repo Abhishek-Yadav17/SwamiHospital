@@ -9,7 +9,7 @@ import doctorData from '../doctorsData.json';
 const DoctorPage = () => {
     const { doctorId } = useParams();
     const doctor =
-        doctorData.CEO[doctorId] ||
+        doctorData["CEO & Director"][doctorId] ||
         doctorData.RND[doctorId] ||
         doctorData.ENT[doctorId] ||
         doctorData.Dentistry[doctorId] ||
@@ -42,7 +42,7 @@ const DoctorPage = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6 }}
                         >
-                            <img src="/about1.webp" alt="doctor" />
+                            <img src={doctor.img} alt={doctor.name} />
                         </motion.div>
                         <motion.div
                             className="doctor-right"
@@ -55,12 +55,6 @@ const DoctorPage = () => {
                             <h4>{doctor.about}</h4>
                             <div className="buttons">
                                 <button><i className="ri-phone-fill"></i> {doctor.phone}</button>
-                            </div>
-                            <div className="socials">
-                                <h5>Socials:</h5>
-                                <a href={doctor.social.facebook}><i className="ri-facebook-fill"></i></a>
-                                <a href={doctor.social.twitter}><i className="ri-twitter-x-fill"></i></a>
-                                <a href={doctor.social.instagram}><i className="ri-instagram-fill"></i></a>
                             </div>
                         </motion.div>
                     </motion.div>
