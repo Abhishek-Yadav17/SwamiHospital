@@ -19,7 +19,7 @@ main {
       padding: 8vw 4vw;
     }
 
-    > h1 {
+    >h1 {
       font-size: 3vw;
       font-family: Playfair;
       font-weight: lighter;
@@ -40,15 +40,15 @@ main {
       gap: 10vw;
       padding-bottom: 4vw;
 
-      .row-1, .row-2 {
+      .row-1,
+      .row-2 {
         display: flex;
         width: 100%;
 
         @media (max-width: 768px) {
           flex-direction: column;
-          gap: 10vw;
-          width: 90%;
-          margin: 0 auto;
+          gap: 25vw;
+          width: 100%;
         }
 
         .category-group {
@@ -57,6 +57,10 @@ main {
           flex-direction: column;
           align-items: center;
           gap: 1vw;
+
+          @media (max-width: 768px) {
+            margin-top: 15vw;
+          }
 
           h2 {
             font-size: 2vw;
@@ -76,6 +80,11 @@ main {
             flex-direction: column;
             gap: 8vw;
             width: 50%;
+
+            @media (max-width: 768px) {
+              width: 90%;
+              gap: 25vw;
+            }
 
             .elem {
               width: 100%;
@@ -124,7 +133,7 @@ main {
 
         @media (max-width: 768px) {
           width: 90%;
-          margin: 0 auto;
+          margin: 25vw auto;
         }
 
         .category-group {
@@ -152,6 +161,11 @@ main {
             display: flex;
             gap: 10vw;
             width: 100%;
+
+            @media (max-width: 768px) {
+              flex-direction: column;
+              gap: 30vw;
+            }
 
             .elem {
               width: 100%;
