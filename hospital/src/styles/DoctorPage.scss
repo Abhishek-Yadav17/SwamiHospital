@@ -93,6 +93,11 @@ main {
                         gap: 2vw;
                         align-items: center;
 
+                        @media (max-width: 768px) {
+                            padding: 3vw 5vw;
+                            font-size: 3vw;
+                        }
+
                         i {
                             background-color: #242845;
                             border-radius: 50%;
