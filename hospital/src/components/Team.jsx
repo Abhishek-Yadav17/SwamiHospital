@@ -58,12 +58,6 @@ const Team = () => {
                                                     onHoverEnd={() => setHovered(null)}
                                                     onClick={() => (window.location.href = `/doctors/${id}`)}
                                                 >
-                                                    <motion.img
-                                                        src={doctorData[category][id].img}
-                                                        alt={name}
-                                                        whileHover={{ scale: 1.05 }}
-                                                        transition={{ type: "tween", duration: 0.3 }}
-                                                    />
                                                     <motion.div
                                                         className="doctor-info"
                                                     >
@@ -100,12 +94,6 @@ const Team = () => {
                                                     onHoverEnd={() => setHovered(null)}
                                                     onClick={() => (window.location.href = `/doctors/${id}`)}
                                                 >
-                                                    <motion.img
-                                                        src={doctorData[category][id].img}
-                                                        alt={name}
-                                                        whileHover={{ scale: 1.05 }}
-                                                        transition={{ type: "tween", duration: 0.3 }}
-                                                    />
                                                     <motion.div
                                                         className="doctor-info"
                                                     >
@@ -142,12 +130,6 @@ const Team = () => {
                                                     onHoverEnd={() => setHovered(null)}
                                                     onClick={() => (window.location.href = `/doctors/${id}`)}
                                                 >
-                                                    <motion.img
-                                                        src={doctorData[category][id].img}
-                                                        alt={name}
-                                                        whileHover={{ scale: 1.05 }}
-                                                        transition={{ type: "tween", duration: 0.3 }}
-                                                    />
                                                     <motion.div
                                                         className="doctor-info"
                                                     >

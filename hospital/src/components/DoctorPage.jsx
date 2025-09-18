@@ -37,14 +37,6 @@ const DoctorPage = () => {
                         style={{ display: 'flex', gap: '2rem' }}
                     >
                         <motion.div
-                            className="doctor-left"
-                            initial={{ opacity: 0, x: -100 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.6 }}
-                        >
-                            <img src={doctor.img} alt={doctor.name} />
-                        </motion.div>
-                        <motion.div
                             className="doctor-right"
                             initial={{ opacity: 0, x: 100 }}
                             whileInView={{ opacity: 1, x: 0 }}

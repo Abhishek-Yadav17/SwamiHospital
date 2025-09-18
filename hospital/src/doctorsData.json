@@ -1,8 +1,8 @@
 {
   "CEO & Director": {
     "dr-aditya": {
-      "name": "Dr. Aditya",
-      "role": "Research Head",
+      "name": "Dr. Adeetya Varal",
+      "role": "MS ENT & Head Neck Surgeon",
       "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
       "about": "Dr. Aditya is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
@@ -52,21 +52,21 @@
   },
   "ENT": {
     "dr-zunaid": {
-      "name": "Dr. Zunaid",
-      "role": "Orthodontist",
+      "name": "Dr. Juned Aslam Kothali ",
+      "role": "MS. ENT",
       "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
       "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
-        "MDS (Orthodontics and Dentofacial Orthopedics)"
+        "ENT Consultant"
       ],
       "experience": [
-        "1 year"
+        " 4 years of handling and managing of all ENT cases"
       ],
       "services": [
-        "Fixed appliances (metal, ceramic, self-ligating braces)",
-        "Aligners",
-        "Myofunctional appliances"
+        "Management of  ENT procedures",
+        "OPD procedures",
+        "Counseling with Patients"
       ],
       "social": {
         "facebook": "",
@@ -75,11 +75,11 @@
       }
     },
     "dr-aditya-ent": {
-      "name": "Dr. Aditya",
-      "role": "Orthodontist",
+      "name": "Dr. Adeetya Varal",
+      "role": "MS ENT & Head Neck Surgeon",
       "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
-      "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
+      "about": "Dr. Aditya is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
         "MDS (Orthodontics and Dentofacial Orthopedics)"
       ],
@@ -228,11 +228,11 @@
   },
   "Facial Aesthetics": {
     "dr-aditya-fa": {
-      "name": "Dr. Aditya",
-      "role": "Orthodontist",
+      "name": "Dr. Adeetya Varal",
+      "role": "MS ENT & Head Neck Surgeon",
       "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
-      "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
+      "about": "Dr. Aditya is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
         "MDS (Orthodontics and Dentofacial Orthopedics)"
       ],
