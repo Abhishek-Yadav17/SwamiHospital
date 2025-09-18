@@ -10,43 +10,30 @@
         "MDS (Orthodontics and Dentofacial Orthopedics)"
       ],
       "experience": [
-        "1 year"
+        "..."
       ],
       "services": [
-        "Fixed appliances (metal, ceramic, self-ligating braces)",
-        "Aligners",
-        "Myofunctional appliances"
+        "...",
+        "...",
+        "..."
       ]
     }
   },
   "RND": {
-    "dr-pradnya-maen": {
-      "name": "Dr. Pradnya Maen",
+    "dr-pradnya": {
+      "name": "Dr. Pradnya",
       "role": "Cosmetic Dentist & Associate Cosmetologist",
       "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
-      "about": "Dr. Rachana Hivarkar is a skilled dental and cosmetic care provider with comprehensive experience in dentistry and aesthetic procedures.",
+      "about": "...",
       "designation": [
-        "Bachelor of Dental Surgery - Dr. DY Patil Dental College, Pimpri.",
-        "Post Graduation Diploma in clinical cosmetology, Advanced Institute of Cosmetic Medicine and surgery, Pune.",
-        "Diploma in Microblading and micropigmentation, Advanced Institute of Cosmetic Medicine and surgery Pune.",
-        "Diploma in BB glow, Advanced Institute of Cosmetic Medicine and surgery Pune."
+        "..."
       ],
       "experience": [
-        "2019-2022 Associate dentist at Ssai Smile orthodontics, Chakan.",
-        "2023-2024 Owner at Hivarkar Dental Care, Chakan.",
-        "Associate Cosmetologist at Absolute clinic. Bhosari."
+        "..."
       ],
       "services": [
-        "Dental Procedures: Root canals, extractions, fillings, crowns, bridges, veneers, implants, etc.",
-        "Restorative Dentistry: Fillings, crowns, bridges, dentures",
-        "Preventive Dentistry: Cleanings, fluoride treatments, sealants, patient education",
-        "Digital Dentistry: Digital radiography, CAD/CAM systems, intraoral scanners",
-        "Anesthesia: Local anesthesia",
-        "Endodontics: Root canal treatment",
-        "Periodontics: Treatment of gum disease",
-        "Pediatric Dentistry: Care for children's teeth",
-        "X-ray Technology: Operating and interpreting X-rays"
+        "..."
       ]
     }
   },
@@ -56,7 +43,7 @@
       "role": "MS. ENT",
       "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
-      "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
+      "about": "...",
       "designation": [
         "ENT Consultant"
       ],
@@ -84,12 +71,10 @@
         "MDS (Orthodontics and Dentofacial Orthopedics)"
       ],
       "experience": [
-        "1 year"
+        "..."
       ],
       "services": [
-        "Fixed appliances (metal, ceramic, self-ligating braces)",
-        "Aligners",
-        "Myofunctional appliances"
+        "..."
       ],
       "social": {
         "facebook": "",
@@ -129,7 +114,7 @@
       ]
     },
     "dr-neel": {
-      "name": "Dr. Neel",
+      "name": "Dr. Neel Doshi",
       "role": "Conservative Dentistry & Endodontics",
       "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
@@ -161,17 +146,20 @@
       "role": "Oral and Maxillofacial Surgeon",
       "phone": "+91-XXXXXXXXXX",
       "img": "/doctor2.jpg",
-      "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
+      "about": "...",
       "designation": [
-        "MDS (Orthodontics and Dentofacial Orthopedics)"
+        "Consultant Oral and Maxillofacial surgeon"
       ],
       "experience": [
-        "1 year"
+        "3 years"
       ],
       "services": [
-        "Fixed appliances (metal, ceramic, self-ligating braces)",
-        "Aligners",
-        "Myofunctional appliances"
+        "Oral and maxillofacial pathologies",
+        "Third molar surgery",
+        "Pre-prosthetic surgery",
+        "Maxillofacial trauma",
+        "Head and Neck Onco consultation",
+        "Implantology"
       ],
       "social": {
         "facebook": "",
@@ -202,22 +190,27 @@
         "instagram": ""
       }
     },
-    "dr-nayan": {
-      "name": "Dr. Nayan",
-      "role": "Orthodontist",
+    "dr-rohan": {
+      "name": "Dr. Rohan Bhave",
+      "role": "MDS (Prosthodontics and Oral Implantology)",
       "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
       "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
-        "MDS (Orthodontics and Dentofacial Orthopedics)"
+        "Consultant Prosthodontist and Implantologist"
       ],
       "experience": [
         "1 year"
       ],
       "services": [
-        "Fixed appliances (metal, ceramic, self-ligating braces)",
-        "Aligners",
-        "Myofunctional appliances"
+        "Full mouth rehabilitation",
+        "Smile Designing",
+        "Veneers",
+        "Complete Dentures",
+        "Removable Partial Dentures",
+        "Fixed Partial Dentures",
+        "Dental Implants (Single Tooth & Full Arch)",
+        "Maxillofacial Prosthetics"
       ],
       "social": {
         "facebook": "",
@@ -237,12 +230,10 @@
         "MDS (Orthodontics and Dentofacial Orthopedics)"
       ],
       "experience": [
-        "1 year"
+        "..."
       ],
       "services": [
-        "Fixed appliances (metal, ceramic, self-ligating braces)",
-        "Aligners",
-        "Myofunctional appliances"
+        "..."
       ],
       "social": {
         "facebook": "",
@@ -255,46 +246,31 @@
       "role": "Cosmetic Dentist & Associate Cosmetologist",
       "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
-      "about": "Dr. Rachana Hivarkar is a skilled dental and cosmetic care provider with comprehensive experience in dentistry and aesthetic procedures.",
+      "about": "...",
       "designation": [
-        "Bachelor of Dental Surgery - Dr. DY Patil Dental College, Pimpri.",
-        "Post Graduation Diploma in clinical cosmetology, Advanced Institute of Cosmetic Medicine and surgery, Pune.",
-        "Diploma in Microblading and micropigmentation, Advanced Institute of Cosmetic Medicine and surgery Pune.",
-        "Diploma in BB glow, Advanced Institute of Cosmetic Medicine and surgery Pune."
+        "..."
       ],
       "experience": [
-        "2019-2022 Associate dentist at Ssai Smile orthodontics, Chakan.",
-        "2023-2024 Owner at Hivarkar Dental Care, Chakan.",
-        "Associate Cosmetologist at Absolute clinic. Bhosari."
+        "..."
       ],
       "services": [
-        "Dental Procedures: Root canals, extractions, fillings, crowns, bridges, veneers, implants, etc.",
-        "Restorative Dentistry: Fillings, crowns, bridges, dentures",
-        "Preventive Dentistry: Cleanings, fluoride treatments, sealants, patient education",
-        "Digital Dentistry: Digital radiography, CAD/CAM systems, intraoral scanners",
-        "Anesthesia: Local anesthesia",
-        "Endodontics: Root canal treatment",
-        "Periodontics: Treatment of gum disease",
-        "Pediatric Dentistry: Care for children's teeth",
-        "X-ray Technology: Operating and interpreting X-rays"
+        "..."
       ]
     },
-    "dr-madhuri": {
-      "name": "Dr. Madhuri",
-      "role": "Orthodontist",
+    "madhavi": {
+      "name": "Madhavi",
+      "role": "Technician",
       "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
-      "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
+      "about": "...",
       "designation": [
-        "MDS (Orthodontics and Dentofacial Orthopedics)"
+        "..."
       ],
       "experience": [
-        "1 year"
+        "..."
       ],
       "services": [
-        "Fixed appliances (metal, ceramic, self-ligating braces)",
-        "Aligners",
-        "Myofunctional appliances"
+        "..."
       ],
       "social": {
         "facebook": "",
