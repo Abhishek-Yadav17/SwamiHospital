@@ -47,7 +47,6 @@ main {
 
         @media (max-width: 768px) {
           flex-direction: column;
-          gap: 25vw;
           width: 100%;
         }
 
@@ -60,6 +59,7 @@ main {
 
           @media (max-width: 768px) {
             margin-top: 15vw;
+            gap: 10vw;
           }
 
           h2 {
@@ -71,19 +71,18 @@ main {
 
             @media (max-width: 768px) {
               font-size: 5vw;
-              margin-bottom: 4vw;
             }
           }
 
           .team-cards {
             display: flex;
             flex-direction: column;
-            gap: 8vw;
+            gap: 5vw;
             width: 50%;
 
             @media (max-width: 768px) {
+              gap: 10vw;
               width: 90%;
-              gap: 25vw;
             }
 
             .elem {
@@ -91,11 +90,6 @@ main {
               height: fit-content;
               position: relative;
               cursor: pointer;
-
-              @media (max-width: 768px) {
-                height: 60vh;
-                border-radius: 1vw;
-              }
 
               .doctor-info {
                 position: relative;
@@ -136,6 +130,10 @@ main {
           align-items: center;
           gap: 2vw;
 
+          @media (max-width: 768px) {
+            gap: 10vw;
+          }
+
           h2 {
             font-size: 2vw;
             font-family: Playfair;
@@ -157,7 +155,7 @@ main {
 
             @media (max-width: 768px) {
               flex-direction: column;
-              gap: 30vw;
+              gap: 15vw;
             }
 
             .elem {
@@ -165,11 +163,6 @@ main {
               height: fit-content;
               position: relative;
               cursor: pointer;
-
-              @media (max-width: 768px) {
-                height: 60vh;
-                border-radius: 1vw;
-              }
 
               .doctor-info {
                 position: relative;

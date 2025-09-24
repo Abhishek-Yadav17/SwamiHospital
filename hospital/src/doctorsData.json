@@ -3,7 +3,6 @@
     "dr-adeetya": {
       "name": "Dr. Adeetya Varal",
       "role": "MS ENT & Head Neck Surgeon",
-      "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
       "about": "Dr. Adeetya is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
@@ -23,7 +22,6 @@
     "dr-pradnya": {
       "name": "Dr. Pradnya",
       "role": "Cosmetic Dentist & Associate Cosmetologist",
-      "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
       "about": "...",
       "designation": [
@@ -41,7 +39,6 @@
     "dr-juned": {
       "name": "Dr. Juned Aslam Kothali ",
       "role": "MS. ENT",
-      "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
       "about": "...",
       "designation": [
@@ -54,17 +51,11 @@
         "Management of  ENT procedures",
         "OPD procedures",
         "Counseling with Patients"
-      ],
-      "social": {
-        "facebook": "",
-        "twitter": "",
-        "instagram": ""
-      }
+      ]
     },
     "dr-adeetya-ent": {
       "name": "Dr. Adeetya Varal",
       "role": "MS ENT & Head Neck Surgeon",
-      "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
       "about": "Dr. Adeetya is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
@@ -75,19 +66,13 @@
       ],
       "services": [
         "..."
-      ],
-      "social": {
-        "facebook": "",
-        "twitter": "",
-        "instagram": ""
-      }
+      ]
     }
   },
   "Dentistry": {
     "dr-rachna": {
       "name": "Dr. Rachna Hivarkar",
       "role": "Dental consultant & Dental Surgeon",
-      "phone": "+91-XXXXXXXXXX",
       "img": "/doctor3.jpg",
       "about": "Dr. Rachana Hivarkar is a skilled dental and cosmetic care provider with comprehensive experience in dentistry and aesthetic procedures.",
       "designation": [
@@ -116,7 +101,6 @@
     "dr-neel": {
       "name": "Dr. Neel Doshi",
       "role": "Conservative Dentistry & Endodontics",
-      "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
       "about": "Dr. Neel Doshi is an accomplished endodontist with academic and clinical expertise, having trained nationally and internationally.",
       "designation": [
@@ -142,9 +126,8 @@
       ]
     },
     "dr-mayuri": {
-      "name": "Dr. Mayuri Yadav MDS",
-      "role": "Oral and Maxillofacial Surgeon",
-      "phone": "+91-XXXXXXXXXX",
+      "name": "Dr. Mayuri Yadav",
+      "role": "MDS (Oral and Maxillofacial Surgeon)",
       "img": "/doctor2.jpg",
       "about": "...",
       "designation": [
@@ -160,17 +143,11 @@
         "Maxillofacial trauma",
         "Head and Neck Onco consultation",
         "Implantology"
-      ],
-      "social": {
-        "facebook": "",
-        "twitter": "",
-        "instagram": ""
-      }
+      ]
     },
     "dr-pragati": {
-      "name": "Dr. Pragati Mahajan MDS",
-      "role": "Orthodontics and Dentofacialorthopedics",
-      "phone": "+91-XXXXXXXXXX",
+      "name": "Dr. Pragati Mahajan",
+      "role": "MDS (Orthodontics and Dentofacialorthopedics)",
       "img": "/doctor1.jpg",
       "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
@@ -183,17 +160,11 @@
         "Fixed appliances (metal, ceramic, self-ligating braces)",
         "Aligners",
         "Myofunctional appliances"
-      ],
-      "social": {
-        "facebook": "",
-        "twitter": "",
-        "instagram": ""
-      }
+      ]
     },
     "dr-rohan": {
       "name": "Dr. Rohan Bhave",
       "role": "MDS (Prosthodontics and Oral Implantology)",
-      "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
       "about": "Dr. Pragati Mahajan is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
@@ -211,19 +182,13 @@
         "Fixed Partial Dentures",
         "Dental Implants (Single Tooth & Full Arch)",
         "Maxillofacial Prosthetics"
-      ],
-      "social": {
-        "facebook": "",
-        "twitter": "",
-        "instagram": ""
-      }
+      ]
     }
   },
   "Facial Aesthetics": {
     "dr-adeetya-fa": {
       "name": "Dr. Adeetya Varal",
       "role": "MS ENT & Head Neck Surgeon",
-      "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
       "about": "Dr. Adeetya is an MDS in Orthodontics and Dentofacial Orthopedics with 1 year of clinical experience.",
       "designation": [
@@ -234,17 +199,11 @@
       ],
       "services": [
         "..."
-      ],
-      "social": {
-        "facebook": "",
-        "twitter": "",
-        "instagram": ""
-      }
+      ]
     },
     "dr-pradnya-fa": {
       "name": "Dr. Pradnya",
       "role": "Cosmetic Dentist & Associate Cosmetologist",
-      "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
       "about": "...",
       "designation": [
@@ -260,7 +219,6 @@
     "madhavi": {
       "name": "Madhavi",
       "role": "Technician",
-      "phone": "+91-XXXXXXXXXX",
       "img": "/placeholder.jpg",
       "about": "...",
       "designation": [
@@ -271,12 +229,7 @@
       ],
       "services": [
         "..."
-      ],
-      "social": {
-        "facebook": "",
-        "twitter": "",
-        "instagram": ""
-      }
+      ]
     }
   }
 }

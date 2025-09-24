@@ -44,10 +44,6 @@ const DoctorPage = () => {
                         >
                             <p>{doctor.role}</p>
                             <h1>{doctor.name}</h1>
-                            <h4>{doctor.about}</h4>
-                            <div className="buttons">
-                                <button><i className="ri-phone-fill"></i> {doctor.phone}</button>
-                            </div>
                         </motion.div>
                     </motion.div>
 
@@ -67,10 +63,6 @@ const DoctorPage = () => {
                                 hidden: {}
                             }}
                         >
-                            <div className="doctors-bottom-inner">
-                                <h2>About {doctor.name}</h2>
-                                <h4>{doctor.about}</h4>
-                            </div>
                             <div className="doctors-bottom-inner">
                                 <h2>Designation</h2>
                                 {doctor.designation.map((item, i) => (
