@@ -44,6 +44,7 @@ const DoctorPage = () => {
                         >
                             <p>{doctor.role}</p>
                             <h1>{doctor.name}</h1>
+                            <h4>{doctor.about}</h4>
                         </motion.div>
                     </motion.div>
 
@@ -63,26 +64,33 @@ const DoctorPage = () => {
                                 hidden: {}
                             }}
                         >
-                            <div className="doctors-bottom-inner">
-                                <h2>Designation</h2>
-                                {doctor.designation.map((item, i) => (
-                                    <h4 key={i}>{item}</h4>
-                                ))}
-                            </div>
-                            <div className="doctors-bottom-inner">
-                                <h2>Experience</h2>
-                                {doctor.experience.map((item, i) => (
-                                    <h4 key={i}>{item}</h4>
-                                ))}
-                            </div>
-                            <div className="doctors-bottom-inner">
-                                <h2>Skill Set</h2>
-                                <ul>
-                                    {doctor.services.map((service, i) => (
-                                        <li key={i}>{service}</li>
+                            {doctor.designation && doctor.designation.some(item => item !== "...") && (
+                                <div className="doctors-bottom-inner">
+                                    <h2>Designation</h2>
+                                    {doctor.designation.map((item, i) => (
+                                        <h4 key={i}>{item}</h4>
                                     ))}
-                                </ul>
-                            </div>
+                                </div>
+                            )}
+                            {doctor.experience && doctor.experience.some(item => item !== "...") && (
+                                <div className="doctors-bottom-inner">
+                                    <h2>Experience</h2>
+                                    {doctor.experience.map((item, i) => (
+                                        <h4 key={i}>{item}</h4>
+                                    ))}
+                                </div>
+                            )}
+
+                            {doctor.services && doctor.services.some(item => item !== "...") && (
+                                <div className="doctors-bottom-inner">
+                                    <h2>Skill Set</h2>
+                                    <ul>
+                                        {doctor.services.map((service, i) => (
+                                            <li key={i}>{service}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
                         </motion.div>
 
                         <motion.div
@@ -92,7 +100,7 @@ const DoctorPage = () => {
                             transition={{ duration: 0.6 }}
                         >
                             <h2>Get in touch</h2>
-                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, laboriosam?</h4>
+                            <h4>Have a question or need to book a consultation? Send us a message and we'll get back to you shortly.</h4>
                             <form className="appointment-form">
                                 <input type="text" placeholder="Full Name" required />
                                 <input type="tel" placeholder="Phone Number" required />
