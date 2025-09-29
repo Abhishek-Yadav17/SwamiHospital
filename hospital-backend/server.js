@@ -38,4 +38,4 @@ app.post('/api/appointments', async (req, res) => {
   }
 });
 
-app.listen(7000, () => console.log('Server running on port 7000'));
+app.listen(5000, () => console.log('Server running on port 5000'));
