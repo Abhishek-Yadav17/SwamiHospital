@@ -31,12 +31,6 @@ const DoctorPage = () => {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
             });
-
-            if (!res.ok) {
-                const errorData = await res.text();
-                throw new Error(errorData || 'Server error');
-            }
-
             const data = await res.json();
             toast.success(data.message || 'Message sent!');
             setFormData({ fullName: '', phone: '', message: '' });
