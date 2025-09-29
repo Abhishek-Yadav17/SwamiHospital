@@ -20,7 +20,7 @@
   },
   "RND": {
     "dr-pradnya": {
-      "name": "Dr. Pradnya",
+      "name": "Dr. Pradnya Karmarkar",
       "role": "Cosmetic Dentist & Associate Cosmetologist",
       "img": "/placeholder.jpg",
       "about": "",
@@ -71,7 +71,7 @@
   },
   "Dentistry": {
     "dr-rachna": {
-      "name": "Dr. Rachna Hivarkar",
+      "name": "Dr. Rachana Hivarkar",
       "role": "Dental consultant & Dental Surgeon",
       "img": "/doctor3.jpg",
       "about": "Dr. Rachana Hivarkar is a skilled dental and cosmetic care provider with comprehensive experience in dentistry and aesthetic procedures.",
@@ -202,7 +202,7 @@
       ]
     },
     "dr-pradnya-fa": {
-      "name": "Dr. Pradnya",
+      "name": "Dr. Pradnya Karmarkar",
       "role": "Cosmetic Dentist & Associate Cosmetologist",
       "img": "/placeholder.jpg",
       "about": "",
@@ -217,18 +217,24 @@
       ]
     },
     "madhavi": {
-      "name": "Madhavi",
+      "name": "Madhavi Nimbalkar",
       "role": "Technician",
       "img": "/placeholder.jpg",
       "about": "",
       "designation": [
-        "..."
+        "Cosmetologist"
       ],
       "experience": [
-        "..."
+        "4 years"
       ],
       "services": [
-        "..."
+        "Skin analysis & Consultation",
+        "Facials (HydraFacial, Medi-Facial)",
+        "Chemical Peels",
+        "PRP (skin & hair)",
+        "Laser Hair Reduction",
+        "Pigmentation & Acne Management",
+        "Client Communication & Treatment Planning"
       ]
     }
   }

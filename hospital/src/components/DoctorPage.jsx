@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { motion } from 'framer-motion'
 import { useParams } from 'react-router-dom';
 import Navbar from './Navbar';
@@ -14,6 +16,28 @@ const DoctorPage = () => {
         doctorData.ENT[doctorId] ||
         doctorData.Dentistry[doctorId] ||
         doctorData["Facial Aesthetics"][doctorId];
+
+    const [formData, setFormData] = useState({ fullName: '', phone: '', message: '' });
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const res = await fetch('http://localhost:5000/send', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+            const data = await res.json();
+            toast.success(data.message || 'Message sent!');
+            setFormData({ fullName: '', phone: '', message: '' });
+        } catch (err) {
+            toast.error('Failed to send message');
+        }
+    };
 
     return (
         <>
@@ -101,16 +125,38 @@ const DoctorPage = () => {
                         >
                             <h2>Get in touch</h2>
                             <h4>Have a question or need to book a consultation? Send us a message and we'll get back to you shortly.</h4>
-                            <form className="appointment-form">
-                                <input type="text" placeholder="Full Name" required />
-                                <input type="tel" placeholder="Phone Number" required />
-                                <textarea placeholder="Your Message" rows="4" required></textarea>
+                            <form className="appointment-form" onSubmit={handleSubmit}>
+                                <input
+                                    type="text"
+                                    name="fullName"
+                                    placeholder="Full Name"
+                                    required
+                                    value={formData.fullName}
+                                    onChange={handleChange}
+                                />
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    placeholder="Phone Number"
+                                    required
+                                    value={formData.phone}
+                                    onChange={handleChange}
+                                />
+                                <textarea
+                                    name="message"
+                                    placeholder="Your Message"
+                                    rows="4"
+                                    required
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                ></textarea>
                                 <button type="submit">Book Appointment</button>
                             </form>
                         </motion.div>
                     </motion.div>
                 </motion.div>
             </main>
+            <ToastContainer />
             <Footer />
         </>
     );
