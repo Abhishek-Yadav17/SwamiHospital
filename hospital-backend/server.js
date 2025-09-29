@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.post('/send', async (req, res) => {
+app.post('/api/appointments', async (req, res) => {
   const { fullName, phone, message, doctorId } = req.body;
 
   const transporter = nodemailer.createTransport({
@@ -38,4 +38,4 @@ app.post('/send', async (req, res) => {
   }
 });
 
-app.listen(5000, () => console.log('Server running on port 5000'));
+app.listen(7000, () => console.log('Server running on port 7000'));
