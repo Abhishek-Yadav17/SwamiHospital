@@ -17,25 +17,37 @@ const DoctorPage = () => {
         doctorData.Dentistry[doctorId] ||
         doctorData["Facial Aesthetics"][doctorId];
 
-    const [formData, setFormData] = useState({ fullName: '', phone: '', message: '' });
+    const [formData, setFormData] = useState({
+        fullName: '',
+        phone: '',
+        message: ''
+    });
 
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
         try {
-            const res = await fetch('https://swamihospital.onrender.com/send', {
+            const response = await fetch('http://localhost:5000/api/appointments', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData),
+                body: JSON.stringify({
+                    doctorId,
+                    ...formData
+                })
             });
-            const data = await res.json();
-            toast.success(data.message || 'Message sent!');
-            setFormData({ fullName: '', phone: '', message: '' });
-        } catch (err) {
-            toast.error('Failed to send message');
+
+            if (response.ok) {
+                toast.success('Appointment booked successfully!');
+                setFormData({ fullName: '', phone: '', message: '' });
+            } else {
+                throw new Error('Failed to book appointment');
+            }
+        } catch (error) {
+            toast.error('Error booking appointment. Please try again later.');
         }
     };
 

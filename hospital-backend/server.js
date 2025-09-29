@@ -7,8 +7,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.post('/send', async (req, res) => {
-  const { fullName, phone, message } = req.body;
+app.post('/api/appointments', async (req, res) => {
+  const { fullName, phone, message, doctorId } = req.body;
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -21,7 +21,7 @@ app.post('/send', async (req, res) => {
   const mailOptions = {
     from: process.env.EMAIL,
     to: process.env.EMAIL,
-    subject: 'New Appointment Request',
+    subject: `New Appointment Request for Doctor ID: ${doctorId || 'N/A'}`,
     text: `
       Name: ${fullName}
       Phone: ${phone}
