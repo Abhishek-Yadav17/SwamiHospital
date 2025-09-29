@@ -26,7 +26,7 @@ const DoctorPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch('https://swamihospital-1.onrender.com/send', {
+            const res = await fetch('https://swamihospital.onrender.com/send', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
