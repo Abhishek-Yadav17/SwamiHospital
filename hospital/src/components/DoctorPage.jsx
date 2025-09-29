@@ -31,7 +31,7 @@ const DoctorPage = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('https://swamihospital.onrender.com/api/appointments', {
+            const response = await fetch('https://blacktiedigitalindia.onrender.com/send', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

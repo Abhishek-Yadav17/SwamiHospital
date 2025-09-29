@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.post('/api/appointments', async (req, res) => {
+app.post('/send', async (req, res) => {
   const { fullName, phone, message, doctorId } = req.body;
 
   const transporter = nodemailer.createTransport({
