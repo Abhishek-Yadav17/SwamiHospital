@@ -8,34 +8,24 @@ import '../styles/Contact.scss'
 const Contact = () => {
 
     const [formData, setFormData] = useState({
-        name: '',
-        phone: '',
+        firstName: '',
+        lastName: '',
         email: '',
-        message: '',
+        phone: '',
+        message: ''
     });
 
-    const handleChange = e => {
-        setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
-    };
-
-    const handleSubmit = async e => {
+    const sendEmail = async (e) => {
         e.preventDefault();
-        try {
-            const res = await fetch('https://swamihospital.onrender.com/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData),
-            });
 
-            if (res.ok) {
-                toast.success('Message sent successfully!');
-                setFormData({ name: '', phone: '', email: '', message: '' });
-            } else {
-                throw new Error('Failed to send message');
-            }
-        } catch {
-            toast.error('Error sending message. Please try again later.');
-        }
+        const res = await fetch('http://localhost:5000/send', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData),
+        });
+
+        if (res.ok) toast.success('Message sent!');
+        else toast.error('Failed to send.');
     };
 
     return (
@@ -155,18 +145,60 @@ const Contact = () => {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6 }}
                         >
-                            <form className="contact-form" onSubmit={handleSubmit}>
-                                <label htmlFor="name">Name</label>
-                                <input id="name" type="text" name="name" placeholder="Name" required value={formData.name} onChange={handleChange} />
+                            <form className="contact-form" onSubmit={sendEmail}>
+                                <label htmlFor="firstName">First Name</label>
+                                <input
+                                    id="firstName"
+                                    type="text"
+                                    name="firstName"
+                                    placeholder="First Name"
+                                    required
+                                    value={formData.firstName}
+                                    onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                                />
 
-                                <label htmlFor="phone">Phone Number</label>
-                                <input id="phone" type="tel" name="phone" placeholder="Phone Number" required value={formData.phone} onChange={handleChange} />
+                                <label htmlFor="lastName">Last Name</label>
+                                <input
+                                    id="lastName"
+                                    type="text"
+                                    name="lastName"
+                                    placeholder="Last Name"
+                                    required
+                                    value={formData.lastName}
+                                    onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                                />
 
                                 <label htmlFor="email">Email</label>
-                                <input id="email" type="email" name="email" placeholder="Email" required value={formData.email} onChange={handleChange} />
+                                <input
+                                    id="email"
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email"
+                                    required
+                                    value={formData.email}
+                                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                />
+
+                                <label htmlFor="phone">Phone Number</label>
+                                <input
+                                    id="phone"
+                                    type="tel"
+                                    name="phone"
+                                    placeholder="Phone Number"
+                                    required
+                                    value={formData.phone}
+                                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                                />
 
                                 <label htmlFor="message">Leave us a message</label>
-                                <textarea id="message" name="message" placeholder="Leave us a message" required value={formData.message} onChange={handleChange}></textarea>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    placeholder="Leave us a message"
+                                    required
+                                    value={formData.message}
+                                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                                ></textarea>
 
                                 <button type="submit">Submit</button>
                             </form>
