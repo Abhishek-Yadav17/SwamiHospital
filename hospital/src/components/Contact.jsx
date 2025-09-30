@@ -18,7 +18,7 @@ const Contact = () => {
     const sendEmail = async (e) => {
         e.preventDefault();
 
-        const res = await fetch('https://swamihospital.onrender.com/send', {
+        const res = await fetch('https://swamihospital-backend.onrender.com/send', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData),
