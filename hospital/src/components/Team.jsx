@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import '../styles/Team.scss'
+import '../styles/Team.scss';
 import doctorData from '../doctorsData.json';
 
 const Team = () => {
-
     const [hovered, setHovered] = useState(null);
 
     return (
@@ -20,16 +19,13 @@ const Team = () => {
                     viewport={{ once: true }}
                     variants={{
                         hidden: {},
-                        visible: { transition: { staggerChildren: 0.3 } }
+                        visible: { transition: { staggerChildren: 0.3 } },
                     }}
                 >
                     <motion.h1
                         variants={{
                             hidden: { y: -50, opacity: 0 },
-                            visible: {
-                                y: 0, opacity: 1,
-                                transition: { duration: 0.6 }
-                            }
+                            visible: { y: 0, opacity: 1, transition: { duration: 0.6 } },
                         }}
                     >
                         Delicate Approach, Exceptional Results
@@ -37,7 +33,7 @@ const Team = () => {
 
                     <div className="categories-wrapper">
                         <div className="row-1">
-                            {["CEO & Director", "RND"].map((category, catIndex) => {
+                            {["CEO - Director", "Research & Development"].map((category, catIndex) => {
                                 const doctors = Object.entries(doctorData[category]);
                                 return (
                                     <motion.div key={catIndex} className="category-group">
@@ -46,93 +42,19 @@ const Team = () => {
                                             className="team-cards"
                                             variants={{
                                                 hidden: { y: 50, opacity: 0 },
-                                                visible: { y: 0, opacity: 1, transition: { duration: 0.8 } }
+                                                visible: { y: 0, opacity: 1, transition: { duration: 0.8 } },
                                             }}
                                         >
                                             {doctors.map(([id, { name, role }], i) => (
                                                 <motion.div
                                                     key={id}
                                                     className={`elem card-${i}`}
-                                                    transition={{ type: "tween", duration: 0.3 }}
+                                                    transition={{ type: 'tween', duration: 0.3 }}
                                                     onHoverStart={() => setHovered(i)}
                                                     onHoverEnd={() => setHovered(null)}
                                                     onClick={() => (window.location.href = `/doctors/${id}`)}
                                                 >
-                                                    <motion.div
-                                                        className="doctor-info"
-                                                    >
-                                                        <h4>{name}</h4>
-                                                        <p>{role}</p>
-                                                    </motion.div>
-                                                </motion.div>
-                                            ))}
-                                        </motion.div>
-                                    </motion.div>
-                                );
-                            })}
-                        </div>
-
-                        <div className="row-2">
-                            {["ENT", "Dentistry"].map((category, catIndex) => {
-                                const doctors = Object.entries(doctorData[category]);
-                                return (
-                                    <motion.div key={catIndex} className="category-group">
-                                        <h2>{category}</h2>
-                                        <motion.div
-                                            className="team-cards"
-                                            variants={{
-                                                hidden: { y: 50, opacity: 0 },
-                                                visible: { y: 0, opacity: 1, transition: { duration: 0.8 } }
-                                            }}
-                                        >
-                                            {doctors.map(([id, { name, role }], i) => (
-                                                <motion.div
-                                                    key={id}
-                                                    className={`elem card-${i}`}
-                                                    transition={{ type: "tween", duration: 0.3 }}
-                                                    onHoverStart={() => setHovered(i)}
-                                                    onHoverEnd={() => setHovered(null)}
-                                                    onClick={() => (window.location.href = `/doctors/${id}`)}
-                                                >
-                                                    <motion.div
-                                                        className="doctor-info"
-                                                    >
-                                                        <h4>{name}</h4>
-                                                        <p>{role}</p>
-                                                    </motion.div>
-                                                </motion.div>
-                                            ))}
-                                        </motion.div>
-                                    </motion.div>
-                                );
-                            })}
-                        </div>
-
-                        <div className="row-3">
-                            {["Facial Aesthetics"].map((category, catIndex) => {
-                                const doctors = Object.entries(doctorData[category]);
-                                return (
-                                    <motion.div key={catIndex} className="category-group">
-                                        <h2>{category}</h2>
-                                        <motion.div
-                                            className="team-cards"
-                                            variants={{
-                                                hidden: { y: 50, opacity: 0 },
-                                                visible: { y: 0, opacity: 1, transition: { duration: 0.8 } }
-                                            }}
-                                        >
-                                            {doctors.map(([id, { name, role }], i) => (
-                                                <motion.div
-                                                    key={id}
-                                                    className={`elem card-${i}`}
-                                                    transition={{ type: "tween", duration: 0.3 }}
-                                                    onHoverStart={() => setHovered(i)}
-                                                    onHoverEnd={() => setHovered(null)}
-                                                    onClick={() => (window.location.href = `/doctors/${id}`)}
-                                                >
-                                                    <motion.div
-                                                        className="doctor-info"
-                                                    >
+                                                    <motion.div className="doctor-info">
                                                         <h4>{name}</h4>
                                                         <p>{role}</p>
                                                     </motion.div>
@@ -145,10 +67,10 @@ const Team = () => {
                         </div>
                     </div>
                 </motion.div>
-            </main >
+            </main>
             <Footer />
         </>
-    )
-}
+    );
+};
 
-export default Team
+export default Team;

@@ -1,239 +1,121 @@
 main {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  .doctors {
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    background-color: #d2c4ee;
+    color: #242845;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Nunito;
 
-    .doctors {
-        min-height: 100vh;
-        width: 100%;
-        background-color: #D2C4EE;
-        color: #242845;
-        padding: 4vw;
+    .doctors-top {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+
+      .doctor-right {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-family: Nunito;
-        position: relative;
-
-        .doctors-top {
-            height: fit-content;
-            width: 90%;
-            display: flex;
-
-            @media (max-width: 768px) {
-                flex-direction: column;
-                height: fit-content;
-                width: 100%;
-            }
-
-            .doctor-right {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0 4vw;
-
-                @media (max-width: 768px) {
-                    width: 100%;
-                    height: 50%;
-                    gap: 4vw;
-                }
-
-                p {
-                    font-size: 1.1vw;
-                    background-color: #C7B1E0;
-                    border-radius: 50px;
-                    width: fit-content;
-                    padding: 0 1vw;
-
-                    @media (max-width: 768px) {
-                        font-size: 3.5vw;
-                    }
-                }
-
-                h1 {
-                    font-family: Playfair;
-                    text-transform: capitalize;
-                    margin-top: 1vw;
-                    margin-bottom: 3vw;
-
-                    @media (max-width: 768px) {
-                        font-size: 5vw;
-                    }
-                }
-
-                h4 {
-                    font-size: 1.3vw;
-                    font-weight: lighter;
-                    margin-bottom: 2vw;
-                    text-align: center;
-
-                    @media (max-width: 768px) {
-                        font-size: 3.5vw;
-                    }
-                }
-            }
+        p {
+          font-size: 1.1vw;
+          background-color: #c7b1e0;
+          border-radius: 50px;
+          padding: 0 1vw;
         }
 
-        .doctors-bottom {
-            height: fit-content;
-            width: 90%;
-            background-color: #C7B1E0;
-            padding: 2vw;
-            display: flex;
-            gap: 5vw;
-
-            @media (max-width: 768px) {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .doctors-bottom-left {
-                width: 60%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                gap: 4vw;
-
-                @media (max-width: 768px) {
-                    width: 100%;
-                    gap: 6vw;
-                }
-
-                .doctors-bottom-inner {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 2vw;
-
-                    h2 {
-                        font-family: Playfair;
-                        font-weight: lighter;
-                        font-size: 2vw;
-                        text-transform: capitalize;
-
-                        @media (max-width: 768px) {
-                            font-size: 4.5vw;
-                        }
-                    }
-
-                    h4 {
-                        font-size: 1.2vw;
-                        font-weight: lighter;
-
-                        @media (max-width: 768px) {
-                            font-size: 3.5vw;
-                        }
-
-                        span {
-                            font-weight: bold;
-                        }
-                    }
-
-                    ul {
-                        padding-left: 1vw;
-
-                        @media (max-width: 768px) {
-                            padding-left: 4vw;
-                        }
-
-                        li {
-                            font-size: 1.1vw;
-
-                            @media (max-width: 768px) {
-                                font-size: 3.5vw;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .doctors-bottom-right {
-                height: 100%;
-                width: 35%;
-                display: flex;
-                flex-direction: column;
-                gap: 1vw;
-                background-color: #D2C4EE;
-                padding: 2vw;
-
-                @media (max-width: 768px) {
-                    width: 100%;
-                    gap: 4vw;
-                }
-
-                h2 {
-                    font-size: 2vw;
-
-                    @media (max-width: 768px) {
-                        font-size: 4.5vw;
-                    }
-                }
-
-                h4 {
-                    font-weight: lighter;
-                    font-size: 1.1vw;
-
-                    @media (max-width: 768px) {
-                        font-size: 3.5vw;
-                    }
-                }
-
-                .appointment-form {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 2vw;
-                    margin-top: 2vw;
-
-                    @media (max-width: 768px) {
-                        gap: 4vw;
-                    }
-
-                    input,
-                    textarea {
-                        padding: 0.8vw;
-                        font-size: 1vw;
-                        border: none;
-                        outline: none;
-                        background-color: #C7B1E0;
-                        font-family: Nunito;
-                        color: #242845;
-
-                        @media (max-width: 768px) {
-                            font-size: 3vw;
-                            padding: 3vw 2vw;
-                        }
-
-                        &::placeholder {
-                            color: #242845;
-                        }
-                    }
-
-                    button {
-                        padding: 0.8vw 1.8vw;
-                        background-color: #74609D;
-                        color: #F6F0F3;
-                        font-size: 1.1vw;
-                        border: none;
-                        transition: all ease 0.5s;
-                        cursor: pointer;
-                        font-family: Nunito;
-                        border: 1px solid #74609D;
-
-                        @media (max-width: 768px) {
-                            padding: 2vw 3vw;
-                            font-size: 3vw;
-                        }
-
-                        &:hover {
-                            border: 1px solid #242845;
-                            background-color: transparent;
-                            color: #242845;
-                        }
-                    }
-                }
-            }
+        h1 {
+          font-family: Playfair;
+          margin-top: 1vw;
+          margin-bottom: 3vw;
         }
+
+        h4 {
+          font-size: 1.3vw;
+          text-align: center;
+        }
+      }
     }
+
+    .doctors-bottom {
+      width: 90%;
+      background-color: #c7b1e0;
+      padding: 2vw;
+      display: flex;
+      gap: 5vw;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      .doctors-bottom-left {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+
+        .doctors-bottom-inner {
+          display: flex;
+          flex-direction: column;
+          gap: 1vw;
+
+          h2 {
+            font-family: Playfair;
+            font-size: 2vw;
+          }
+
+          h4,
+          li {
+            font-size: 1.1vw;
+            font-weight: lighter;
+          }
+        }
+      }
+
+      .doctors-bottom-right {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        background-color: #d2c4ee;
+        padding: 2vw;
+
+        .appointment-form {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5vw;
+          input,
+          textarea {
+            padding: 0.8vw;
+            background-color: #c7b1e0;
+            border: none;
+            outline: none;
+            font-family: Nunito;
+          }
+
+          button {
+            padding: 0.8vw 1.8vw;
+            background-color: #74609d;
+            color: #fff;
+            border: 1px solid #74609d;
+            cursor: pointer;
+            transition: 0.3s ease;
+            font-family: Nunito;
+
+            &:hover {
+              background-color: transparent;
+              color: #242845;
+              border-color: #242845;
+            }
+          }
+        }
+      }
+    }
+  }
 }

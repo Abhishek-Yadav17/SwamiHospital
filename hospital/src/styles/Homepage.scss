@@ -8,7 +8,7 @@ main {
         min-height: 85vh;
         width: 100%;
         background-color: #F6F0F3;
-        color: #242845;
+        color: #24284A;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -36,7 +36,7 @@ main {
         }
 
         .hero-bg.active {
-            opacity: 0.4;
+            opacity: 0.3;
             z-index: 1;
         }
 
@@ -103,7 +103,7 @@ main {
         h1 {
             font-size: 3vw;
             font-family: Playfair;
-            font-weight: lighter;
+            font-weight: bold;
             line-height: 1.2;
             width: 60%;
             height: fit-content;
@@ -121,12 +121,11 @@ main {
 
         h4 {
             font-size: 1.4vw;
-            font-weight: lighter;
+            font-weight: 800;
             width: 60%;
             text-align: center;
             padding: 0 6vw;
             align-self: center;
-
 
             @media (max-width: 768px) {
                 font-size: 3.5vw;
@@ -146,7 +145,7 @@ main {
             align-self: center;
 
             button {
-                padding: 1vw 1vw;
+                padding: 1vw;
                 background-color: #74609D;
                 color: #F6F0F3;
                 font-size: 1.1vw;
@@ -159,8 +158,17 @@ main {
                 align-items: center;
                 gap: 0.5vw;
 
+                @media (max-width: 768px) {
+                    padding: 3vw;
+                    font-size: 3vw;
+                }
+
                 i {
                     font-size: 1.2vw;
+
+                    @media (max-width: 768px) {
+                        font-size: 3vw;
+                    }
                 }
 
                 &:hover {
@@ -188,7 +196,7 @@ main {
                 color: #F6F0F3;
                 font-size: 24px;
                 border: none;
-                height: 18vh;
+                height: 20vh;
                 width: 25%;
                 transition: all ease 0.5s;
                 cursor: pointer;
@@ -201,7 +209,7 @@ main {
                 @media (max-width: 768px) {
                     width: 100%;
                     font-size: 3.5vw;
-                    height: 10vh;
+                    height: fit-content;
                 }
 
                 &:hover {

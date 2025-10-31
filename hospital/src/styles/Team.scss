@@ -19,7 +19,7 @@ main {
       padding: 8vw 4vw;
     }
 
-    >h1 {
+    > h1 {
       font-size: 3vw;
       font-family: Playfair;
       font-weight: lighter;
@@ -40,10 +40,11 @@ main {
       gap: 10vw;
       padding-bottom: 4vw;
 
-      .row-1,
-      .row-2 {
+      .row-1 {
         display: flex;
         width: 100%;
+        justify-content: center;
+        gap: 5vw;
 
         @media (max-width: 768px) {
           flex-direction: column;
@@ -58,7 +59,7 @@ main {
           gap: 1vw;
 
           @media (max-width: 768px) {
-            margin-top: 15vw;
+            margin-top: 10vw;
             gap: 10vw;
           }
 
@@ -87,7 +88,6 @@ main {
 
             .elem {
               width: 100%;
-              height: fit-content;
               position: relative;
               cursor: pointer;
 
@@ -97,83 +97,9 @@ main {
                 left: 0;
                 width: 100%;
                 background-color: #24284594;
-                color: #F6F0F3;
+                color: #f6f0f3;
                 padding: 10px;
                 text-align: center;
-                pointer-events: none;
-                z-index: 2;
-
-                @media (max-width: 768px) {
-                  opacity: 1 !important;
-                  transform: translateY(0) !important;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .row-3 {
-        width: 100%;
-        display: flex;
-        align-self: flex-start;
-
-        @media (max-width: 768px) {
-          width: 90%;
-          margin: 25vw auto;
-        }
-
-        .category-group {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 2vw;
-
-          @media (max-width: 768px) {
-            gap: 10vw;
-          }
-
-          h2 {
-            font-size: 2vw;
-            font-family: Playfair;
-            font-weight: 600;
-            width: 100%;
-            text-align: center;
-            margin-bottom: 1vw;
-
-            @media (max-width: 768px) {
-              font-size: 5vw;
-              margin-bottom: 4vw;
-            }
-          }
-
-          .team-cards {
-            display: flex;
-            gap: 10vw;
-            width: 100%;
-
-            @media (max-width: 768px) {
-              flex-direction: column;
-              gap: 15vw;
-            }
-
-            .elem {
-              width: 100%;
-              height: fit-content;
-              position: relative;
-              cursor: pointer;
-
-              .doctor-info {
-                position: relative;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                background-color: #24284594;
-                color: #F6F0F3;
-                padding: 10px;
-                text-align: center;
-                pointer-events: none;
                 z-index: 2;
 
                 @media (max-width: 768px) {
