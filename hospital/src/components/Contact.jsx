@@ -124,16 +124,24 @@ const Contact = () => {
                                         visible: { transition: { staggerChildren: 0.2 } },
                                     }}
                                 >
-                                    {["ri-instagram-fill", "ri-facebook-fill", "ri-linkedin-fill", "ri-twitter-x-fill"].map((icon, i) => (
-                                        <motion.i
+                                    {[
+                                        { icon: "ri-instagram-fill", link: "https://www.instagram.com/swamisclinic/?hl=en" },
+                                        { icon: "ri-facebook-fill", link: "https://www.facebook.com/share/1M8a7P9vCY/" },
+                                        { icon: "ri-linkedin-fill", link: "https://www.linkedin.com/company/swami-s-clinic/" },
+                                    ].map(({ icon, link }, i) => (
+                                        <motion.a
                                             key={i}
-                                            className={icon}
+                                            href={link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             variants={{
                                                 hidden: { opacity: 0, x: -50 },
                                                 visible: { opacity: 1, x: 0 },
                                             }}
                                             transition={{ duration: 0.4 }}
-                                        />
+                                        >
+                                            <i className={icon}></i>
+                                        </motion.a>
                                     ))}
                                 </motion.div>
                             </div>
