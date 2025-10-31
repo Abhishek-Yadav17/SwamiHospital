@@ -137,50 +137,31 @@ const Homepage = () => {
                     ))}
                     <motion.div
                         className="hero-heading"
-                        initial="hidden"
-                        animate="visible"
                     >
                         <motion.button
                             className="contact-button"
-                            variants={{
-                                hidden: { opacity: 0, x: -100 },
-                                visible: { opacity: 1, x: 0, transition: { duration: 0.8, delay: 0.2 } }
-                            }}
                         >
                             <i className="ri-phone-fill"></i>+91 9135321616
                         </motion.button>
 
                         <motion.h2
-                            initial={{ opacity: 0, y: -100 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1.5, delay: 0.5 }}
                         >
                             सुहास्य वदनं सर्व सुखस्य कारणं
                         </motion.h2>
 
                         <motion.button
                             className="contact-button"
-                            variants={{
-                                hidden: { opacity: 0, x: 100 },
-                                visible: { opacity: 1, x: 0, transition: { duration: 0.8, delay: 0.2 } }
-                            }}
                         >
                             <i className="ri-mail-fill"></i>swamisclinic100@gmail.com
                         </motion.button>
                     </motion.div>
 
                     <motion.h1
-                        initial={{ opacity: 0, y: -100 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1.5, delay: 0.5 }}
                     >
                         Sculpting Identity Through Beauty
                     </motion.h1>
 
                     <motion.h4
-                        initial={{ opacity: 0, x: 100 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1.5, delay: 0.5 }}
                     >
                         Facial Aesthetic solutions by expert Surgeons, Dentists, Cosmetologists & Psychologists — devoted to enhancing self-esteem.
                     </motion.h4>

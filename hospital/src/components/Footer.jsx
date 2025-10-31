@@ -101,14 +101,22 @@ const Footer = () => {
                             >
                                 <motion.h2>Follow Us</motion.h2>
                                 <motion.div className="social-media">
-                                    {["ri-instagram-fill", "ri-facebook-fill", "ri-linkedin-fill"].map((icon, i) => (
-                                        <motion.i
+                                    {[
+                                        { icon: "ri-instagram-fill", link: "https://www.instagram.com/swamisclinic/?hl=en" },
+                                        { icon: "ri-facebook-fill", link: "https://www.facebook.com/share/1M8a7P9vCY/" },
+                                        { icon: "ri-linkedin-fill", link: "https://www.linkedin.com/company/swami-s-clinic/" },
+                                    ].map(({ icon, link }, i) => (
+                                        <motion.a
                                             key={i}
-                                            className={icon}
+                                            href={link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             initial={{ opacity: 0, x: -50 }}
                                             animate={{ opacity: 1, x: 0 }}
                                             transition={{ duration: 0.4, delay: i * 0.2 }}
-                                        />
+                                        >
+                                            <i className={icon} />
+                                        </motion.a>
                                     ))}
                                 </motion.div>
                             </motion.div>
